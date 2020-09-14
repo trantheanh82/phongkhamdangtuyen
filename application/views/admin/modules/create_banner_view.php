@@ -1,0 +1,1 @@
+create banner view

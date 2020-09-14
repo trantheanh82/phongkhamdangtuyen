@@ -1,0 +1,4 @@
+*.DS_Store
+/application/tmp/*
+/application/cache*
+/application/logs/*
