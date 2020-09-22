@@ -23,7 +23,7 @@
             $link = base_url();
          ?>
       <!-- SERVICE BOX #1 -->
-      <div class="col-sm-6 col-lg-3">
+      <div class="col-6 col-sm-6 col-lg-3">
         <div class="sbox-2 wow fadeInUp" data-wow-delay="<?=$data_wow_delay?>s">
           <a href="<?=$link?>">
 
