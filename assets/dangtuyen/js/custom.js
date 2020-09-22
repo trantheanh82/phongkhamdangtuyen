@@ -50,7 +50,7 @@
 
 		$('.slider').slider({
 			full_width: false,
-			interval:5000,
+			interval:8000,
 			transition:700,
 			draggable: false,
 		});
