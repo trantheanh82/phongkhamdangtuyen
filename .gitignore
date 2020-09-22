@@ -2,3 +2,4 @@
 /application/tmp/*
 /application/cache*
 /application/logs/*
+/resources/*
