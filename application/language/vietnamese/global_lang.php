@@ -43,7 +43,6 @@ $lang['entries']			= "mục";
 /*Table*/
 $lang['Status']				= "Trạng thái";
 $lang['Actions']				= "Thao tác";
-
 $lang['Date']				=	"Ngày";
 
 
@@ -78,3 +77,22 @@ $lang['Connect us']         = "Kết nối với chúng tôi";
 
 $lang['Term & Conditions']  = "Điều khoản sử dụng";
 $lang['Privacy']            = "Chính sách bảo mật";
+
+$lang['Address']            = "CS1: ";
+$lang['Address 2']          = "CS2: ";
+
+$lang['Get an Appointment'] = "Đặt lịch khám trực tuyến";
+
+$lang['About Clinic']       = "Giới thiệu";
+$lang['Our Locations']      = "Địa Chỉ Phòng Khám";
+
+$lang['View more posts']    = "Xem bài viết khác";
+
+/*Statistics*/
+$lang['Happy Patients'] = "Bệnh nhân tin tưởng";
+$lang['Qualified Doctors']     = "Bác sĩ tận tâm";
+$lang['Clinic Rooms']     = "Phòng khám";
+$lang['Partners']     = "Đối tác uy tín";
+
+/*Booking*/
+$lang['Book an appointment'] = "Đặt lịch trực tuyến";

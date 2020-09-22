@@ -15,21 +15,19 @@
 								<!-- Footer Logo -->
 								<!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 360 x 80  pixels) -->
 								<!--<img src="<?=base_url().'assets/'.$template?>/images/footer-logo.png" width="180" height="40" alt="footer-logo">-->
-                <?=img($Settings['company_logo'],'',array('height'=>45,'alt'=>$Settings['company_name']))?>
+                <?=img($Settings['company_logo_footer'],'',array('height'=>45,'alt'=>$Settings['company_name']))?>
 
 								<!-- Text -->
-								<p class="p-sm mt-20">Aliquam orci nullam tempor sapien gravida donec an enim ipsum porta
-								   justo velna auctor congue magna laoreet augue sapien gravida at purus euismod
-								</p>
+								<p class="p-sm mt-20"><?=$Settings['company_description']?></p>
 
 								<!-- Social Icons -->
 								<div class="footer-socials-links mt-20">
 									<ul class="foo-socials text-center clearfix">
 
-										<li><a href="#" class="ico-facebook"><i class="fab fa-facebook-f"></i></a></li>
-										<li><a href="#" class="ico-twitter"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="https://www.facebook.com/pkdkdangtuyen/" class="ico-facebook"><i class="fab fa-facebook-f"></i></a></li>
+										<!--<li><a href="#" class="ico-twitter"><i class="fab fa-twitter"></i></a></li>
 										<li><a href="#" class="ico-google-plus"><i class="fab fa-google-plus-g"></i></a></li>
-										<li><a href="#" class="ico-tumblr"><i class="fab fa-tumblr"></i></a></li>
+										<li><a href="#" class="ico-tumblr"><i class="fab fa-tumblr"></i></a></li>-->
 
 										<!--
 										<li><a href="#" class="ico-behance"><i class="fab fa-behance"></i></a></li>
@@ -55,17 +53,17 @@
 							<div class="footer-box mb-40">
 
 								<!-- Title -->
-								<h5 class="h5-xs">Our Location</h5>
+								<h5 class="h5-xs darkgreen-color"><?=lang("Our Locations")?></h5>
 
 								<!-- Address -->
-								<p>121 King Street, Melbourne,</p>
-								<p>Victoria 3000 Australia</p>
+								<p><?=lang("Address").$Settings['address']?></p>
+								<p><?=lang("Address 2").$Settings['company_address_1']?></p>
 
 								<!-- Email -->
-								<p class="foo-email mt-20">E: <a href="mailto:yourdomain@mail.com">hello@yourdomain.com</a></p>
+								<p class="foo-email mt-20">E: <a href="mailto:<?=$Settings['company_email']?>"><?=$Settings['company_email']?></a></p>
 
 								<!-- Phone -->
-								<p>P: +12 9 8765 4321</p>
+								<p>P: <?=$Settings['company_phone_1']?></p>
 
 							</div>
 						</div>
@@ -76,7 +74,7 @@
 							<div class="footer-links mb-40">
 
 								<!-- Title -->
-								<h5 class="h5-xs">About Clinic</h5>
+								<h5 class="h5-xs darkgreen-color"><?=lang("About Clinic")?></h5>
 
 								<!-- Footer Links -->
 								<ul class="foo-links clearfix">
@@ -118,7 +116,7 @@
 					<div class="bottom-footer">
 						<div class="row">
 							<div class="col-md-12">
-								<p class="footer-copyright">&copy; 2019 <span>MedService</span>. All Rights Reserved</p>
+								<?=$Settings['copyright']?>
 							</div>
 						</div>
 					</div>

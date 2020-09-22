@@ -14,7 +14,7 @@
 <br /><br />
 <div class='image-placehold mt-10' style='max-width:<?=isset($max_width)?$max_width:"150px";?>'>
 
-	<p style='position:absolute;left:<?=isset($max_width)?$max_width:"150px";?>;' class='hide remove-placehold-image' title='<?=__('remove image',$this)?>'><icon class='fa fa-trash red'></icon></p>
+	<p style='position:absolute;right:30px' class='hide remove-placehold-image' title='<?=__('remove image',$this)?>'><icon class='fa fa-trash red'></icon></p>
 
 	<img src="<?=($value != "")?base_url().$value:""?>" id='img_<?=$id?>' class='img-responsive profile-avatar border-trans'
 		style='cursor:pointer;width:<?=	isset($max_width)?$max_width:"150px";?>;'

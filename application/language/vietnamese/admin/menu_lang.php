@@ -22,6 +22,8 @@ $lang['Products']		=	"Sản Phẩm";
 $lang['Product Types']	=	"Loại sản phẩm";
 $lang['Services']		=	$lang['Service'] = "Dịch vụ";
 $lang['Article'] = $lang['Articles']	=	"Bài viết";
+$lang['Doctors']	=	"Bác sĩ";
+$lang['Specialists']	=	"Chuyên khoa";
 // Regular menu
 $lang['Add']			= $lang['Create'] = "Thêm";
 $lang['Listing']			= "Danh sách";

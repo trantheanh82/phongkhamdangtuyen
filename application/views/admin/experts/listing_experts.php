@@ -7,7 +7,7 @@
 <?=content_open($page_name,$this)?>
 	<div class='box-body'>
 		<?php
-			$this->load->view('admin/elements/ui/command_tools.php',array('command_tools'=>array('create'=>array('url'=>'admin/experts/create','name'=>lang('Create Pages')))));
+			$this->load->view('admin/elements/ui/command_tools.php',array('command_tools'=>array('create'=>array('url'=>'admin/experts/create','name'=>lang('Create Expert')))));
 			?>
 		<table id="data" class="table table-bordered table-striped table-hover">
 		    <thead>

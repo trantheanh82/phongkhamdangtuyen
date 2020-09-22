@@ -42,11 +42,10 @@ class Category_model extends MY_Model
 
 	}
 
-	function get_dropdown($model,$current_lang="vn"){
+	function get_dropdown($model,$current_lang="vi"){
 		//$lists = $this->get_all();
-		$lists = $this->with_translation('where: `model`=\'category\' AND `language`=\''.$current_lang.'\'')->where(array('model'=>$model,'active'=>'Y'))->order_by('sort','asc')->set_cache($model.'_'.$current_lang)->get_all();
+		$lists = $this->with_translation('where: `model`=\''.$this->name.'\' AND `language`=\''.$current_lang.'\'')->where(array('model'=>$model,'active'=>'Y'))->order_by('sort','asc')->set_cache($model.'_'.$current_lang)->get_all();
 		$dropdown = array();
-
 		foreach($lists as $k=>$value){
 			$dropdown[$value->id] = $value->translation->content->name;
 		}

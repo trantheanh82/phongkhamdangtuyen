@@ -37,7 +37,7 @@ class Public_Controller extends MY_Controller{
 
 		//$this->data['before_head'] .= parent::insert_assets('modernizr-2.8.3.min.js',$this->template,'js',false);
 
-		$this->data['before_body'] .= parent::insert_assets('jquery-3.3.1.min.js',$this->template,'js',false,"");
+		$this->data['before_body'] .= parent::insert_assets(array('jquery-3.3.1.min.js','wow.js'),$this->template,'js',false,"");
 		$this->data['before_body'] .= parent::insert_assets(array(
 			'bootstrap.min.js',
 			'modernizr.custom.js',
@@ -59,10 +59,7 @@ class Public_Controller extends MY_Controller{
 			'jquery.datetimepicker.full.js',
 			'jquery.validate.min.js',
 			'jquery.ajaxchimp.min.js',
-			'wow.js',
-			'custom.js',
-			'changer.js',
-			'styleswitch.js'
+			'custom.js'
 		),$this->template,'js',false,'defer');
 
 		if(!empty($this->data['Settings']['header_javascript'])){
@@ -99,10 +96,10 @@ class Public_Controller extends MY_Controller{
 					$this->load->model($model);
 
 					$items = $this->{$model}->get_menu($this->current_lang,'article');
+					if(!empty($items))
 					$public_menu[$k]->children = $items;
 
 				}
-
 				/*switch($v->name){
 					case 'About us':
 						$this->load->model('page_model');
@@ -147,7 +144,7 @@ class Public_Controller extends MY_Controller{
 		->with_translation("fields:content","where:`model`='link' and language='".$this->current_lang."'")
 		->where(array('active'=>'Y'))
 		->order_by('sort','asc')
-		->set_cache($this->current_lang.'_footer_menu',8400)
+		//->set_cache($this->current_lang.'_footer_menu',8400)
 		->get_all();
 
 		return $links;

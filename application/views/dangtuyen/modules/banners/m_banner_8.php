@@ -13,10 +13,10 @@
           <span class="flaticon-072-hospital-5"></span>
 
           <!-- Title  -->
-          <h3 class="h3-sm">Take the First Step to Help</h3>
+          <h3 class="h3-sm">Để được hỗ trợ về sức khỏe</h3>
 
-            <h4 class="h4-lg">Call MedService Clinic Now</h4>
-            <h2 class="h2-lg">1-800-123-4560</h2>
+            <h4 class="h4-lg">Hãy gọi cho <span class='red-color'>Đặng Tuyền</span> ngay</h4>
+            <h2 class="h2-lg"><?=$Settings['company_phone_1']?></h2>
 
         </div>
       </div>

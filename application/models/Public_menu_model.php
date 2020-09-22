@@ -24,6 +24,13 @@ class Public_menu_model extends MY_Model
 
 	}
 
+	public function get_allitems($lang){
+		return $this->with_translation('where: `model`=\'public_menu\' AND `language`=\''.$lang.'\'')
+		->with_slug('where:`model`=\'public_menu\' AND `language`=\''.$lang.'\'')
+		->order_by('sort','ASC')
+		->get_all();
+	}
+
 	public function getTreeMenu($current_lang){
 		$conditions = 'where:`model`=\'public_menu\' AND `language`=\''.$current_lang.'\'';
 		$items = $this

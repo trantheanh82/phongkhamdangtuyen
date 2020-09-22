@@ -21,12 +21,8 @@ class Publicmenu extends Admin_Controller {
   }
 
 	function listing(){
-		$this->data['items'] = $this->public_menu_model
-		->with_translation('where: `model`=\'public_menu\' AND `language`=\''.$this->current_lang.'\'')
-		->with_slug('where:`model`=\'public_menu\' AND `language`=\''.$this->current_lang.'\'')
-		->order_by('sort','ASC')
-		->get_all();
-
+		$this->data['items'] = $this->public_menu_model->get_allitems($this->current_lang);
+		
 		$this->render('admin/publicmenu/publicmenu_view');
 	}
 

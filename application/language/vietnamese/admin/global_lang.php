@@ -82,3 +82,7 @@ $lang['new contact']  = "liên hệ mới";
 /**/
 $lang['Active']     =   "Kích hoạt";
 $lang['Refresh Page'] = "Tải lại trang";
+$lang['Order']      = "Thứ tự";
+$lang['Created']    = "Ngày tạo";
+$lang['Action']     = "Thao tác";
+$lang['Image']    = "Hình ảnh";

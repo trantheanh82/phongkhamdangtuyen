@@ -142,7 +142,7 @@ video {
 */
 .wsmenu {
   color: #fff;
-  font-size: 14.5px;
+  font-size: 13px;
   font-weight: 400;
   padding: 0;
   float: right;
@@ -174,7 +174,8 @@ video {
 }
 
 .wsmenu >.wsmenu-list > li:hover > a {
-  color: #00a3c8;
+  color: #00923f; /*#00a3c8;*/
+
 }
 
 .wsmenu > .wsmenu-list > li > a {
@@ -186,7 +187,10 @@ video {
 }
 
 #header-2 .wsmenu > .wsmenu-list > li > a {
-  padding: 10px 40px 10px 10px;
+  /*padding: 10px 40px 10px 10px;*/
+  padding: 10px 30px 10px 10px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .wsmenu > .wsmenu-list > li:last-child > a {
@@ -196,7 +200,7 @@ video {
 /* Header Button */
 .header-button span,
 .wsmenu > .wsmenu-list > li.header-btn a {
-  background-color: #00a3c8;
+  background-color: #00923f; /*#00a3c8;*/
   color: #fff!important;
   line-height: 30px;
   margin-top: 15px;
@@ -237,8 +241,9 @@ video {
 
 .header-button span a {
   color: #fff;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .wsmenu > .wsmenu-list > li.header-btn a:hover {

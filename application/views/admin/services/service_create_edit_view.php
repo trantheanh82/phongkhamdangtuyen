@@ -61,7 +61,7 @@
 							<label for="inputEmail3" class="control-label"><?=lang("Description")?></label>
 							<div class="">
 								<?php echo form_textarea('relation[translation]['.$lang['slug'].'][content][description]',value(isset($item->content[$lang['slug']]->description)?$item->content[$lang['slug']]->description:""),
-								array('class'=>'form-control basic-editor','id'=>$lang['slug'].'_description','contenteditable'=>true));?>
+								array('class'=>'form-control article-editor','id'=>$lang['slug'].'_description','contenteditable'=>true));?>
 				            </div>
 						</div>
 
@@ -69,23 +69,7 @@
 							<label for="inputEmail3" class="control-label"><?=lang("Content")?></label>
 							<div class="">
 								<?php echo form_textarea('relation[translation]['.$lang['slug'].'][content][content]',value(isset($item->content[$lang['slug']]->content)?$item->content[$lang['slug']]->content:""),
-													array('class'=>'form-control basic-editor','id'=>$lang['slug'].'_content','contenteditable'=>true));?>
-				            </div>
-						</div>
-
-						<div class='form-group'>
-							<label for="inputEmail3" class="control-label"><?=lang("Benefits")?></label>
-							<div class="">
-								<?php echo form_textarea('relation[translation]['.$lang['slug'].'][content][benefits]',value(isset($item->content[$lang['slug']]->benefits)?$item->content[$lang['slug']]->benefits:""),
-												array('class'=>'form-control basic-editor','id'=>$lang['slug'].'_benefits','contenteditable'=>true));?>
-				            </div>
-						</div>
-
-						<div class='form-group'>
-							<label for="inputEmail3" class="control-label"><?=lang("Responsibility")?></label>
-							<div class="">
-								<?php echo form_textarea('relation[translation]['.$lang['slug'].'][content][responsibility]',value(isset($item->content[$lang['slug']]->responsibility)?$item->content[$lang['slug']]->responsibility:""),
-												array('class'=>'form-control basic-editor','id'=>$lang['slug'].'_responsibility','contenteditable'=>true));?>
+													array('class'=>'form-control article-editor','id'=>$lang['slug'].'_content','contenteditable'=>true));?>
 				            </div>
 						</div>
 
@@ -109,13 +93,13 @@
             <?php
 	            endif;
 	            ?>
-
+							<!--
 							<div class='form-group'>
 								<label for="inputEmail3" class="control-label"><?=lang("Tags")?></label>
 								<div class="">
 	                <?=form_input('relation[translation]['.$lang['slug'].'][tags]',value(isset($item->tags[$lang['slug']])?$item->tags[$lang['slug']]:""),array('data-role'=>'tagsinput','class'=>'form-control','id'=>'tagsinput'))?>
 		            </div>
-							</div>
+							</div>-->
             <!-- Meta tags -->
             <div class="">
             	<h3><?=lang('Meta Tags')?></h3>
@@ -170,8 +154,9 @@
 						<div style="padding:5px;max-height:300px;overflow: scroll;border:1px solid #d2d6de;">
 						<?php
 							foreach($list_cats as $key=>$value):
-								$check = "";
-								if($key == $item->category_id) $check = "checked";
+								$check = "checked";
+								if(isset($item))
+									if($key == $item->category_id) $check = "checked";
 						?>
 								<div class="checkbox">
                     <label>

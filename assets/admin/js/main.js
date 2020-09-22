@@ -14,7 +14,7 @@ $(document).ready(function() {
 			$('.content-wrapper').fadeOut(function(){
 				$('.content-wrapper').html(html);
 					$('div.content-wrapper').find('table#data').DataTable({
-					    'language'		: {'url':'//cdn.datatables.net/plug-ins/1.10.16/i18n/Vietnamese.json'},
+					    'language'		: {'url':'//cdn.datatables.net/plug-ins/1.10.16/i18n/English.json'},
 					    'paging'      	: true,
 					    'order'			: [[4,'DESC']],
 					    'searching'   : true,
@@ -32,14 +32,28 @@ $(document).ready(function() {
 
 
 	$('#data').DataTable({
-	    'language'		: {'url':'//cdn.datatables.net/plug-ins/1.10.16/i18n/English.json'},
+	    'language'		: {'url':'//cdn.datatables.net/plug-ins/1.10.16/i18n/Vietnamese.json'},
 	    'paging'      	: true,
 	    'order'			: [[0,'ASC']],
 	    'searching'   : true,
 	    'ordering'    : true,
 	    'info'        : true,
 	    'pageLength'			: 50,
-			'lengthMenu'	: [20,50,100]
+			'lengthMenu'	: [20,50,100],
+			responsive: {
+        details: true,
+				breakpoints: [
+		      {name: 'bigdesktop', width: Infinity},
+		      {name: 'meddesktop', width: 1480},
+		      {name: 'smalldesktop', width: 1280},
+		      {name: 'medium', width: 1188},
+		      {name: 'tabletl', width: 1024},
+		      {name: 'btwtabllandp', width: 848},
+		      {name: 'tabletp', width: 768},
+		      {name: 'mobilel', width: 480},
+		      {name: 'mobilep', width: 320}
+		    ]
+    }
 	});
 
 });
@@ -64,7 +78,9 @@ function startjs(){
 		});
 	});
 
-	$('.select2').select2();
+
+
+	//$('.select2').select2();
 
    /*$('#data').DataTable({
 	    'language'		: {'url':'//cdn.datatables.net/plug-ins/1.10.16/i18n/Vietnamese.json'},

@@ -40,7 +40,7 @@
               <label for="inputEmail3" class="control-label"><?=lang("Headline")?></label>
                 <!--<input type="input" name='title' class="form-control make_slug" id="title" placeholder="<?=lang("Title")?>">-->
                 <?=form_textarea('relation[translation]['.$lang['slug'].'][content][headline]',value(isset($item->content[$lang['slug']]->headline)?$item->content[$lang['slug']]->headline:""),
-								array('id'=>$lang['slug'].'_header','class'=>'form-control basic_editor','placeholder'=>lang("Title")))?>
+								array('id'=>$lang['slug'].'_header','class'=>'form-control basic-editor','placeholder'=>lang("Title")))?>
 						</div>
 
             <div class='form-group'>
@@ -95,6 +95,24 @@
 	          </div>
 	        </div>
 	        <hr />
+					<!-- Radio Text align -->
+		<div class="form-group">
+			<label for="inputEmail3" class="control-label"><?=lang("Text align")?></label>
+			<div class='radio_box'>
+				<label style='margin-right:20px'>
+          <input type="radio" name="text_align" class="minimal"  value="left" <?=isset($item->text_align)?($item->text_align=="left"?"checked":""):"checked"?>>
+					<?=lang("Left")?>
+        </label>
+				<label>
+	        <input type="radio" name="text_align" class="minimal" value="right"  <?=isset($item->text_align)?($item->text_align=="right"?"checked":""):""?>>
+					<?=lang("Right")?>
+
+	      </label>
+			</div>
+
+		</div>
+
+		<hr />
 
 					<!-- sort -->
 	        <div class="form-group">

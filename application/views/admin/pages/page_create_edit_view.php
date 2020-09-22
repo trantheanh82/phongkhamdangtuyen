@@ -92,20 +92,20 @@
             </div>
 
             <div class='form-group'>
-				<label for="input" class="control-label"><?=lang("Meta title")?></label>
-				<div class="">
-	                   <!-- <input type="input" name='slug' class="form-control slug" id="slug" placeholder="<?=lang("Slug")?>">-->
-	                    <?=form_input('relation[translation]['.$lang['slug'].'][content][meta_title]',value(isset($item->content[$lang['slug']]->meta_title)?$item->content[$lang['slug']]->meta_title:""),array('class'=>'form-control','id'=>'meta_title','placeholder'=>lang("meta title")))?>
-	            </div>
-			</div>
+							<label for="input" class="control-label"><?=lang("Meta title")?></label>
+							<div class="">
+				                   <!-- <input type="input" name='slug' class="form-control slug" id="slug" placeholder="<?=lang("Slug")?>">-->
+				                    <?=form_input('relation[translation]['.$lang['slug'].'][content][meta_title]',value(isset($item->content[$lang['slug']]->meta_title)?$item->content[$lang['slug']]->meta_title:""),array('class'=>'form-control','id'=>'meta_title','placeholder'=>lang("meta title")))?>
+				            </div>
+						</div>
 
-			<div class='form-group'>
-				<label for="inputEmail3" class="control-label"><?=lang("Meta description")?></label>
-				<div class="">
-					<?php echo form_textarea('relation[translation]['.$lang['slug'].'][content][meta_description]',value(isset($item->content[$lang['slug']]->meta_description)?$item->content[$lang['slug']]->meta_description:""),array('class'=>'form-control','id'=>'meta_description'));?>
-	            </div>
-			</div>
-			<!-- Meta tags -->
+						<div class='form-group'>
+							<label for="inputEmail3" class="control-label"><?=lang("Meta description")?></label>
+							<div class="">
+								<?php echo form_textarea('relation[translation]['.$lang['slug'].'][content][meta_description]',value(isset($item->content[$lang['slug']]->meta_description)?$item->content[$lang['slug']]->meta_description:""),array('class'=>'form-control','id'=>'meta_description'));?>
+				            </div>
+						</div>
+						<!-- Meta tags -->
 
 		</div>
 		<?php

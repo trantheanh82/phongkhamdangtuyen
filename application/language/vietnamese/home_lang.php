@@ -20,4 +20,5 @@ $lang['Our Clients']        = "Khách Hàng";
 $lang['Business']           = "Lĩnh vực hoạt động";
 
 $lang['View All']           = "Xem tất cả";
+$lang['View more detail']   = "Tìm hiểu thêm";
 ?>
