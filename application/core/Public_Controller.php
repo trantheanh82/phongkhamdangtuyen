@@ -74,7 +74,7 @@ class Public_Controller extends MY_Controller{
 
 		$this->data['page_title'] = $this->data['Settings']['company_name']." ";
 		$this->data['meta_description'] = $this->data['Settings']['company_description'];
-		$this->data['meta_image'] = "assets/linhsan/img/default-website-avatar.jpg";
+		$this->data['meta_image'] = "assets/dangtuyen/images/default-avatar.jpg";
 
 
 		$this->breadcrumbs->push(lang('Home'), '/home');
