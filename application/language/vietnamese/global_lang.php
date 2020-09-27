@@ -87,6 +87,7 @@ $lang['About Clinic']       = "Giới thiệu";
 $lang['Our Locations']      = "Địa Chỉ Phòng Khám";
 
 $lang['View more posts']    = "Xem bài viết khác";
+$lang['View more info']     = "Tìm hiểu thêm";
 
 /*Doctors*/
 $lang['Our Doctors']        = "Đội ngũ bác sĩ";
@@ -108,3 +109,4 @@ $lang['Testimonial']    = "Bệnh nhân nhận xét về Đặng Tuyền";
 
 /**/
 $lang['Services'] = "Dịch vụ";
+

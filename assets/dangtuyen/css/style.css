@@ -3365,6 +3365,7 @@ td.text-right {
 /*   Overlay Background
 /*------------------------------------------*/
 
+.service-1 .item-overlay,
 .doctor-1 .item-overlay {
   opacity: 0;
   -moz-opacity: 0;
@@ -3390,6 +3391,7 @@ td.text-right {
 /*   Doctor Photo Hover Overlay
 /*------------------------------------------*/
 
+.service-1 .hover-overlay,
 .doctor-1 .hover-overlay,
 .doctor-2 .hover-overlay {
   width: 100%;
@@ -3398,6 +3400,7 @@ td.text-right {
   position: relative;
 }
 
+.service-1 .hover-overlay,
 .doctor-1 .hover-overlay > img,
 .doctor-2 .hover-overlay > img {
   transform: scale(1.1);
@@ -3416,6 +3419,7 @@ td.text-right {
 /*   Image Hover Effect
 /*------------------------------------------*/
 
+.service-1:hover .hover-overlay,
 .doctor-1:hover .hover-overlay > img,
 .doctor-2:hover .hover-overlay > img {
   transform: scale(1);
@@ -3425,11 +3429,13 @@ td.text-right {
   -moz-transform: scale(1);
 }
 
+.service-1:hover .item-overlay,
 .doctor-1:hover .item-overlay {
   opacity: 1;
   -moz-opacity: 1;
 }
 
+.service-1:hover a,
 .doctor-1:hover a {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
