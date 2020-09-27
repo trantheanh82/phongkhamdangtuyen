@@ -17,7 +17,7 @@
     <meta property="og:title" content="<?=$page_title?>">
     <meta property="og:description" content="<?=strip_tags($meta_description)?>">
     <meta property="og:image" content="<?=base_url().$meta_image?>">
-    <meta property="og:url" content="<?=base_url(uri_string());?>">
+    <meta property="og:url" content="<?=base_url().$current_lang['slug'].uri_string();?>">
     <meta property="og:site_name" content="<?=$Settings['company_name']?>">
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="/<?=$Settings['company_favicon']?>">
