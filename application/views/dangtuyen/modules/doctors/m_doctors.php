@@ -73,7 +73,7 @@
     <div class="row">
       <div class="col-md-12 text-center">
         <div class="all-doctors mb-40">
-          <a href="all-doctors.html" class="btn btn-orange orange-hover"><?=lang('View All')?></a>
+          <a href="<?=base_url()?>bac-si" class="btn btn-orange orange-hover"><?=lang('View All')?></a>
         </div>
       </div>
     </div>
