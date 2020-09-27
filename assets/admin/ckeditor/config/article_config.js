@@ -61,3 +61,4 @@ CKEDITOR.editorConfig = function( config ) {
 
 	//config.options.fileRoot = '/assets/upload/';
 };
+

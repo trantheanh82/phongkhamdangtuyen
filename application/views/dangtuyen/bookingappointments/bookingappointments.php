@@ -20,7 +20,7 @@
 									<form name="appointmentform" class="row appointment-form">
 
 										<!-- Form Select -->
-						                <div id="input-department" class="col-md-12 input-department">
+						               <!-- <div id="input-department" class="col-md-12 input-department">
 
 						                    <select id="inlineFormCustomSelect1" name="department" class="custom-select department" required>
 						                        <option value=""><?=lang("Select Department")?></option>
@@ -28,31 +28,31 @@
   						                      	<option value="<?=$v?>"><?=$v?></option>
                                     <?php endforeach;?>
 						                    </select>
-						                </div>
+						                </div>-->
 
 						                <!-- Form Select -->
-						                <div id="input-doctor" class="col-md-12 input-doctor">
+						               <!-- <div id="input-doctor" class="col-md-12 input-doctor">
 						                    <select id="inlineFormCustomSelect2" name="doctor" class="custom-select doctor" required>
 						                        <option value=""><?=lang('Select Doctor')?></option>
                                     <?php foreach($doctors as $k => $v): ?>
   						                      	<option value="<?=$v?>"><?=lang("Doctors")?> <?=$v?></option>
                                     <?php endforeach;?>
 						                    </select>
-						                </div>
-
+						                </div>-->
+														
+														<!-- Contact Form Input -->
+													 <div id="input-name" class="col-lg-12">
+														 <input type="text" name="name" class="form-control name" placeholder="<?=lang('Enter Your Name')?>*" required>
+													 </div>
+													 
 						                <!-- Contact Form Input -->
 						                <div id="input-date" class="col-lg-12">
 						                	<input id="datetimepicker" type="text" name="date" class="form-control date" placeholder="<?=lang("Appointment Date")?>" required>
 						                </div>
 
-						                <!-- Contact Form Input -->
-						                <div id="input-name" class="col-lg-12">
-						                	<input type="text" name="name" class="form-control name" placeholder="<?=lang('Enter Your Name')?>*" required>
-						                </div>
-
-						                <div id="input-email" class="col-lg-12">
+						                <!--<div id="input-email" class="col-lg-12">
 						                	<input type="text" name="email" class="form-control email" placeholder="<?=lang('Enter Your Email')?>*" required>
-						                </div>
+						                </div>-->
 
 						                <div id="input-phone" class="col-lg-12">
 						                	<input type="tel" name="phone" class="form-control phone" placeholder="<?=lang('Enter Your Phone Number')?>*" required>

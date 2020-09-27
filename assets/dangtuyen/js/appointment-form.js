@@ -14,7 +14,7 @@ $(document).ready(function() {
         var phone = $(".phone");
         var msg = $(".message");
         var flag = false;
-        if (department.val() == "") {
+        /*if (department.val() == "") {
             department.closest(".form-control").addClass("error");
             department.focus();
             flag = false;
@@ -28,7 +28,7 @@ $(document).ready(function() {
             return false;
         } else {
             doctor.closest(".form-control").removeClass("error").addClass("success");
-        } if (patient.val() == "") {
+        } */if (patient.val() == "") {
             patient.closest(".form-control").addClass("error");
             patient.focus();
             flag = false;
@@ -49,14 +49,14 @@ $(document).ready(function() {
             return false;
         } else {
             name.closest(".form-control").removeClass("error").addClass("success");
-        } if (email.val() == "") {
+        }/* if (email.val() == "") {
             email.closest(".form-control").addClass("error");
             email.focus();
             flag = false;
             return false;
         } else {
             email.closest(".form-control").removeClass("error").addClass("success");
-        } if (phone.val() == "") {
+        }*/ if (phone.val() == "") {
             phone.closest(".form-control").addClass("error");
             phone.focus();
             flag = false;
