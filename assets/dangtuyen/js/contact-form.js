@@ -66,9 +66,9 @@ $(document).ready(function() {
             success: function (d) {
                 $(".form-control").removeClass("success");
                     if(d == 'success') // Message Sent? Show the 'Thank You' message and hide the form
-                        $('.loading').fadeIn('slow').html('<font color="#48af4b">Mail sent Successfully.</font>').delay(3000).fadeOut('slow');
+                        $('.loading').fadeIn('slow').html('<font color="#48af4b">Thông tin đã gửi thành công, chúng tôi sẽ liên hệ với quý khách trong thời gian sớm nhất.</font>').delay(3000).fadeOut('slow');
                          else
-                        $('.loading').fadeIn('slow').html('<font color="#ff5607">Mail not sent.</font>').delay(3000).fadeOut('slow');
+                        $('.loading').fadeIn('slow').html('<font color="#ff5607">Thông tin không gửi được, vui lòng thử lại.</font>').delay(3000).fadeOut('slow');
                                 }
         });
         return false;

@@ -11,7 +11,6 @@ class Services extends Public_Controller {
 
     $this->load->model('service_model');
 		$this->load->model('category_model');
-		$this->load->language('services_lang');
 
     $this->load->model('page_model');
     $this->load->model('slug_model');
@@ -29,7 +28,7 @@ class Services extends Public_Controller {
                           ->get();
 
 
-    $this->data['before_head'] .= "<style>.page-title{background-image: url(".base_url().$this->page->image.")}</style>";
+    $this->data['before_head'] .= "<style>#breadcrumb{background-image: url(".base_url().$this->page->image.")}</style>";
 		$this->breadcrumbs->push($this->page->translation->content->name,"/".$this->page_id->slug);
 
 	}

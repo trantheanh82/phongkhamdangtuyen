@@ -53,7 +53,7 @@ body {
 .wide-90 { padding-top: 100px; padding-bottom: 90px; }
 .wide-80 { padding-top: 100px; padding-bottom: 80px; }
 .wide-70 { padding-top: 100px; padding-bottom: 70px; }
-.wide-60 { padding-top: 100px; padding-bottom: 60px; }
+.wide-60 { padding-top: 50px; padding-bottom: 60px; }
 .wide-50 { padding-top: 100px; padding-bottom: 50px; }
 .wide-40 { padding-top: 100px; padding-bottom: 40px; }
 .wide-30 { padding-top: 100px; padding-bottom: 30px; }
@@ -319,7 +319,7 @@ h2.h2-huge { font-size: 5rem; }    /* 80px */
 /*------------------------------------------*/
 
 p.p-sm { font-size: 0.95rem; }     /* 15.2px */
-p { font-size: 1rem; }             /* 16px */
+p { font-size: 1.1rem; }             /* 16px */
 p.p-md { font-size: 1.125rem; }    /* 18px */
 p.p-lg { font-size: 1.25rem; }     /* 20px */
 p.p-xl { font-size: 1.3175rem; }   /* 22px */
@@ -488,8 +488,8 @@ ul.content-list li:last-child {
 .btn-darkgreen,
 .white-color .btn-darkgreen {
   color: #fff;
-  background-color: #0dc176;
-  border-color: #0dc176;
+  background-color: #025637;
+  border-color: #025637;
 }
 
 .btn-orange,
@@ -952,7 +952,7 @@ span.id-color {
 .darkgreen-color li,
 .darkgreen-color i,
 .white-color .darkgreen-color,
-.darkgreen-color span { color: #013220; }
+.darkgreen-color span { color: #025637; }
 
 
 

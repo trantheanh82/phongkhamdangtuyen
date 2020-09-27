@@ -1,6 +1,6 @@
 <?php if(isset($other_specialists)):?>
 <div class="blog-categories sidebar-div mb-50">
-									
+
 	<!-- Title -->
 	<h5 class="h5-sm darkgreen-color"><?=lang("Other Specialists")?></h5>
 

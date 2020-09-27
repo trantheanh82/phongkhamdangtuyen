@@ -3,7 +3,7 @@
 class Public_Controller extends MY_Controller{
 
 	protected $template;
-
+	protected $settings;
 	function __construct(){
 
 		parent:: __construct();
@@ -13,7 +13,7 @@ class Public_Controller extends MY_Controller{
 
 		parent::load_languages(false);
 
-		$this->data['Settings'] = $this->__getGlobalSettings();
+		$this->data['Settings'] = $this->settings = $this->__getGlobalSettings();
 
 		$this->template = 'dangtuyen';
 		$this->data['template'] = $this->template;
@@ -77,7 +77,7 @@ class Public_Controller extends MY_Controller{
 		$this->data['meta_image'] = "assets/dangtuyen/images/default-avatar.jpg";
 
 
-		$this->breadcrumbs->push(lang('Home'), '/home');
+		$this->breadcrumbs->push('<i class="fa fa-home" aria-hidden="true"></i> '.lang('Home'), '/home');
 		$this->breadcrumbs->crumb_open = "<li class='breadcrumb-item'>";
 		$this->breadcrumbs->crumb_close = "</li>";
 		$this->breadcrumbs->crumb_last_open = "<li class='breadcrumb-item active' aria-current='page'>";

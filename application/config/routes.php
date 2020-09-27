@@ -97,6 +97,9 @@ $route['^(\w{2})/(specialists|chuyen-khoa)/(:any)'] = '/specialists/index/$3';
 $route['^(\w{2})/(service|dich-vu)'] = '/services';
 $route['^(\w{2})/(service|dich-vu|services)/(:any)'] = '/services/index/$3';
 
+/*Service or Dich-vu*/
+$route['^(\w{2})/(doctors|bac-si)'] = '/doctors';
+
 
 /*Artice*/
 $route['^(\w{2})/(articles|article|tin-tuc)/(:any)/(:any)-chi-tiet'] = '/articles/detail/$3/$4';

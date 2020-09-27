@@ -312,10 +312,10 @@
 				}
 			},
 			messages: {
-				select: "This field is required",
-				name: "Please enter your name",
-				email: "We need your email address to contact you",
-				phone: "Please enter a valid number",
+				select: "Thông tin này là bắt buộc",
+				name: "Vui lòng nhập họ tên",
+				email: "Chúng tôi cần email của bạn để liên hệ",
+				phone: "Vui lòng nhập đúng số điện thoại",
 			}
 		});
 
@@ -339,11 +339,11 @@
 				select: "required",
 			},
 			messages: {
-				name: "Please enter your name",
-				email: "We need your email address to contact you",
-				phone: "Please enter a valid number",
-				date: "Please enter valid date",
-				select: "This field is required",
+				name: "Vui lòng nhập họ tên",
+				email: "Chúng tôi cần email của bạn để liên hệ",
+				phone: "Vui lòng nhập đúng số điện thoại",
+				date: "Vui lòng chọn ngày giờ",
+				select: "Thông tin này là bắt buộc",
 			}
 		});
 
@@ -368,12 +368,12 @@
 				message: "required",
 			},
 			messages: {
-				select: "This field is required",
-				name: "Please enter your name",
-				email: "We need your email address to contact you",
-				phone: "Please enter a valid number",
-				subject: "Please enter no more than (1) characters",
-				message: "Please enter no more than (1) characters",
+				select: "Thông tin này là bắt buộc",
+				name: "Vui lòng nhập họ tên",
+				email: "Chúng tôi cần email của bạn để liên hệ",
+				phone: "Vui lòng nhập đúng số điện thoại",
+				subject: "Vui lòng nhập nhiều hơn 1 ký tự",
+				message: "Vui lòng nhập nhiều hơn 1 ký tự",
 			}
 		});
 
