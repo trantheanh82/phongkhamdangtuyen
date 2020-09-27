@@ -37,6 +37,12 @@ class Services extends Public_Controller {
 		if(empty($slug)){
 		  $this->data['page_name'] = $this->page->translation->content->name;
 			$this->data['items'] = $this->service_model->get_items($this->current_lang);
+			
+			/*SEO*/
+      $this->data['page_title'] = $this->page->translation->content->meta_title;
+      $this->data['meta_description'] = $this->page->translation->content->meta_description;
+      $this->data['meta_image'] = $this->page->image;
+			
 			$this->render('/services/index_view');
 		}else{
 			$this->detail($slug);
@@ -48,6 +54,11 @@ class Services extends Public_Controller {
 
 			$this->breadcrumbs->push($this->data['item']->translation->content->name,"/");
 			$this->data['page_name'] = $this->data['item']->translation->content->name;
+			
+			/*SEO*/
+      $this->data['page_title'] = $this->data['item']->translation->content->meta_title;
+      $this->data['meta_description'] = $this->data['item']->translation->content->meta_description;
+      $this->data['meta_image'] = $this->data['item']->image;
 
 			$this->render('/services/detail_view');
 	}

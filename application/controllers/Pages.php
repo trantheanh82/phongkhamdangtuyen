@@ -78,9 +78,9 @@ class Pages extends Public_Controller {
 
 		$this->data['before_head'] .= "<style>.page-title{background: url(".base_url().$this->data['item']->image.")}</style>";
 		/*for meta tag*/
-		$this->data['page_title'] .= $this->data['item']->translation->content->meta_title;
-		$this->data['meta_description'] .= $this->data['item']->translation->content->meta_description;
-		$this->data['meta_image'] .= $this->data['item']->image;
+		$this->data['page_title'] = $this->data['item']->translation->content->meta_title;
+		$this->data['meta_description'] = $this->data['item']->translation->content->meta_description;
+		$this->data['meta_image'] = $this->data['item']->image;
 
 		$this->data['script_for_layout'] .= '
 		<!-- Google Map -->

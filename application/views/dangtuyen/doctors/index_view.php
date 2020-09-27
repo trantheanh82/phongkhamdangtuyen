@@ -1,7 +1,7 @@
 <?=$this->load->view($template.'/elements/page_inner_title',array('subpage_name'=>$page_name))?>
 <!-- DOCTORS-3
 			============================================= -->
-			<section id="doctors-3" class="bg-lightgrey wide-60 doctors-section division">
+			<section id="doctors-3" class="wide-60 doctors-section division">
 				<div class="container">
 					<div class="row">
 
@@ -22,7 +22,7 @@
 									<span class='green-color'><?=$v->translation->content->title?></span>
 
 									<!-- Button -->
-									<a class="btn btn-sm btn-orange orange-hover mt-15" href="doctor-1.html" title=""><?=lang('VIEW INFO')?></a>
+                  <?=anchor('/',lang('VIEW INFO'),array('class'=>'btn btn-sm btn-orange orange-hover mt-15','title'=>lang('VIEW INFO').' Bác sĩ '.$v->translation->content->name))?>
 
 								</div>	
 
@@ -35,3 +35,6 @@
 					</div>	    <!-- End row -->
 				</div>	   <!-- End container -->
 			</section>	<!-- END DOCTORS-3 -->
+      
+<?=$this->load->view($template.'/modules/statistics/m_home_statistics')?>
+<?=$this->load->view($template.'/modules/m_home_testimonial',array('content'=>"Khách hàng nói về phòng khám",'background'=>""))?>

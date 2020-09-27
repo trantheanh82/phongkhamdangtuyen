@@ -32,6 +32,12 @@ class Doctors extends Public_Controller {
     if(empty($slug)){
 		  $this->data['page_name'] = $this->page->translation->content->name;
 			$this->data['items'] = $this->doctor_model->get_items($this->current_lang);
+      
+      /*SEO*/
+      $this->data['page_title'] = $this->page->translation->content->meta_title;
+      $this->data['meta_description'] = $this->page->translation->content->meta_description;
+      $this->data['meta_image'] = $this->page->image;
+      
 			$this->render('/doctors/index_view');
 		}
   }

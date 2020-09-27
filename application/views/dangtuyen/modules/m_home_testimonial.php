@@ -1,7 +1,10 @@
-<?php $template = "dangtuyen";?>
+<?php
+  if(!isset($background))
+    $background = "bg-lightgrey";
+?>
 <!-- TESTIMONIALS-2
 ============================================= -->
-<section id="reviews-2" class="bg-lightgrey wide-100 reviews-section division">
+<section id="reviews-2" class="<?=$background?> wide-100 reviews-section division">
   <div class="container">
 
 
@@ -9,7 +12,7 @@
     <div class="row">
       <div class="col-lg-10 offset-lg-1 section-title">
 
-        <?=$content?>
+        <h3 class="h3-md darkgreen-color"><?=$content?></h3>
 
       </div>
     </div>	 <!-- END SECTION TITLE -->
@@ -79,11 +82,11 @@
             <div class="review-txt text-center">
 
               <!-- Quote -->
-              <div class="quote"><img src="<?=base_url().'assets/'.$template?>/images/quote.png" alt="quote-img" /></div>
+              <div class="quote"><img src="<?=base_url()?>assets/dangtuyen/images/quote.png" alt="quote-img" /></div>
 
               <!-- Author Avatar -->
               <div class="testimonial-avatar">
-                <img src="<?=base_url().'assets/'.$template?>/images/review-author-3.jpg" alt="testimonial-avatar">
+                <img src="<?=base_url()?>assets/dangtuyen/images/review-author-3.jpg" alt="testimonial-avatar">
               </div>
 
               <!-- Testimonial Text -->
@@ -105,11 +108,11 @@
             <div class="review-txt text-center">
 
               <!-- Quote -->
-              <div class="quote"><img src="<?=base_url().'assets/'.$template?>/images/quote.png" alt="quote-img" /></div>
+              <div class="quote"><img src="<?=base_url()?>assets/dangtuyen/images/quote.png" alt="quote-img" /></div>
 
               <!-- Author Avatar -->
               <div class="testimonial-avatar">
-                <img src="<?=base_url().'assets/'.$template?>/images/review-author-4.jpg" alt="testimonial-avatar">
+                <img src="<?=base_url()?>assets/dangtuyen/images/review-author-4.jpg" alt="testimonial-avatar">
               </div>
 
               <!-- Testimonial Text -->
@@ -132,11 +135,11 @@
             <div class="review-txt text-center">
 
               <!-- Quote -->
-              <div class="quote"><img src="<?=base_url().'assets/'.$template?>/images/quote.png" alt="quote-img" /></div>
+              <div class="quote"><img src="<?=base_url()?>assets/dangtuyen/images/quote.png" alt="quote-img" /></div>
 
               <!-- Author Avatar -->
               <div class="testimonial-avatar">
-                <img src="<?=base_url().'assets/'.$template?>/images/review-author-5.jpg" alt="testimonial-avatar">
+                <img src="<?=base_url()?>assets/dangtuyen/images/review-author-5.jpg" alt="testimonial-avatar">
               </div>
 
               <!-- Testimonial Text -->
@@ -159,11 +162,11 @@
             <div class="review-txt text-center">
 
               <!-- Quote -->
-              <div class="quote"><img src="<?=base_url().'assets/'.$template?>/images/quote.png" alt="quote-img" /></div>
+              <div class="quote"><img src="<?=base_url()?>assets/dangtuyen/images/quote.png" alt="quote-img" /></div>
 
               <!-- Author Avatar -->
               <div class="testimonial-avatar">
-                <img src="<?=base_url().'assets/'.$template?>/images/review-author-6.jpg" alt="testimonial-avatar">
+                <img src="<?=base_url()?>assets/dangtuyen/images/review-author-6.jpg" alt="testimonial-avatar">
               </div>
 
               <!-- Testimonial Text -->
@@ -186,11 +189,11 @@
             <div class="review-txt text-center">
 
               <!-- Quote -->
-              <div class="quote"><img src="<?=base_url().'assets/'.$template?>/images/quote.png" alt="quote-img" /></div>
+              <div class="quote"><img src="<?=base_url()?>assets/dangtuyen/images/quote.png" alt="quote-img" /></div>
 
               <!-- Author Avatar -->
               <div class="testimonial-avatar">
-                <img src="<?=base_url().'assets/'.$template?>/images/review-author-7.jpg" alt="testimonial-avatar">
+                <img src="<?=base_url()?>assets/dangtuyen/images/review-author-7.jpg" alt="testimonial-avatar">
               </div>
 
               <!-- Testimonial Text -->
@@ -213,11 +216,11 @@
             <div class="review-txt text-center">
 
               <!-- Quote -->
-              <div class="quote"><img src="<?=base_url().'assets/'.$template?>/images/quote.png" alt="quote-img" /></div>
+              <div class="quote"><img src="<?=base_url()?>assets/dangtuyen/images/quote.png" alt="quote-img" /></div>
 
               <!-- Author Avatar -->
               <div class="testimonial-avatar">
-                <img src="<?=base_url().'assets/'.$template?>/images/review-author-8.jpg" alt="testimonial-avatar">
+                <img src="<?=base_url()?>assets/dangtuyen/images/review-author-8.jpg" alt="testimonial-avatar">
               </div>
 
               <!-- Testimonial Text -->
