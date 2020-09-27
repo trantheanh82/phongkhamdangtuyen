@@ -21,6 +21,18 @@
 				 			</div>
 				 		</div>	<!-- END DEPARTMENT DETAILS -->
 
+
+				 		<!-- SIDEBAR  -->
+						<aside id="sidebar" class="col-lg-4">
+
+
+							<?=$this->load->view($template.'/modules/doctors/m_doctors_in_specialist',array('doctors'=>$specialist->doctor_specialist))?>
+
+							<?=$this->load->view($template.'/modules/specialists/m_other_specialists',array('other_specialists'=>$other_specialists))?>
+							
+							<?=$this->load->view($template.'/modules/services/m_services',array('services'=>$services))?>
+
+
 							<!-- IMAGE WIDGET -->
 							<div id="image-widget" class="sidebar-div">
 								<a href="#">
