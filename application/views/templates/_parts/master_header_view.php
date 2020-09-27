@@ -14,11 +14,11 @@
     <meta name="description" content="<?=strip_tags($meta_description)?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:title" content="<?=$page_title?>">
+    <meta property="og:title" content="<?=$Settings['company_name'].': '.$page_title?>">
     <meta property="og:description" content="<?=strip_tags($meta_description)?>">
     <meta property="og:image" content="<?=base_url().$meta_image?>">
     <meta property="og:url" content="<?=base_url().$current_lang['slug'].uri_string();?>">
-    <meta property="og:site_name" content="<?=$Settings['company_name']?>">
+    <meta property="og:site_name" content="<?=$Settings['company_name']. ': '.$page_title?>">
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="/<?=$Settings['company_favicon']?>">
     <?php echo $before_head?>
