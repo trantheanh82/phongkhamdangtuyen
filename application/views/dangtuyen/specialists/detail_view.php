@@ -100,7 +100,7 @@
 							<!-- IMAGE WIDGET -->
 							<div id="image-widget" class="sidebar-div">
 								<a href="#">
-									<img class="img-fluid" src="images/blog/image-widget.jpg" alt="image-widget" />
+									<img class="img-fluid" src="/assets/dangtuyen/images/blog/image-widget.jpg" alt="image-widget" />
 								</a>
 							</div>
 
