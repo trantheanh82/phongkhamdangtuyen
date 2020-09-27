@@ -88,6 +88,9 @@ $lang['Our Locations']      = "Địa Chỉ Phòng Khám";
 
 $lang['View more posts']    = "Xem bài viết khác";
 
+/*Doctors*/
+$lang['Our Doctors']        = "Đội ngũ bác sĩ";
+
 /*Statistics*/
 $lang['Happy Patients'] = "Bệnh nhân tin tưởng";
 $lang['Qualified Doctors']     = "Bác sĩ tận tâm";

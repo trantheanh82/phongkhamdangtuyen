@@ -122,5 +122,16 @@ class Specialist_model extends MY_Model
 						->order_by('sort','ASC')
 						->get_all();
 		}
+		
+		public function get_other($specialist_id,$lang){
+			$conditions = "where:`model`='".$this->name."' and `language`='".$lang."'";
+			
+			return $this->with_translation($conditions)
+						->with_slug($conditions)
+						->where(array('active'=>'Y','id <>'=>$specialist_id))
+						->order_by('sort','ASC')
+						->get_all();
+
+		}
 
 }

@@ -19,117 +19,7 @@
 								</div>	<!-- END CONTENT BLOCK -->
 
 
-				 				<!-- PRICING -->
-								<div id="pricing-2" class="pricing-section division">
-									<div class="row pricing-row">
-
-
-										<!-- PRICING TABLE #1 -->
-										<div class="col-md-12">
-
-											<!-- Plan Title  -->
-											<h5 class="h5-md steelblue-color">Treatments</h5>
-
-											<div class="pricing-table mb-40">
-												<table class="table table-hover">
-													<thead>
-													    <tr>
-													      	<th scope="col">#</th>
-													      	<th scope="col">Service</th>
-													      	<th scope="col">Price</th>
-													    </tr>
-													</thead>
-													<tbody>
-													    <tr>
-													      	<th scope="row">1</th>
-													     	<td>X-Ray</td>
-													      	<td>From <span>$325.00</span></td>
-													    </tr>
-													    <tr>
-													      	<th scope="row">2</th>
-													      	<td>Magnetic Resonance Imaging</td>
-													      	<td>From <span>$435.00</span></td>
-													    </tr>
-													    <tr>
-													      	<th scope="row">3</th>
-													      	<td>Computer Tomography</td>
-													      	<td>From <span>$315.00</span></td>
-													    </tr>
-													    <tr>
-													      	<th scope="row">4</th>
-													      	<td>Laboratory Tests</td>
-													      	<td>From <span>$90.00</span></td>
-													    </tr>
-													    <tr>
-													      	<th scope="row">5</th>
-													      	<td>Ultrasound Imaging</td>
-													      	<td>From <span>$285.00</span></td>
-													    </tr>
-													    <tr class="last-tr">
-													      	<th scope="row">6</th>
-													      	<td>Pregnancy Care Service</td>
-													      	<td>From <span>$530.00</span></td>
-													    </tr>
-													</tbody>
-												</table>
-											</div>
-										</div>	<!-- END PRICING TABLE #1 -->
-
-
-										<!-- PRICING TABLE #2 -->
-										<div class="col-md-12">
-
-											<!-- Plan Title  -->
-											<h5 class="h5-md steelblue-color">Investigations</h5>
-
-											<div class="pricing-table mb-40">
-												<table class="table table-hover">
-													<thead>
-													    <tr>
-													      	<th scope="col">#</th>
-													      	<th scope="col">Service</th>
-													      	<th scope="col">Price</th>
-													    </tr>
-													</thead>
-													<tbody>
-													    <tr>
-													      	<th scope="row">1</th>
-													     	<td>Bronchoscopy</td>
-													      	<td>From <span>$340.00</span></td>
-													    </tr>
-													    <tr>
-													      	<th scope="row">2</th>
-													      	<td>Parathyroid Scan</td>
-													      	<td>From <span>$65.00</span></td>
-													    </tr>
-													    <tr>
-													      	<th scope="row">3</th>
-													      	<td>Echocardiography</td>
-													      	<td>From <span>$175.00</span></td>
-													    </tr>
-													    <tr>
-													      	<th scope="row">4</th>
-													      	<td>Full Blood Picture</td>
-													      	<td>From <span>$250.00</span></td>
-													    </tr>
-													    <tr>
-													      	<th scope="row">5</th>
-													      	<td>CT & Ultrasound Diagnostic</td>
-													      	<td>From <span>$285.00</span></td>
-													    </tr>
-													    <tr class="last-tr">
-													      	<th scope="row">6</th>
-													      	<td>MRI & X-Ray</td>
-													      	<td>From <span>$450.00</span></td>
-													    </tr>
-													</tbody>
-												</table>
-											</div>
-										</div>	<!-- END PRICING TABLE #2 -->
-
-
-									</div>	<!-- End row -->
-								</div>	<!-- END PRICING -->
+				 				
 
 
 				 			</div>
@@ -140,39 +30,9 @@
 						<aside id="sidebar" class="col-lg-4">
 
 
-							<!-- TEXT WIDGET -->
-							<div id="txt-widget" class="sidebar-div mb-50">
+							<?=$this->load->view($template.'/modules/doctors/m_doctors_in_specialist',array('doctors'=>$specialist->doctor_specialist))?>
 
-								<!-- Title -->
-								<h5 class="h5-sm steelblue-color">The Heart Of Clinic</h5>
-
-								<!-- Head of Clinic -->
-								<div class="txt-widget-unit mb-15 clearfix d-flex align-items-center">
-
-									<!-- Avatar -->
-									<div class="txt-widget-avatar">
-										<img src="images/head-of-clinic.jpg" alt="testimonial-avatar">
-									</div>
-
-									<!-- Data -->
-									<div class="txt-widget-data">
-										<h5 class="h5-md steelblue-color">Dr. Jonathan Barnes</h5>
-										<span>Chief Medical Officer, Founder</span>
-										<p class="blue-color">1-800-1234-567</p>
-									</div>
-
-								</div>	<!-- End Head of Clinic -->
-
-								<!-- Text -->
-								<p class="p-sm">An enim nullam tempor sapien at gravida donec pretium ipsum porta justo
-								   integer at odiovelna vitae auctor integer congue magna purus
-								</p>
-
-								<!-- Button -->
-								<a href="about.html" class="btn btn-blue blue-hover">Learn More</a>
-
-							</div>	<!-- END TEXT WIDGET -->
-
+							<?=$this->load->view($template.'/modules/specialists/m_other_specialists',array('other_specialists'=>$other_specialists))?>
 
 							<!-- SIDEBAR TABLE -->
 							<div class="sidebar-table blue-table sidebar-div mb-50">
@@ -252,7 +112,7 @@
 				</div>	 <!-- End container -->
 			</div>	<!-- END DEPARTMENT DETAILS -->
 
-			<?=$this->load->view($template.'/modules/doctors/m_doctors_in_specialist_detail',array('doctors'=>$specialist->doctor_specialist))?>
+			<?=$this->load->view($template.'/modules/doctors/m_doctors',array('doctors'=>$doctors))?>
 
 
 

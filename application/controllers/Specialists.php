@@ -34,8 +34,11 @@ class Specialists extends Public_Controller {
   public function get_detail($slug){
     $slug = $this->slug_model->where(array('slug'=>$slug,'model'=>'specialist'))->get();
     $this->data['specialist'] = $this->specialist_model->get_item_detail($slug->model_id,$this->current_lang,true);
-    
+    $this->data['page'] = $this->page;
     $this->data['subpage_name'] = $this->data['specialist']->translation->content->name;
+    $this->data['doctors'] = $this->doctor_model->get_items($this->current_lang);
+
+    $this->data['other_specialists'] = $this->specialist_model->get_other($this->data['specialist']->id,$this->current_lang);
 
     $this->breadcrumbs->push($this->data['specialist']->translation->content->name,"/");
     $this->render('/specialists/detail_view');

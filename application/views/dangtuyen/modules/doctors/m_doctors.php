@@ -12,7 +12,7 @@
       <div class="col-lg-10 offset-lg-1 section-title">
 
         <!-- Title 	-->
-        <h3 class="h3-md darkgreen-color"><?=lang("Our Medical Specialists")?></h3>
+        <h3 class="h3-md darkgreen-color"><?=lang("Our Doctors")?></h3>
 
         <!-- Text -->
         <!--<p>Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero at tempus,
