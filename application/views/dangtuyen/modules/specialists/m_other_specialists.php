@@ -10,7 +10,7 @@
         foreach($other_specialists as $k=>$v):
           $link = $parent_link.$v->slug->slug;
     ?>
-		<li><a href="<?=$link?>"><i class="fas <?=$v->icon?> green-color"></i> <?=$v->translation->content->name?></a> </li>
+		<li><a href="<?=$link?>" class='darkgreen-color'><i class="fas <?=$v->icon?> green-color"></i> <?=$v->translation->content->name?></a> </li>
     <?php
         endforeach;
     ?>

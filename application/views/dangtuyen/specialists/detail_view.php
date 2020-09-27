@@ -13,14 +13,10 @@
 
 				 				<!-- CONTENT BLOCK -->
 				 				<div class="content-block mb-40">
-
+									
 				 					<?=$specialist->translation->content->content?>
 
 								</div>	<!-- END CONTENT BLOCK -->
-
-
-				 				
-
 
 				 			</div>
 				 		</div>	<!-- END DEPARTMENT DETAILS -->
@@ -33,6 +29,9 @@
 							<?=$this->load->view($template.'/modules/doctors/m_doctors_in_specialist',array('doctors'=>$specialist->doctor_specialist))?>
 
 							<?=$this->load->view($template.'/modules/specialists/m_other_specialists',array('other_specialists'=>$other_specialists))?>
+							
+							<?=$this->load->view($template.'/modules/services/m_services',array('services'=>$services))?>
+
 
 							<!-- SIDEBAR TABLE -->
 							<div class="sidebar-table blue-table sidebar-div mb-50">

@@ -105,3 +105,6 @@ $lang['View All']         = "Xem Tất Cả";
 
 /*Testimonial*/
 $lang['Testimonial']    = "Bệnh nhân nhận xét về Đặng Tuyền";
+
+/**/
+$lang['Services'] = "Dịch vụ";
