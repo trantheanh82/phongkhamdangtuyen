@@ -52,25 +52,17 @@ class Service_model extends MY_Model
 
 
 		public function get_menu($current_lang){
-		/*	$conditions = "where:`model`='".$this->name."' and `language`='".$current_lang."'";
+			$conditions = "where:`model`='".$this->name."' and `language`='".$current_lang."'";
 
 			return $this->with_translation($conditions)
 									->with_slug($conditions)
 									->where(array('on_menu'=>'Y','active'=>'Y'))
 									->order_by('sort','ASC')
 									->set_cache($current_lang)
-									->get_all();*/
-			$this->load->model('category_model');
-			$items =  $this->category_model->get_categories_by_model('service',$current_lang);
+									->get_all();
 
-			foreach($items as $k=>$v){
-				$children = $this->get_services_by_category($v->id,$current_lang);
-				if(!empty($children)){
-					$items->$k->children = $children;
-				}
-			}
 
-			return $items;
+			//return $items;
 		}
 
 		public function get_items($language){
