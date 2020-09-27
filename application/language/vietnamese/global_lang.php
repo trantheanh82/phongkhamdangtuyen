@@ -95,4 +95,10 @@ $lang['Clinic Rooms']     = "Phòng khám";
 $lang['Partners']     = "Đối tác uy tín";
 
 /*Booking*/
-$lang['Book an appointment'] = "Đặt lịch trực tuyến";
+$lang['Book an appointment'] = "Đặt lịch khám";
+
+/*functionale*/
+$lang['View All']         = "Xem Tất Cả";
+
+/*Testimonial*/
+$lang['Testimonial']    = "Bệnh nhân nhận xét về Đặng Tuyền";

@@ -6,10 +6,13 @@ class Slug_model extends MY_Model
 {
 
 	public $table = "slugs";
-
+	public $name = "slug";
+	
   public function __construct()
   {
     parent::__construct();
   }
+
+
 
 }

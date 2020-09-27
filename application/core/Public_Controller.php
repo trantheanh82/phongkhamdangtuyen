@@ -78,6 +78,10 @@ class Public_Controller extends MY_Controller{
 
 
 		$this->breadcrumbs->push(lang('Home'), '/home');
+		$this->breadcrumbs->crumb_open = "<li class='breadcrumb-item'>";
+		$this->breadcrumbs->crumb_close = "</li>";
+		$this->breadcrumbs->crumb_last_open = "<li class='breadcrumb-item active' aria-current='page'>";
+		$this->breadcrumbs->divider = "::";
 	}
 
 	/**

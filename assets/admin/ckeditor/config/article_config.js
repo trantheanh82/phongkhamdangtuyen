@@ -36,7 +36,7 @@ CKEDITOR.editorConfig = function( config ) {
 	config.format_tags = 'p;h1;h2;h3;pre';
 
 	// Simplify the dialog windows.
-	config.removeDialogTabs = 'link:advanced;image:file;image:Upload';
+	//config.removeDialogTabs = 'link:advanced;image:file;image:Upload';
 
 	config.filebrowserBrowseUrl = '/filemanager/dialog.php?type=1&akey=abc&editor=ckeditor&fldr=';
 	config.filebrowserUploadUrl = '/filemanager/dialog.php?type=1&akey=abc&editor=ckeditor&fldr=';
@@ -45,16 +45,19 @@ CKEDITOR.editorConfig = function( config ) {
 	//config styleset
 	//config.stylesSet = 'my_styles';
 	config.allowedContent = true;
-	config.extraAllowedContent = 'div(*)';
+	config.extraAllowedContent = 'div(*) span(*)';
 
   config.stylesheetParser_skipSelectors = /(^body\.|^caption\.|\.high|^\.)/i;
 
   config.stylesheetParser_validSelectors = /\^(div|p|span|h1|h2|h3|h4|h5|h6|)\.\w+|^(\.w+\-\w+)/;
 
-  config.contentsCss = ["http://localhost:8080/assets/linhsan/css/style.css"];
+  config.contentsCss = ["/assets/dangtuyen/css/style.css"];
   config.stylesSet = [];
 
   config.extraPlugins = 'colorbutton,colordialog,stylesheetparser';
+
+  config.image_alignClasses = [ 'align-left', 'align-center', 'align-right' ];
+
 
 	//config.options.fileRoot = '/assets/upload/';
 };

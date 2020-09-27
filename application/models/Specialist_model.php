@@ -18,7 +18,7 @@ class Specialist_model extends MY_Model
 		        doesn't respect the format of "singularlocaltable_primarykey", then you must set it. In the next title
 		        you will see how a pivot table should be set, if you want to  skip these keys */
 		    'pivot_foreign_key'=>'doctor_id', /* this is also optional, the same as above, but for foreign table's keys */
-		    'foreign_key'=>'id',
+		    'foreign_key'=>'id'
 		    );
 
 				$this->has_one['slug'] = array('foreign_model'=>'Slug_model','foreign_table'=>'slugs','foreign_key'=>'model_id','local_key'=>'id');
@@ -64,9 +64,40 @@ class Specialist_model extends MY_Model
 	                            ->where(array('active'=>'Y'))
 															//->set_cache($language.'_get_home_items')
 															->order_by('sort','ASC')
+															->limit(8)
 	                            ->get_all();
 
 		}
+
+		public function get_all_items($lang){
+			return $this->with_translation('where:`translations`.`model`="'.$this->name.'" and `language`="'.$lang.'"')
+                  ->with_slug('where:`model`="'.$this->name.'" and `language`="'.$lang.'"')
+                  ->where(array('active'=>'Y'))
+									//->set_cache($language.'_get_home_items')
+									->order_by('sort','ASC')
+                  ->get_all();
+		}
+
+		/**
+		 * [get_item_detail description]
+		 * @param  [int]  $id                 [description]
+		 * @param  [string]  $lang               [description]
+		 * @param  boolean $doctor_information [description]
+		 * @return [specialists]                      [description]
+		 */
+		public function get_item_detail($id,$lang,$doctor_information=false){
+			$conditions = "where:`model`='".$this->name."' AND `model_id`='".$id."'";
+			$item = $this->with_translation($conditions)->with_slug($conditions)->with_doctor_specialist()->where(array('active'=>'Y'))->get($id);
+			if($doctor_information){
+				foreach($item->doctor_specialist as $k=>$value){
+					$doctor = $this->doctor_model->get_item_detail($value->id,$lang);
+					$item->doctor_specialist->$k = $doctor;
+				}
+			}
+
+			return $item;
+		}
+
 
 		function get_dropdown($model,$lang="vi"){
 			//$lists = $this->get_all();
@@ -80,6 +111,16 @@ class Specialist_model extends MY_Model
 
 			return $dropdown;
 
+		}
+
+		public function get_menu($lang){
+			$conditions = "where:`model`='".$this->name."' and `language`='".$lang."'";
+
+			return $this->with_translation($conditions)
+						->with_slug($conditions)
+						->where(array('active'=>'Y'))
+						->order_by('sort','ASC')
+						->get_all();
 		}
 
 }

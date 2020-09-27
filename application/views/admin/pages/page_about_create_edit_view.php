@@ -149,7 +149,7 @@
 									foreach($item->page_category as $k => $v){
 										if($v->category_id == $key){
 											$check = "checked";
-											unset($item->page_category[$k]);
+											unset($item->page_category->$k);
 										}
 									}
 								}

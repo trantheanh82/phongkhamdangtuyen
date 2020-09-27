@@ -46,31 +46,3 @@
       </div>  <!-- End row -->
   </div>  <!-- End container -->
 </div>  <!-- End wsmegamenu -->
-
-<div class="wsmegamenu clearfix halfmenu">
-    <div class="container-fluid">
-      <div class="row">
-
-        <!-- Links -->
-        <ul class="col-lg-6 col-md-12 col-xs-12 link-list">
-            <li class="title">For Patients:</li>
-            <li><a href="#">Meet The Doctors</a></li>
-            <li><a href="#">Patient Info Sheets</a></li>
-            <li><a href="#">Online Patients Portal</a></li>
-            <li><a href="#">Patients Testimonials</a></li>
-            <li><a href="#">Blog & Latest News</a></li>
-          </ul>
-
-          <!-- Links -->
-        <ul class="col-lg-6 col-md-12 col-xs-12 link-list">
-            <li class="title">Quick Links:</li>
-            <li><a href="#">Terms & Privacy Policy</a></li>
-            <li><a href="#">Donor Privacy Policy</a></li>
-            <li><a href="#">Workers Compensation</a></li>
-            <li><a href="#">Insurance Information</a></li>
-            <li><a href="#">After Hours Care</a></li>
-        </ul>
-
-      </div>
-    </div>
-</div>

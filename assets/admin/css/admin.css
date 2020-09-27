@@ -40,6 +40,16 @@
     padding-left: 0;
 }
 
+.inline-content-editor{
+  border: 1px solid #999;
+  padding: 1%;
+  border-style: dotted;
+}
+
+.inline-content-editor .cke_textarea_inline{
+  min-height: 100px;
+}
+
 @media only screen and (max-width:1024px){
   #myVideo {
     position: fixed;

@@ -52,6 +52,12 @@ class Doctor_model extends MY_Model
 
 		}
 
+		function get_item_detail($id,$lang){
+			$conditions = "where:`model`='".$this->name."' AND `model_id`='".$id."' AND `language`='".$lang."'";
+			return $this->with_translation($conditions)->get($id);
+
+		}
+
 		function get_home_items($lang){
 			return $this->{$this->name.'_model'}
                     ->with_translation('where:`translations`.`model`="'.$this->name.'" and `language`="'.$lang.'"')

@@ -59,11 +59,17 @@ div span#iconselected:before{
                 <?=form_input('relation[slug]['.$lang['slug'].'][slug]',value(isset($item->slug[$lang['slug']]->slug)?$item->slug[$lang['slug']]->slug:""),array('class'=>'form-control '.$lang['slug'].'_slug','id'=>'slug','placeholder'=>lang("Slug")))?>
 	            </div>
 						</div>
+            <div class='form-group'>
+							<label for="inputEmail3" class="control-label"><?=lang("Description")?></label>
+							<div class="inline-content-editor">
+								<?php echo form_textarea('relation[translation]['.$lang['slug'].'][content][description]',value(isset($item->content[$lang['slug']]->description)?$item->content[$lang['slug']]->description:""),array('class'=>'form-control basic-editor','id'=>$lang['slug'].'_description','contenteditable'=>true));?>
+				            </div>
+						</div>
 
 						<div class='form-group'>
 							<label for="inputEmail3" class="control-label"><?=lang("Content")?></label>
-							<div class="">
-								<?php echo form_textarea('relation[translation]['.$lang['slug'].'][content][content]',value(isset($item->content[$lang['slug']]->content)?$item->content[$lang['slug']]->content:""),array('class'=>'form-control article-editor','id'=>$lang['slug'].'_content','contenteditable'=>true));?>
+							<div class="inline-content-editor">
+								<?php echo form_textarea('relation[translation]['.$lang['slug'].'][content][content]',value(isset($item->content[$lang['slug']]->content)?$item->content[$lang['slug']]->content:""),array('rows'=>30,'class'=>'form-control article-editor','id'=>$lang['slug'].'_content','contenteditable'=>true));?>
 				            </div>
 						</div>
 

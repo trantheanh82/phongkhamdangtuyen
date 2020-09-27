@@ -180,22 +180,44 @@ function startjs(){
 }//end of startjs()
 
 window.onload = function(){
-		$('.product-editor').each(function(){
+		$('.product-editor').each(function(e){
 
-			CKEDITOR.replace($(this).attr('id'),{
-				customConfig: "/assets/admin/ckeditor/config/product_config.js"
+			e = CKEDITOR.replace($(this).attr('id'),{
+				customConfig: "/assets/admin/ckeditor/config/product_config.js",
+				height: 400
+
 			});
+
+			e.on('insertElement', function(event) {
+				var element = event.data;
+				if (element.getName() == 'img') {
+					element.addClass('img-fluid');
+					element.removeAttribute("style");
+				}
+			});
+
 		});
 
-		$('.article-editor').each(function(){
+		$('.article-editor').each(function(e){
 
-			CKEDITOR.replace($(this).attr('id'),{
-				customConfig: "/assets/admin/ckeditor/config/article_config.js"
+			e = CKEDITOR.inline($(this).attr('id'),{
+				customConfig: "/assets/admin/ckeditor/config/article_config.js",
+				height: 400
+
 			});
+
+			e.on('insertElement', function(event) {
+				var element = event.data;
+				if (element.getName() == 'img') {
+					element.addClass('img-fluid');
+					element.removeAttribute("style");
+				}
+			});
+
 		});
 
 		$('.basic-editor').each(function(){
-			CKEDITOR.replace($(this).attr('id'),{
+			CKEDITOR.inline($(this).attr('id'),{
 				customConfig: "/assets/admin/ckeditor/config/basic.js"
 			});
 

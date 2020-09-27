@@ -90,15 +90,16 @@ $route['^(\w{2})/(contact|lien-he)'] = '/pages/contact';
 $route['^(\w{2})/(pages|page)/request_call'] = '/pages/request_call';
 //$route['^(\w{2})/lien-he'] = '/pages/contact';
 
+$route['^(\w{2})/(specialists|chuyen-khoa)'] = '/specialists';
+$route['^(\w{2})/(specialists|chuyen-khoa)/(:any)'] = '/specialists/index/$3';
+
 /*Service or Dich-vu*/
 $route['^(\w{2})/(service|dich-vu)'] = '/services';
 $route['^(\w{2})/(service|dich-vu|services)/(:any)'] = '/services/index/$3';
-$route['^(\w{2})/(service|dich-vu|services)/(:any)/(:any)'] = '/services/index/$3/$4';
 
 
 /*Artice*/
 $route['^(\w{2})/(articles|article|tin-tuc)/(:any)/(:any)-chi-tiet'] = '/articles/detail/$3/$4';
-
 $route['^(\w{2})/(articles|article|tin-tuc)/(.+)'] = '/articles/index/$3';
 
 

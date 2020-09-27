@@ -65,6 +65,8 @@ class Admin_Controller extends MY_Controller{
 		$this->data['css_for_elements'] .= assets('datatables.net-bs/css/dataTables.bootstrap.min.css');
 		$this->data['css_for_elements'] .= assets('plugins/iCheck/all.css');
 
+		$this->data['css_for_elements'] .= assets('css/admin.css');
+
 
 		/*Script for Interface*/
 		$this->data['script_for_layout'] .= assets('datatables.net/js/jquery.dataTables.min.js');

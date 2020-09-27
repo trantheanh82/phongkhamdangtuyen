@@ -3,6 +3,7 @@
 <?php if(!empty($items)):?>
 <section id="tabs-1" class="wide-100 tabs-section division">
   <div class="container">
+    <?php if(isset($content)):?>
     <!-- SECTION TITLE -->
     <div class="row">
       <div class="col-lg-10 offset-lg-1 section-title">
@@ -13,6 +14,7 @@
         <!-- Text -->
       </div>
     </div>	 <!-- END SECTION TITLE -->
+  <?php endif;?>
 
     <div class="row">
       <div class="col-md-12">
@@ -43,7 +45,7 @@
           <?php
           $active = 'active';
           foreach($items as $k=>$v):
-                $link = "";
+                $link = base_url()."dich-vu/".$v->slug->slug;
             ?>
           <!-- TAB-1 CONTENT -->
           <div class="tab-pane fade show <?=$active?>" id="tab-<?=$v->id?>" role="tabpanel" aria-labelledby="tab<?=$v->id?>-list">

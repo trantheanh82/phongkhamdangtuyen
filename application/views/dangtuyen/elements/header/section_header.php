@@ -79,7 +79,7 @@
 
     					<!-- LOGO IMAGE -->
     					<!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 360 x 80 pixels) -->
-    					<div class="desktoplogo"><a href="#hero-4">                    <?=img($Settings['company_logo_2'], '', array('height'=>44,'alt'=>$Settings['company_name']))?>
+    					<div class="desktoplogo"><a href="<?=base_url()?>">                    <?=img($Settings['company_logo_2'], '', array('height'=>44,'alt'=>$Settings['company_name']))?>
 </a></div>
 
     					<?=$this->load->view($template.'/elements/navigator/nav', array('main_menu'=>$main_menu))?>

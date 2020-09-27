@@ -26,6 +26,7 @@ class Specialists extends Admin_Controller {
 
   function index(){
     $this->data['items'] = $this->{$this->model."_model"}->get_items($this->current_lang);
+    
     $this->render('admin/specialists/listing_view');
   }
 
