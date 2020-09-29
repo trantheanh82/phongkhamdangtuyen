@@ -11,7 +11,7 @@
             if($i == 0){
               echo '<!-- Links --><ul class="col-lg-6 col-md-12 col-xs-12 link-list">';
             }
-            echo "<li>".anchor($link,$v->translation->content->name)."</li>";
+            echo "<li>".anchor($link,"<i class='flaticon-060-cardiogram-4 green-color'></i> ".$v->translation->content->name)."</li>";
 
             $i++;
             if($i==4){
