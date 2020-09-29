@@ -291,7 +291,8 @@
 		});
 
 
-		$('#datetimepicker').datetimepicker();
+		$('#datetimepicker').datetimepicker({
+		minDate:'today'});
 
 
 		/*----------------------------------------------------*/

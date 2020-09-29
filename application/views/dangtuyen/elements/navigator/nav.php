@@ -44,7 +44,8 @@
     <!--<li class="nl-simple" aria-haspopup="true"><a href="#">Simple Link</a></li>-->
 
     <!-- HIDDEN NAVIGATION MENU BUTTON -->
-    <li class="nl-simple header-btn" aria-haspopup="true"><?=anchor('/bookingappointments',lang('Book an appointment'))?></li>
+    <li class="nl-simple header-btn" aria-haspopup="true">
+      <?=anchor('/bookingappointments',"<i class=\"flaticon-007-calendar-3\" aria-hidden=\"true\"></i> ".lang('Book an appointment'))?></li>
 
 
     </ul>
@@ -54,6 +55,6 @@
   <!-- NAVIGATION MENU BUTTON -->
   <div class="header-button">
     <span class="nl-simple header-btn orange-hover">
-        <?=anchor('/bookingappointments',lang('Book an appointment'))?>
+ <?=anchor('/bookingappointments',"<i class=\"flaticon-007-calendar-3\" aria-hidden=\"true\"></i> ".lang('Book an appointment'))?>
       </span>
   </div>

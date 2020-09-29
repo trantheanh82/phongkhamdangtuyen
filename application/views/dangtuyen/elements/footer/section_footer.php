@@ -9,7 +9,7 @@
 
 
 						<!-- FOOTER INFO -->
-						<div class="col-md-6 col-lg-4">
+						<div class="col-md-6 col-lg-3">
 							<div class="footer-info mb-40">
 
 								<!-- Footer Logo -->
@@ -49,7 +49,7 @@
 
 
 						<!-- FOOTER CONTACTS -->
-						<div class="col-md-6 col-lg-3 offset-lg-1">
+						<div class="col-md-6 col-lg-3">
 							<div class="footer-box mb-40">
 
 								<!-- Title -->
@@ -90,20 +90,21 @@
 
 
 						<!-- FOOTER LINKS -->
-						<div class="col-md-6 col-lg-2">
+						<div class="col-md-6 col-lg-4">
 							<div class="footer-links mb-40">
 
 								<!-- Title -->
-								<h5 class="h5-xs">Discover</h5>
+								<h5 class="h5-xs darkgreen-color">Fanpage</h5>
 
 								<!-- Footer List -->
-								<ul class="clearfix">
+								<!--<ul class="clearfix">
 									<li><a href="#">Help Center</a></li>
 									<li><a href="#">Life Chatting</a></li>
 									<li><a href="#">Terms & Privacy</a></li>
 									<li><a href="#">FAQs</a></li>
 									<li><a href="#">Site Map</a></li>
-								</ul>
+								</ul>-->
+								<?=$this->load->view($template.'/elements/facebook/fb_fanpage')?>
 
 							</div>
 						</div>

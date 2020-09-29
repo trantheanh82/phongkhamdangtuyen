@@ -3,6 +3,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Pages extends Public_Controller {
 
+	protected $page;
+	protected $model = 'page';
 	public function __construct(){
 
 	parent::__construct();
@@ -21,6 +23,7 @@ class Pages extends Public_Controller {
 			$this->data['page_title'] .= $this->data['item']->translation->content->name;
 			$this->data['meta_description'] .= $this->data['item']->translation->content->description;
 			$this->data['meta_image'] .= $this->data['item']->image;
+			$this->data['subpage_name'] = $this->data['item']->translation->content->name;
 
 			$this->data['before_head'] .= "<style>.page-title{background-image: url(".base_url().$this->data['item']->image.")}</style>";
 
@@ -219,6 +222,25 @@ class Pages extends Public_Controller {
 		$this->breadcrumbs->push($this->data['item']->translation->content->name,'/');
 		$this->render('/pages/contact_us_view');
   }
+	
+	public function doctors(){
+		$this->load->model('doctor_model');
+		$page_id = $this->slug_model
+		->fields('model_id')
+		->where(
+			"slug='bac-si' and language='".$this->current_lang."' and model='".$this->model."' or `slug`='doctors' and language='".$this->current_lang."' and model='".$this->model."'  ",'','',false,false,true)
+		->get();
+		$this->page= $this->page_model
+													->with_translation('fields:content','where:`model`="'.$this->model.'" and `language`="'.$this->current_lang.'"')
+													->where('id',$page_id->model_id)
+													->get();
+													
+		$this->data['items'] = $this->doctor_model->get_items($this->current_lang);
+		$this->data['page_name'] = $this->page->translation->content->name;
+		$this->breadcrumbs->push($this->page->translation->content->name,'/');
+
+		$this->render('/pages/doctors_view');
+	}
 
 	public function request_call(){
 		if($this->input->is_ajax_request()){

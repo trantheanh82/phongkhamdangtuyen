@@ -25,6 +25,7 @@
 </head>
 
 <body>
+  <?=$this->load->view($template.'/elements/facebook/fb_sdk.php')?>
   <!-- PRELOADER SPINNER
 		============================================= -->
 		<div id="loader-wrapper">

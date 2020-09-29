@@ -94,11 +94,11 @@ $route['^(\w{2})/(specialists|chuyen-khoa)'] = '/specialists';
 $route['^(\w{2})/(specialists|chuyen-khoa)/(:any)'] = '/specialists/index/$3';
 
 /*Service or Dich-vu*/
-$route['^(\w{2})/(service|dich-vu)'] = '/services';
-$route['^(\w{2})/(service|dich-vu|services)/(:any)'] = '/services/index/$3';
+$route['^(\w{2})/(service|dich-vu|goi-kham-benh)'] = '/services';
+$route['^(\w{2})/(service|dich-vu|services|goi-kham-benh)/(:any)'] = '/services/index/$3';
 
 /*Service or Dich-vu*/
-$route['^(\w{2})/(doctors|bac-si)'] = '/doctors';
+$route['^(\w{2})/(about-us|gioi-thieu)/(doctors|bac-si)'] = '/pages/doctors';
 
 
 /*Artice*/
