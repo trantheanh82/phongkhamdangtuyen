@@ -65,6 +65,7 @@ $lang['Activities']			=	"Lĩnh vực hoạt động";
 $lang['Newsletter']     = "Thư thông báo";
 $lang["footer_newsletters"] = "Nhận email thông báo về những thông tin tài chính, thông tin luật sửa đổi, tài chính kế toán v.v.. mới nhất";
 // Menu News
+$lang['Categories']     = "Danh mục tin";
 $lang['Activity news']		=	"Tin Hoạt động";
 $lang['Technology']			=	"Tin Công nghệ";
 $lang['Events']				=	"Sự kiện";

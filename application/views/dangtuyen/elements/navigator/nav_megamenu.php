@@ -6,7 +6,7 @@
         ?>
         <!-- MEGAMENU QUICK LINKS -->
         <ul class="col-lg-3 col-md-12 col-xs-12 link-list">
-            <li class="title"><?=lang('Categories')?></li>
+            <li class="title  darkgreen-color"><?=lang('Categories')?></li>
             <?php
                 foreach($children as $k=>$v):
                     $link = "";
@@ -22,7 +22,7 @@
         <div class="col-lg-5 col-md-12 col-xs-12">
 
           <!-- Title -->
-            <h3 class="title">Featured News:</h3>
+            <h3 class="title darkgreen-color">Featured News:</h3>
 
             <!-- Image -->
             <div class="fluid-width-video-wrapper"><img src="<?=base_url().'assets/'.$template?>/images/blog/featured-news.jpg" alt="featured-news" /></div>
@@ -40,7 +40,7 @@
         <div class="col-lg-4 col-md-12 col-xs-12">
 
           <!-- Title -->
-            <h3 class="title">Latest News:</h3>
+            <h3 class="title darkgreen-color">Latest News:</h3>
 
             <!-- Latest News -->
             <ul class="latest-news">
