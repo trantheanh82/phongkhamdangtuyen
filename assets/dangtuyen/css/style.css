@@ -1967,7 +1967,7 @@ p.header-widget-phone {
 #about-2,
 #about-3 {
  position: relative;
- margin-top: -120px;
+ margin-top: -40px;
  z-index: 99;
 }
 
@@ -2009,10 +2009,10 @@ p.header-widget-phone {
 /*  ABOUT BOX
 /*------------------------------------------*/
 
-#abox-1 { background-color: #36a8eb; border-radius: 6px 0 0 6px; }
+#abox-1 { background-color: #ffa12f; border-radius: 6px 0 0 6px; }
 #abox-2 { background-color: #088edd; }
 #abox-3 { background-color: #1977cc; }
-#abox-4 { background-color: #1063af;  border-radius: 0 6px 6px 0; }
+#abox-4 { background-color: #02a247;  border-radius: 0 6px 6px 0; }
 
 .abox-1 {
   height: 300px;

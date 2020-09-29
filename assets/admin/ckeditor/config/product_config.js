@@ -7,7 +7,7 @@ CKEDITOR.editorConfig = function( config ) {
 	// Define changes to default configuration here.
 	// For complete reference see:
 	// http://docs.ckeditor.com/#!/api/CKEDITOR.config
-  config.contentsCss = "/assets/linhsan/css/style.css";
+  config.contentsCss = "/assets/dangtuyen/css/style.css";
 	// The toolbar groups arrangement, optimized for two toolbar rows.
 	config.toolbarGroups = [
 
