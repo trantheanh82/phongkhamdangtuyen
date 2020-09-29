@@ -53,7 +53,7 @@ class Publicmenu extends Admin_Controller {
 			$this->data['item']->slug[$value->language]->id = $value->id;
 		}
 
-		$this->data['menu_type'] = array('simple'=>lang('Simple'),'mega_menu'=>lang('Mega menu'));
+		$this->data['menu_type'] = array('nav_simple'=>lang('Simple'),'nav_2_columns'=>lang('2 Columns'),'nav_mega_menu'=>lang('Mega menu'));
 
 		$this->render('/admin/publicmenu/publicmenu_create_edit_view');
 	}
