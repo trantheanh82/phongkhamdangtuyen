@@ -1141,7 +1141,7 @@
 
   /* Hero Register Form */
   #hero-section-form { margin-bottom: -100px; }
-  .hero-form { margin: 0; padding: 40px 20px 40px; }
+  .hero-form { margin: 0; padding: 0px; }
   .hero-form .col-md-6, .hero-form .col-md-12 { padding: 0 10px; }
   .hero-form h4 { font-size: 1.7rem; margin-bottom: 30px;}
   .hero-form .form-control, .hero-form .custom-select { height: 52px; }
@@ -1156,7 +1156,7 @@
   /*------------------------------------------*/
 
   /* About */
-  #about-1, #about-2,  #about-3 { margin-top: -80px; }
+  #about-1, #about-2,  #about-3 { margin-top: -30px; }
   #about-5 { padding-bottom: 80px; }
   #about-5 .txt-block { margin-top: 40px; }
   #about-6 .txt-block { margin-bottom: 40px; }
@@ -1622,7 +1622,7 @@
 
   /* Hero Register Form */
   #hero-section-form { margin-bottom: -100px; }
-  .hero-form { margin: 0; padding: 40px 10px 40px; }
+  .hero-form { margin: 0; padding: 0px 10px 0px; }
   .hero-form .col-md-6, .hero-form .col-md-12 { padding: 0 10px; }
   .hero-form h4 { font-size: 1.7rem; margin-bottom: 30px;}
   .hero-form .form-control, .hero-form .custom-select { height: 52px; }
@@ -1637,7 +1637,7 @@
   /*------------------------------------------*/
 
   /* About */
-  #about-1, #about-2,  #about-3 { margin-top: -80px; }
+  #about-1, #about-2,  #about-3 { margin-top: -30px; }
   #about-5 { padding-bottom: 80px; }
   #about-5 .txt-block { margin-top: 40px; }
   #about-6 .txt-block { margin-bottom: 40px; }
