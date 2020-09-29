@@ -86,3 +86,7 @@ $lang['Order']      = "Thứ tự";
 $lang['Created']    = "Ngày tạo";
 $lang['Action']     = "Thao tác";
 $lang['Image']    = "Hình ảnh";
+
+/*Editor*/
+$lang['Description'] = "Mô tả ngắn gọn";
+$lang['Content']     =  "Nội dung chính";

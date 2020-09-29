@@ -20,4 +20,20 @@ $lang['Our Clients']        = "Khách Hàng";
 $lang['Business']           = "Lĩnh vực hoạt động";
 
 $lang['View more detail']   = "Tìm hiểu thêm";
+
+/*Booking Form*/
+$lang['Booking An Appointment'] = "Đặt lịch khám online";
+$lang['Enter Your Name']                 = "Điền tên của bạn";
+$lang['Enter Your Phone Number']                 = "Điền Số điện thoại";
+$lang['Appointment Date']                 = "Chọn ngày tới khám";
+$lang['Your Message']                 = "Lời nhắn";
+$lang['Booking']                 = "Đặt lịch";
+
+/*Look up Patient*/
+$lang['Look up patient'] = "Tra cứu bệnh án" ;
+$lang['Patient Code'] = "Mã số bệnh án" ;
+$lang['Your Birthday Year'] = "Năm sinh" ;
+$lang['Date'] = "Ngày khám bệnh" ;
+$lang['Look up'] = "Tra kết quả" ;
+
 ?>

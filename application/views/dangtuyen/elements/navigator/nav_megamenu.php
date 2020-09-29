@@ -1,19 +1,21 @@
 <div class="wsmegamenu clearfix">
   <div class="container">
       <div class="row">
-
-
+        <?php
+            if(isset($children)):
+        ?>
         <!-- MEGAMENU QUICK LINKS -->
         <ul class="col-lg-3 col-md-12 col-xs-12 link-list">
-            <li class="title">Quick Links:</li>
-            <li><a href="#">For Referring Doctors</a></li>
-            <li><a href="#">Terms & Privacy Policy</a></li>
-            <li><a href="#">Donor Privacy Policy</a></li>
-            <li><a href="#">Patient Info Sheets</a></li>
-            <li><a href="#">Online Patients Portal</a></li>
-            <li><a href="#">Insurance Information</a></li>
-            <li><a href="#">Patients Testimonials</a></li>
+            <li class="title"><?=lang('Categories')?></li>
+            <?php
+                foreach($children as $k=>$v):
+                    $link = "";
+                    echo "<li>".anchor($link,$v->translation->content->name)."</li>";
+                endforeach;
+            ?>
         </ul>
+      <?php endif;
+      ?>
 
 
         <!-- MEGAMENU FEATURED NEWS -->

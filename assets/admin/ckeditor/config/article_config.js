@@ -57,6 +57,7 @@ CKEDITOR.editorConfig = function( config ) {
   config.extraPlugins = 'colorbutton,colordialog,stylesheetparser';
 
   config.image_alignClasses = [ 'align-left', 'align-center', 'align-right' ];
+  config['placeholder'] = "Enter Content Here";
 
 
 	//config.options.fileRoot = '/assets/upload/';

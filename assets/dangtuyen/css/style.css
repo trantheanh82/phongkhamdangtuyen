@@ -1807,16 +1807,24 @@ p.header-widget-phone {
 /*------------------------------------------*/
 
 .hero-form {
-  padding: 45px 30px 40px;
-  margin: 0 20px 0 50px;
+  /*padding: 45px 30px 40px;
+  margin: 0 0px 0 0px;*/
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
 }
 
 .hero-form .col-md-12,
-.hero-form .col-lg-12 {
+.hero-form .col-lg-12{
   padding: 0;
+}
+
+.hero-form .col-lg-6{
+  padding-left:0;
+}
+
+.hero-form .col-lg-12{
+  padding-right:15px;
 }
 
 .form-group {
@@ -1839,11 +1847,11 @@ p.header-widget-phone {
 .hero-form .form-control,
 .hero-form .custom-select {
   background-color: #fff;
-  color: #333;
+  color: #6b6b6b;
   height: 48px;
   font-size: 15px;
   line-height: 1;
-  font-weight: 300;
+  font-weight: 400;
   padding: 4px 15px;
   margin-bottom: 15px;
   border: 1px solid #ddd;
@@ -2009,10 +2017,10 @@ p.header-widget-phone {
 /*  ABOUT BOX
 /*------------------------------------------*/
 
-#abox-1 { background-color: #ffa12f; border-radius: 6px 0 0 6px; }
+#abox-1 { background-image: url(/assets/dangtuyen/images/box-1.jpg);border-radius: 6px 0 0 6px; }
 #abox-2 { background-color: #088edd; }
 #abox-3 { background-color: #1977cc; }
-#abox-4 { background-color: #02a247;  border-radius: 0 6px 6px 0; }
+#abox-4 { background-image: url(/assets/dangtuyen/images/box-2.jpg);background-color: #02a247;  border-radius: 0 6px 6px 0; }
 
 .abox-1 {
   height: 300px;
