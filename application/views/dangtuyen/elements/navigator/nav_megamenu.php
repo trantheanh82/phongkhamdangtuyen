@@ -15,11 +15,7 @@
                 endforeach;
             ?>
         </ul>
-      <?php endif;
-
-      ?>
-
-
+      <?php endif; ?>
         <!-- MEGAMENU FEATURED NEWS -->
         <div class="col-lg-5 col-md-12 col-xs-12">
           <?php
