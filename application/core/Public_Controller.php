@@ -103,33 +103,6 @@ class Public_Controller extends MY_Controller{
 					if(!empty($items))
 					$public_menu[$k]->children = $items;
 				}
-
-
-
-
-				/*switch($v->name){
-					case 'About us':
-						$this->load->model('page_model');
-						$public_menu[$k]->children = $this->page_model->get_menu_about();
-
-					break;
-					case 'Services':
-						$this->load->model('service_model');
-						$public_menu[$k]->children = $this->service_model->get_menu_services();
-					break;
-					case 'Manufactures':
-						$this->load->model('manufacture_model');
-						$public_menu[$k]->children = $this->manufacture_model->get_home_menu();
-					break;
-					case 'News':
-						$this->load->model('category_model');
-						$public_menu[$k]->children = $this->category_model->get_menu_category();
-					break;
-					case 'Products & Solutions':
-						$this->load->model('solution_model');
-						$public_menu[$k]->children = $this->solution_model->get_menu_solutions();
-					break;
-				}*/
 			}
 		return $public_menu;
 

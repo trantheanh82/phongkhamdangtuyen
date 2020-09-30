@@ -2,7 +2,6 @@
   <div class="container">
       <div class="row">
         <?php
-        pr($children);
             if(isset($children)):
         ?>
         <!-- MEGAMENU QUICK LINKS -->
