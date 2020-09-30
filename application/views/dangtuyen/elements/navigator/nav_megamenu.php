@@ -9,7 +9,7 @@
             <li class="title  darkgreen-color"><?=lang('Categories')?></li>
             <?php
             
-                foreach($children['items'] as $k=>$v):
+                foreach($children->items as $k=>$v):
                     $link = base_url().'tin-tuc/'.$v->slug->slug;
                     echo "<li>".anchor($link,$v->translation->content->name)."</li>";
                 endforeach;
