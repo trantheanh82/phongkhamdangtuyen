@@ -113,3 +113,7 @@ $lang['Services'] = "Dịch vụ";
 
 /*Modules*/
 $lang['Latest Posts'] = "Bài viết mới";
+
+/*Mega menu*/
+$lang['Featured Posts']   = "Bài viết được quan tâm";
+$lang['Lastest Posts']    = "Bài mới nhất";
