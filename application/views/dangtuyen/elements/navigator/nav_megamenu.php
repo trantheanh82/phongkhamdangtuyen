@@ -3,7 +3,7 @@
       <div class="row">
         <?php
             if(isset($children)):
-              pr($children['items'])
+              pr($children['items']);exit();
         ?>
         <!-- MEGAMENU QUICK LINKS -->
         <ul class="col-lg-3 col-md-12 col-xs-12 link-list">
