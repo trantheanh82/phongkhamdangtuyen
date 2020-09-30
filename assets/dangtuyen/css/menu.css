@@ -1242,7 +1242,7 @@ video {
   }
 
   .callusbtn {
-    color: #a9a9a9;
+    color: #e51e18;
     font-size: 18px;
     position: absolute;
     right: 5px;
@@ -1286,7 +1286,7 @@ video {
     cursor: pointer;
     height: 3px;
     width: 22px;
-    background: #a9a9a9;
+    background: #00933f;
     position: absolute;
     display: block;
     content: '';

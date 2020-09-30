@@ -22,7 +22,7 @@
             if(isset($children->feature_post)):
           ?>
           <!-- Title -->
-            <h3 class="title darkgreen-color"><?=lang("Featured Posts")?>:</h3>
+            <h3 class="title darkgreen-color"><?=lang("Featured Post")?>:</h3>
 
             <!-- Image -->
             <?php
