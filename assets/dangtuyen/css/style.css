@@ -1628,7 +1628,7 @@ p.header-widget-phone {
 #hero-2 h2,
 #hero-11 h2 {
   font-size: 3.75rem;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0;
   margin-bottom: 25px;
@@ -1638,7 +1638,7 @@ p.header-widget-phone {
 #hero-6 h2 span,
 #hero-9 h2 span,
 #hero-11 h2 span  {
-  font-weight: 900;
+  font-weight: 600;
 }
 
 #hero-3 h2 {
