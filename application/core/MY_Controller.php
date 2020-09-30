@@ -269,16 +269,17 @@ function insert_css($files,$template='default',$admin = false){
 	$link = base_url().'assets/'.$template;
 	if($admin == true) $link .= 'admin/';
 
+	$r = rand(0,100000);
 	$assets = "";
 	if(is_array($files)){
 		foreach($files as $file){
 			$assets .= "
-			<link rel='preload' href='".$link.($file[0]=='/'?'':'/css/').$file."' as='style' onload='this.onload=null;this.rel=\"stylesheet\"' />
-			<noscript><link defer href='".$link.($file[0]=='/'?'':'/css/').$file."' rel='stylesheet' type='text/css' /></noscript>\n";
+			<link rel='preload' href='".$link.($file[0]=='/'?'':'/css/').$file."?r=".$r."' as='style' onload='this.onload=null;this.rel=\"stylesheet\"' />
+			<noscript><link defer href='".$link.($file[0]=='/'?'':'/css/').$file."?r=".$r."' rel='stylesheet' type='text/css' /></noscript>\n";
 		}
 	}else{
-		return "<link rel='preload' href='".$link.($files[0]=='/'?'':'/css/').$files."' as='style' onload='this.onload=null;this.rel=\"stylesheet\"' />
-		<noscript><link defer href='".$link.($files[0]=='/'?'':'/css/').$files."' rel='stylesheet' type='text/css' /></noscript>\n";
+		return "<link rel='preload' href='".$link.($files[0]=='/'?'':'/css/').$files."?r=".$r."' as='style' onload='this.onload=null;this.rel=\"stylesheet\"' />
+		<noscript><link defer href='".$link.($files[0]=='/'?'':'/css/').$files."?r=".$r."' rel='stylesheet' type='text/css' /></noscript>\n";
 	}
 	return $assets;
 }
