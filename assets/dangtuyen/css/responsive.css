@@ -1624,6 +1624,7 @@
   #hero-section-form { margin-bottom: -100px; }
   .hero-form { margin: 0; padding: 0px 10px 0px; }
   .hero-form .col-md-6, .hero-form .col-md-12 { padding: 0 10px; }
+  .hero-form .col-lg-6, .hero-form .col-lg-12 {padding-left: 0;padding-right: 0;}
   .hero-form h4 { font-size: 1.7rem; margin-bottom: 30px;}
   .hero-form .form-control, .hero-form .custom-select { height: 52px; }
 
@@ -1642,7 +1643,7 @@
   #about-5 .txt-block { margin-top: 40px; }
   #about-6 .txt-block { margin-bottom: 40px; }
 
-  .abox-1 { height: auto; padding: 35px 20px 40px; }
+  .abox-1 { height: auto; padding: 35px 0px 20px; }
   #abox-1, #abox-2, #abox-3, #abox-4 { border-radius: 6px; margin-bottom: 20px; }
   #abox-4 { margin-bottom: 0; }
 
