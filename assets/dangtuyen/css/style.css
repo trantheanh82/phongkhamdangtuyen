@@ -5342,8 +5342,8 @@ ul.blog-category-list li:hover {
   padding-top: 60px;
 }
 
-.page-link {
-  color: #666;
+.page-link, .page-item a{
+  color: #fff;
   font-weight: 500;
   padding: .65rem .95rem;
   margin: 0 5px;
@@ -5353,6 +5353,11 @@ ul.blog-category-list li:hover {
   -moz-border-radius: 6px;
   -o-border-radius: 6px;
   border-radius: 6px;
+}
+
+.page-item a{
+  border:1px solid #e5e5e5;
+  color:#333;
 }
 
 .page-item:first-child .page-link {
@@ -5382,15 +5387,18 @@ ul.blog-category-list li:hover {
   color: #fff;
   border-color: #5496ff;
   -webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, .15);
-  -moz-box-shadow: 0 8px 8px rgba(0, 0, 0, .15);
+  -moz-box-shadow: 0 8px 8px right: ;gba(0, 0, 0, .15);
   box-shadow: 0 8px 8px rgba(0, 0, 0, .15);
 }
 
 .primary-theme .page-link:hover,
+.primary-theme .page-link:hover,
 .primary-theme .page-link:focus,
-.primary-theme .page-item.active .page-link {
-  background-color: #00a3c8;
-  border-color: #00a3c8;
+.primary-theme .page-item.active .page-link,
+.primary-theme .page-item:hover a{
+  background-color: #00923f;
+  border-color: #00923f;
+  color:#fff;
 }
 
 

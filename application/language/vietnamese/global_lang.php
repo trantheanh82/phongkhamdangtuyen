@@ -111,3 +111,5 @@ $lang['Testimonial']    = "Bệnh nhân nhận xét về Đặng Tuyền";
 /**/
 $lang['Services'] = "Dịch vụ";
 
+/*Modules*/
+$lang['Latest Posts'] = "Bài viết mới";

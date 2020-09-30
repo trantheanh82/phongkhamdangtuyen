@@ -29,16 +29,20 @@ class Articles extends Public_Controller {
 
 		$this->data['categories'] = $this->category_model->get_all_category_article($this->current_lang);
 		$this->data['slug_model'] = $this->data['item']->slug->slug;
+		
+		$this->data['lastest_posts']  = $this->article_model->get_lastest_article($this->current_lang,5);
 		$this->breadcrumbs->push("Tin tức","/".$this->data['item']->slug->slug.'/tin-tuc-chung');
 	}
 
   function index($slug="tin-tuc-chung",$page_number=1){
+		
 		if(!empty($slug)){
 			$this->data['slug'] = $this->slug_model->where(array('model'=>'category','slug'=>$slug,'language'=>$this->current_lang))->get();
 			$this->data['item'] = $this->category_model->get_articles($this->data['slug']->model_id,$slug,$this->current_lang);
+			$this->data['page_name'] = $this->data['item']->translation->content->name;
 			//$this->data['item'] = $this->category_model->get_category_by_slug($slug,'article',$this->current_lang);
 
-
+			
 			//pr($this->data['items']);
 
       if(!empty($this->data['item']->articles)){
@@ -53,10 +57,9 @@ class Articles extends Public_Controller {
 				$this->data['meta_description'] .= $this->data['item']->translation->content->name;
 				$this->data['meta_image'] .= $this->data['item']->image;
       }
-			$this->data['latest_news']  = $this->article_model->get_latest_article($this->current_lang,5);
 			$this->breadcrumbs->push($this->data['item']->translation->content->name,"/");
     }
-
+		
 		$this->render('/articles/listing_articles');
 
   }
@@ -69,16 +72,14 @@ class Articles extends Public_Controller {
 			$this->data['item']->translation->tags = explode(',',$this->data['item']->translation->tags);
 		}
 
-		$this->data['page_title'] .= $this->data['item']->translation->content->name;
+		$this->data['page_title'] .= $this->data['page_name'] = $this->data['item']->translation->content->name;
 		$this->data['meta_description'] .= $this->data['item']->translation->content->name;
 		$this->data['meta_image'] .= $this->data['item']->image;
 
 		$this->breadcrumbs->push($cat->translation->content->name,"/tin-tuc/".$cat->slug->slug);
 		$this->breadcrumbs->push($this->data['item']->translation->content->name,'/');
 
-		$this->data['latest_news']  = $this->article_model->get_latest_article($this->current_lang,5);
-
-		$this->render('/articles/detail_articles');
+		$this->render('/articles/detail_article');
   }
 
 }

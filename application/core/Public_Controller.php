@@ -93,17 +93,18 @@ class Public_Controller extends MY_Controller{
 
 			//$this->db->cache_on();
 			$public_menu = $this->public_menu_model->getTreeMenu($this->current_lang);
-
+			
 			foreach($public_menu as $k => $v){
 				if(!empty($v->user_function)){
 					$model = $v->class_name.'_model';
 					$this->load->model($model);
 
-					$items = $this->{$model}->get_menu($this->current_lang,'article');
+					$items = $this->{$model}->{$v->user_function}($this->current_lang,'article');
 					if(!empty($items))
 					$public_menu[$k]->children = $items;
 
 				}
+				
 				/*switch($v->name){
 					case 'About us':
 						$this->load->model('page_model');

@@ -134,6 +134,17 @@
 	          </div>
 	        </div>
 	        <hr />
+					
+					<div class="form-group">
+						<label for="inputEmail3" class="control-label"><?=lang("Feature Post")?></label>
+			          <div class="checkbox">
+			            <label>
+			              <?=form_hidden('feature','N')?>
+										<?=form_checkbox('feature','Y',(isset($item->feature)?($item->feature=='N'?false:true):true),array('class'=>'minimal'))?>
+			            </label>
+			          </div>
+			        </div>
+			        <hr />
 
 	       <!-- <div class="form-group">
 						<label for="inputEmail3" class="control-label"><?=lang("Home Menu")?></label>

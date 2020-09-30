@@ -21,11 +21,13 @@ class Article_model extends MY_Model
 				'foreign_model'=>'article_category_model','foreign_key'=>'article_id','local_key'=>'id');
 
 	    $this->has_one['user'] = array('foreign_model'=>'User_model','foreign_key'=>'id','local_key'=>'created_by');
-	    $this->has_many['articles_categories'] = array(
+	    
+			$this->has_many['articles_categories'] = array(
 	    	'foreign_model'=>'Article_category_model',
 	    	'foreign_table'=>'articles_categories',
 	    	'foreign_key'=>'article_id',
 	    	'local_key'=>'id');
+			
 
 			$this->has_one['slug'] = array('foreign_model'=>'Slug_model','foreign_table'=>'slugs','foreign_key'=>'model_id','local_key'=>'id');
 			$this->has_many['slugs'] = array('foreign_model'=>'Slug_model','foreign_table'=>'slugs','foreign_key'=>'model_id','local_key'=>'id');
@@ -35,7 +37,7 @@ class Article_model extends MY_Model
 
 			parent::__construct();
 
-			$this->pagination_delimiters = array('<li>','</li>');
+			$this->pagination_delimiters = array('<li class="page-item">','</li>');
 			$this->pagination_arrows = array('&lt;','&gt;');
     }
 
@@ -90,7 +92,7 @@ class Article_model extends MY_Model
 			return $items;
 		}
 
-		public function get_latest_article($language,$numbers){
+		public function get_lastest_article($language,$numbers){
 			$items =  $this->article_model
               ->with_translation('fields:model,content|where:`translations`.`model`="'.$this->name.'" and `language`="'.$language.'"')
               ->with_slug('fields:slug|where:`model`="'.$this->name.'" and `language`="'.$language.'"')
@@ -129,6 +131,19 @@ class Article_model extends MY_Model
 										->where(array('active'=>'Y'))
 										->paginate($row_per_page,count((array)$total_rows),$page_number);
 			return $items;
+		}
+		
+		public function get_feature_post($lang){
+			$conditions = "where:`model`='".$this->name."' and `language`='".$lang."'";
+			$item = $this->with_slug($conditions)
+										->with_translation($conditions)
+										->with_category()
+										->order_by('updated_at','DESC')
+										->where(array('active'=>'Y','feature'=>'Y'))
+										->get();
+			$category = $this->category_model->with_slug("where:`model`='category' and `language`='".$lang."'")->where(array('active'=>'Y','id'=>$item->category->category_id))->get();
+			$item->parent_category = $category;
+			return $item;
 		}
 
 }
