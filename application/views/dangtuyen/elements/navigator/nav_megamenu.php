@@ -22,24 +22,24 @@
         <!-- MEGAMENU FEATURED NEWS -->
         <div class="col-lg-5 col-md-12 col-xs-12">
           <?php
-            if(isset($children['feature_post'])):
+            if(isset($children->feature_post)):
           ?>
           <!-- Title -->
             <h3 class="title darkgreen-color"><?=lang("Featured Posts")?>:</h3>
             
             <!-- Image -->
             <?php
-              if(isset($children['feature_post']->image)):
+              if(isset($children->feature_post->image)):
             ?>
-            <div class="fluid-width-video-wrapper"><?=img($children['feature_post']->image,'',array('class'=>'img-fluid','alt'=>$Settings['company_name'].': '.$children['feature_post']->translation->content->name))?></div>
+            <div class="fluid-width-video-wrapper"><?=img($children->feature_post->image,'',array('class'=>'img-fluid','alt'=>$Settings['company_name'].': '.$children->feature_post->translation->content->name))?></div>
             <?php
           endif;
             ?>
             <!-- Text -->
             <h5 class="h5-xs">
-              <?=anchor(base_url().'tin-tuc/'.$children['feature_post']->parent_category->slug->slug,$children['feature_post']->translation->content->name)?></h5>
+              <?=anchor(base_url().'tin-tuc/'.$children['feature_post']->parent_category->slug->slug,$children->feature_post->translation->content->name)?></h5>
             <p class="wsmwnutxt">
-              <?=getSnippet(strip_tags($children['feature_post']->translation->content->description),20)?>
+              <?=getSnippet(strip_tags($children->feature_post->translation->content->description),20)?>
             </p>
             <?php 
           endif;?>
@@ -50,7 +50,7 @@
         <!-- MEGAMENU LATEST NEWS -->
         <div class="col-lg-4 col-md-12 col-xs-12">
           <?php
-            if(isset($children['lastest_posts'])):
+            if(isset($children->lastest_posts)):
           ?>
           <!-- Title -->
             <h3 class="title darkgreen-color"><?=lang("Lastest Posts")?>:</h3>
@@ -58,7 +58,7 @@
             <!-- Latest News -->
             <ul class="latest-news">
               <?php
-                  foreach($children['lastest_posts'] as $k=>$v):
+                  foreach($children->lastest_posts as $k=>$v):
                       $link = base_url().'tin-tuc/'.$v->category->slug->slug.'/'.$v->slug->slug;
               ?>
             <!-- Post #1 -->
