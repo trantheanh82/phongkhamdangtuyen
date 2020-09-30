@@ -131,7 +131,6 @@ class Public_Controller extends MY_Controller{
 					break;
 				}*/
 			}
-			pr($public_menu);exit();
 		return $public_menu;
 
 	}

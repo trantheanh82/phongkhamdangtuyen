@@ -72,21 +72,22 @@ class Category_model extends MY_Model
 								->set_cache($model.'_'.$current_lang)
 								->get_all();
 	}
-	
+
 	function get_mega_menu($current_lang,$model){
 		$conditions = "where:`model`='".$this->name."' and `language`='".$current_lang."'";
-		
-		$menu['items'] = $this->with_translation($conditions)
+
+		$menu = new \stdClass;
+		$menu->items = $this->with_translation($conditions)
 										->with_slug($conditions)
 										->where(array('model'=>$model,'on_menu'=>'Y','active'=>'Y'))
 										->order_by('sort','ASC')
 										->set_cache($model.'_'.$current_lang)
 										->get_all();
-										
-		$menu['feature_post'] = $this->article_model->get_feature_post($current_lang);
-		
-		$menu['lastest_posts'] = $this->article_model->get_lastest_article($current_lang,3);
-		
+
+		$menu->feature_post = $this->article_model->get_feature_post($current_lang);
+
+		$menu->lastest_posts = $this->article_model->get_lastest_article($current_lang,3);
+
 		return $menu;
 	}
 
