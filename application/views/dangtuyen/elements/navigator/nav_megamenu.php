@@ -3,12 +3,13 @@
       <div class="row">
         <?php
             if(isset($children)):
+              pr($children['items'])
         ?>
         <!-- MEGAMENU QUICK LINKS -->
         <ul class="col-lg-3 col-md-12 col-xs-12 link-list">
             <li class="title  darkgreen-color"><?=lang('Categories')?></li>
             <?php
-            
+
                 foreach($children->items as $k=>$v):
                     $link = base_url().'tin-tuc/'.$v->slug->slug;
                     echo "<li>".anchor($link,$v->translation->content->name)."</li>";
@@ -26,7 +27,7 @@
           ?>
           <!-- Title -->
             <h3 class="title darkgreen-color"><?=lang("Featured Posts")?>:</h3>
-            
+
             <!-- Image -->
             <?php
               if(isset($children->feature_post->image)):
@@ -41,7 +42,7 @@
             <p class="wsmwnutxt">
               <?=getSnippet(strip_tags($children->feature_post->translation->content->description),20)?>
             </p>
-            <?php 
+            <?php
           endif;?>
 
         </div>	<!-- END MEGAMENU FEATURED NEWS -->
@@ -63,7 +64,7 @@
               ?>
             <!-- Post #1 -->
             <li class="clearfix d-flex align-items-center">
-              
+
               <?=img($v->image,'',array('with'=>100,'class'=>'img-fluid','alt'=>$Settings['company_name'].': '.$v->translation->content->name))?>
 
               <!-- Text -->
