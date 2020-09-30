@@ -9,7 +9,7 @@
 								
 								<form name="heroForm" class="row hero-form">
 								<!-- Title -->
-								<h5 class="h5-md col-lg-12 text-uppercase"><?=lang('Booking An Appointment')?></h5>
+								<h5 class="h5-md col-lg-12 text-uppercase"><i class="flaticon-007-calendar-3" aria-hidden="true"></i> <?=lang('Booking An Appointment')?></h5>
 									<div id="input-name" class="col-lg-6">
 										<input type="text" name="name" class="form-control name" placeholder="<?=lang("Enter Your Name")?>*" required>
 									</div>

@@ -243,11 +243,11 @@
             <div class="review-txt text-center">
 
               <!-- Quote -->
-              <div class="quote"><img src="<?=base_url().'assets/'.$template?>/images/quote.png" alt="quote-img" /></div>
+              <div class="quote"><img src="<?=base_url().'assets/dangtuyen/images/quote.png'?>" alt="quote-img" /></div>
 
               <!-- Author Avatar -->
               <div class="testimonial-avatar">
-                <img src="<?=base_url().'assets/'.$template?>/images/review-author-9.jpg" alt="testimonial-avatar">
+                <img src="<?=base_url().'assets/dangtuyen/images/review-author-9.jpg'?>" alt="testimonial-avatar">
               </div>
 
               <!-- Testimonial Text -->

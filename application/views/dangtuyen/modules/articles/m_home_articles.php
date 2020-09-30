@@ -34,13 +34,13 @@
           <div class="blog-post-txt">
 
             <!-- Post Title -->
-            <h5 class="h5-sm steelblue-color"><a href="<?=$link?>"><?=$v->translation->content->name?></a></h5>
+            <h5 class="h5-sm darkgreen-color"><a href="<?=$link?>"><?=$v->translation->content->name?></a></h5>
 
             <!-- Post Data -->
             <span><?=date_format(date_create($v->created_at),'d/m/Y')?></span>
 
             <!-- Post Text -->
-            <?=getSnippet($v->translation->content->description,30)?>
+            <p><?=getSnippet(strip_tags($v->translation->content->description),30)?></p>
 
           </div>
 

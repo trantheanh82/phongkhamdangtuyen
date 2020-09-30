@@ -42,7 +42,7 @@
             <h5 class="h5-sm darkgreen-color"><?=$v->translation->content->name?></h5>
             <span class="green-color"><?=$v->translation->content->title?></span>
 
-            <p class="p-sm grey-color"><?=getSnippet($v->translation->content->experience,20)?>
+            <p class="p-sm grey-color"><?=getSnippet(strip_tags($v->translation->content->experience),20)?>
             </p>
 
           </div>
