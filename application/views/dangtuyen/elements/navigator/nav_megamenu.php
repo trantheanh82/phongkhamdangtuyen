@@ -37,7 +37,7 @@
             ?>
             <!-- Text -->
             <h5 class="h5-xs">
-              <?=anchor(base_url().'tin-tuc/'.$children['feature_post']->parent_category->slug->slug,$children->feature_post->translation->content->name)?></h5>
+              <?=anchor(base_url().'tin-tuc/'.$children->feature_post->parent_category->slug->slug,$children->feature_post->translation->content->name)?></h5>
             <p class="wsmwnutxt">
               <?=getSnippet(strip_tags($children->feature_post->translation->content->description),20)?>
             </p>
