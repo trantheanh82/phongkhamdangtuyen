@@ -44,17 +44,15 @@
     <!--<li class="nl-simple" aria-haspopup="true"><a href="#">Simple Link</a></li>-->
 
     <!-- HIDDEN NAVIGATION MENU BUTTON -->
-    <li class="nl-simple header-btn" aria-haspopup="true">
-      <?=anchor('/bookingappointments',"<i class=\"flaticon-007-calendar-3\" aria-hidden=\"true\"></i> ".lang('Book an appointment'))?></li>
-
-
+    <!--<li class="nl-simple header-btn" aria-haspopup="true">
+      <?=anchor('/bookingappointments',"<i class=\"flaticon-007-calendar-3\" aria-hidden=\"true\"></i> ".lang('Book an appointment'))?></li>-->
     </ul>
 
   </nav>	<!-- END MAIN MENU -->
 
   <!-- NAVIGATION MENU BUTTON -->
-  <div class="header-button">
+  <!--<div class="header-button">
     <span class="nl-simple header-btn orange-hover">
  <?=anchor('/bookingappointments',"<i class=\"flaticon-007-calendar-3\" aria-hidden=\"true\"></i> ".lang('Book an appointment'))?>
       </span>
-  </div>
+  </div>-->
