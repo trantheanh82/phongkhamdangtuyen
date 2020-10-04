@@ -4,6 +4,7 @@
         <?php
         $i = 0;
         $parent_link = base_url().(isset($parent_slug)?$parent_slug.'/':"");
+        $number_of_elements =  count((array)$children);
           foreach($children as $v):
 
             $link = $parent_link.$v->slug->slug;
@@ -14,15 +15,13 @@
             echo "<li>".anchor($link,"<i class='flaticon-060-cardiogram-4 green-color'></i> ".$v->translation->content->name)."</li>";
 
             $i++;
-            if($i==4){
+            if($i>=($number_of_elements/2)){
               echo "</ul>";
               $i=0;
             }
 
           endforeach;
         ?>
-
-
       </div>
     </div>
 </div>
