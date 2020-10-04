@@ -281,7 +281,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: #222;
   font-family: 'Lato', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: -0.25px;
 }
 
@@ -736,7 +736,7 @@ ul.content-list li:last-child {
 span.section-id {
   font-size: 0.825rem;
   font-family: 'Lato', sans-serif;
-  font-weight: 900;
+  font-weight: 600;
   text-transform: uppercase;
   display: block;
   letter-spacing: 0.5px;
@@ -816,9 +816,9 @@ span.id-color {
 .txt-400 { font-weight: 400; }
 .txt-500 { font-weight: 500; }
 .txt-600 { font-weight: 600; }
-.txt-700 { font-weight: 700; }
+.txt-700 { font-weight: 600; }
 .txt-800 { font-weight: 800; }
-.txt-900 { font-weight: 900; }
+.txt-900 { font-weight: 600; }
 
 .txt-upper { text-transform: uppercase; }
 
@@ -1280,7 +1280,7 @@ span.id-color {
 p.header-widget-phone {
   font-size: 17px;
   font-family: 'Lato', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   margin-top: 3px;
   margin-bottom: 0;
 }
@@ -1605,7 +1605,7 @@ p.header-widget-phone {
 
 #hero-1 h2 {
   font-size: 4.5rem;
-  font-weight: 900;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0;
   margin-bottom: 25px;
@@ -1619,7 +1619,7 @@ p.header-widget-phone {
 #hero-9 h5,
 #hero-12 h5 {
   font-size: 0.85rem;
-  font-weight: 900;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 25px;
@@ -1651,7 +1651,7 @@ p.header-widget-phone {
 
 #hero-3 h2 {
   font-size: 5.15rem;
-  font-weight: 900;
+  font-weight: 600;
   line-height: 1.1;
   letter-spacing: -2px;
   margin-bottom: 25px;
@@ -1663,7 +1663,7 @@ p.header-widget-phone {
 
 #hero-4 h2 {
   font-size: 3.65rem;
-  font-weight: 900;
+  font-weight: 600;
   line-height: 1.25;
   text-transform: uppercase;
   letter-spacing: -0.5px;
@@ -1672,7 +1672,7 @@ p.header-widget-phone {
 
 #hero-5 h3 {
   font-size: 2.15rem;
-  font-weight: 900;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-bottom: 20px;
@@ -1694,7 +1694,7 @@ p.header-widget-phone {
 
 #hero-6 h2 {
   font-size: 3.75rem;
-  font-weight: 900;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-bottom: 20px;
@@ -1702,7 +1702,7 @@ p.header-widget-phone {
 
 #hero-6 h5 {
   font-size: 0.95rem;
-  font-weight: 900;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 30px;
@@ -1710,7 +1710,7 @@ p.header-widget-phone {
 
 #hero-7 h2 {
   font-size: 4rem;
-  font-weight: 900;
+  font-weight: 600;
   line-height: 1.15;
   text-transform: uppercase;
   letter-spacing: 0;
@@ -1719,7 +1719,7 @@ p.header-widget-phone {
 
 #hero-8 h2 {
   font-size: 5.25rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.15;
   text-transform: uppercase;
   letter-spacing: 2.5px;
@@ -1738,7 +1738,7 @@ p.header-widget-phone {
 #hero-10 h2 {
   font-size: 3.85rem;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 600;
   line-height: 1.15;
   letter-spacing: 4px;
   margin-bottom: 25px;
@@ -1746,7 +1746,7 @@ p.header-widget-phone {
 
 #hero-11 h2 {
   font-size: 6rem;
-  font-weight: 900;
+  font-weight: 600;
   letter-spacing: -0.5px;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -1776,7 +1776,7 @@ p.header-widget-phone {
 }
 
 #hero-12 h2 span {
-  font-weight: 900;
+  font-weight: 600;
   letter-spacing: -1px;
 }
 
@@ -1943,7 +1943,7 @@ p.header-widget-phone {
   color: #f0f0f0;
   font-size: 17px;
   font-family: 'Lato', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 /*------------------------------------------*/
@@ -2071,7 +2071,7 @@ p.header-widget-phone {
 .abox-4 h5  {
   font-size: 1.05rem;
   line-height: 1;
-  font-weight: 900;
+  font-weight: 600;
   letter-spacing: 0.25px;
   text-transform: uppercase;
   margin-bottom: 15px;
@@ -2385,7 +2385,7 @@ td.text-right {
 .sbox-5 h5 {
   font-size: 1.05rem;
   line-height: 1;
-  font-weight: 900;
+  font-weight: 600;
   text-transform: uppercase;
   margin-top: 25px;
   margin-bottom: 15px;
@@ -2553,7 +2553,7 @@ td.text-right {
   font-size: 16px;
   padding: 18px 0;
   font-family: 'Lato', sans-serif;
-  font-weight: 900;
+  font-weight: 600;
   text-transform: uppercase;
   border-top: none;
   border-bottom: 1px dashed rgba(255, 255, 255, .6);
@@ -2609,7 +2609,7 @@ td.text-right {
 .s1-page h4.h4-lg span {
   font-size: 2.25rem;
   line-height: 1;
-  font-weight: 900;
+  font-weight: 600;
   position: relative;
   top: 4px;
   left: 5px;
@@ -2730,7 +2730,7 @@ td.text-right {
   font-size: 16px;
   padding: 18px 0;
   font-family: 'Lato', sans-serif;
-  font-weight: 900;
+  font-weight: 600;
   text-transform: uppercase;
   border-top: none;
   border-bottom: 1px dashed rgba(255, 255, 255, .6);
@@ -2762,7 +2762,7 @@ td.text-right {
   font-size: 16px;
   padding: 18px 0;
   font-family: 'Lato', sans-serif;
-  font-weight: 900;
+  font-weight: 600;
   text-transform: uppercase;
   border-top: none;
   border-bottom: 1px dashed rgba(255, 255, 255, .6);
@@ -2986,7 +2986,7 @@ td.text-right {
   color: #888;
   font-size: 1rem;
   font-family: 'Lato', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: -0;
   margin: 0 30px;
   padding: 0.5rem 0.1rem;
@@ -3244,7 +3244,7 @@ td.text-right {
 .statistic-block h5 {
   font-size: 2.85rem;
   line-height: 1;
-  font-weight: 900;
+  font-weight: 600;
   letter-spacing: 0.5px;
   margin-top: 20px;
   margin-bottom: 15px;
@@ -3253,7 +3253,7 @@ td.text-right {
 #statistic-2 .statistic-block h5 {
   font-size: 2.35rem;
   line-height: 1;
-  font-weight: 900;
+  font-weight: 600;
   letter-spacing: 0.5px;
   margin-top: 25px;
   margin-bottom: 10px;
@@ -3262,7 +3262,7 @@ td.text-right {
 .statistic-holder .statistic-block h5 {
   font-size: 2rem;
   line-height: 1;
-  font-weight: 900;
+  font-weight: 600;
   letter-spacing: 0.5px;
   margin-top: 22px;
   margin-bottom: 10px;
@@ -3647,7 +3647,7 @@ td.text-right {
 }
 
 .pricing-table td span {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 /*------------------------------------------*/
@@ -3663,14 +3663,14 @@ td.text-right {
   font-size: 70px;
   font-family: 'Lato', sans-serif;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: -0.5px;
 }
 
 .pricing-table sup {
   font-size: 45px;
   font-family: 'Lato', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   top: -7px;
   right: 2px;
 }
@@ -3723,7 +3723,7 @@ td.text-right {
 }
 
 .all-pricing-btn p span {
-  font-weight: 700;
+  font-weight: 600;
   margin-right: 5px;
 }
 
@@ -3867,7 +3867,7 @@ td.text-right {
 #reviews-2 .review-author h5 {
   font-size: 0.775rem;
   line-height: 1;
-  font-weight: 900;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 5px;
   padding-top: 10px;
@@ -3885,7 +3885,7 @@ td.text-right {
   color: #959595;
   font-size: 0.7rem;
   line-height: 1;
-  font-weight: 900;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
@@ -4035,7 +4035,7 @@ td.text-right {
 }
 
 #banner-8 h2 {
-  font-weight: 900;
+  font-weight: 600;
   letter-spacing: 1.5px;
   margin-bottom: 0;
 }
@@ -4043,7 +4043,7 @@ td.text-right {
 /* Banner Phone Number */
 #banner-3 .banner-txt h3.h3-md,
 #banner-4 .banner-txt h3.h3-xl {
-  font-weight: 900;
+  font-weight: 600;
   letter-spacing: 0.5px;
   margin-top: 20px;
   margin-bottom: 25px;
@@ -4066,7 +4066,7 @@ td.text-right {
 #banner-1 .banner-details h5 {
   font-size: 2.5rem;
   line-height: 2rem!important;
-  font-weight: 900;
+  font-weight: 600;
   letter-spacing: -1px;
   margin-top: 20px;
   margin-bottom: 0;
@@ -4456,7 +4456,7 @@ a.share-ico.ico-pinterest { background-color: #cb2027; color: #fff; }
   color: #333;
   font-size: 15px;
   line-height: 15px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 10px;
   padding-left: 5px;
   display: block;
@@ -4526,7 +4526,7 @@ a.share-ico.ico-pinterest { background-color: #cb2027; color: #fff; }
   color: #666;
   font-size: 17px;
   font-family: 'Lato', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 
@@ -4546,7 +4546,7 @@ a.share-ico.ico-pinterest { background-color: #cb2027; color: #fff; }
 
 .contact-box h5 {
   line-height: 1;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 15px;
 }
 
@@ -4695,7 +4695,7 @@ p.contact-notice {
   color: #666;
   font-size: 17px;
   font-family: 'Lato', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 
@@ -4756,7 +4756,7 @@ p.contact-notice {
 }
 
 .footer-box h5.h5-xl {
-  font-weight: 900;
+  font-weight: 600;
   letter-spacing: 0.5px;
   margin-bottom: 0;
 }
@@ -4777,7 +4777,7 @@ p.footer-copyright {
 }
 
 p.footer-copyright span {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .footer.bg-image h5.h5-xs,
@@ -5265,7 +5265,7 @@ ul.blog-category-list li:hover {
 .txt-widget-data p {
   font-size: 1.25rem;
   line-height: 1;
-  font-weight: 900;
+  font-weight: 600;
   margin-top: 4px;
   margin-bottom: 0;
 }
@@ -5301,7 +5301,7 @@ ul.blog-category-list li:hover {
 
 .breadcrumb-holder h4 {
   line-height: 1;
-  font-weight: 900;
+  font-weight: 600;
   letter-spacing: 0;
   margin-top: 10px;
   margin-bottom: 0;
@@ -5512,7 +5512,7 @@ ul.blog-category-list li:hover {
   color: #666;
   font-size: 17px;
   font-family: 'Lato', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 
@@ -5537,7 +5537,7 @@ ul.blog-category-list li:hover {
 
 .cd-schedule .timeline span {
   font-family: 'Lato', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 
@@ -5570,7 +5570,7 @@ ul.blog-category-list li:hover {
 #faqs-page #accordion [data-toggle="collapse"].collapsed:after,
 #faqs-page #accordion [data-toggle="collapse"]:after {
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+  font-weight: 600;
   content: "\f068";
   position: absolute;
   font-size: 13px;
@@ -5649,7 +5649,7 @@ ul.blog-category-list li:hover {
 #terms-page p.p-notice {
   font-size: 0.915rem;
   font-family: 'Lato', sans-serif;
-  font-weight: 900;
+  font-weight: 600;
   letter-spacing: 0.5px;
 }
 
@@ -5664,13 +5664,13 @@ ul.blog-category-list li:hover {
 .terms-box p span {
   font-size: 1.1rem;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 600;
   margin-right: 5px;
 }
 
 .terms-box p a {
   color: #5496ff;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: underline;
 }
 
@@ -5814,7 +5814,7 @@ nav a#pull {
   color: #444;
   font-size: 15px;
   font-family: 'Lato', sans-serif;
-  font-weight: 900;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-bottom: 20px;
@@ -5859,4 +5859,9 @@ nav a#pull {
 
 .s_1 img:hover {
   opacity: 0.8;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
 }
