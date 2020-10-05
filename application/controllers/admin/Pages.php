@@ -16,6 +16,8 @@ class Pages extends Admin_Controller {
 		$this->load->model('page_model');
 		$this->data['page_name'] = 'Pages';
 		$this->model = 'page';
+		
+		$this->data['before_head'] .= $this->data['before_head'] .= parent::insert_assets(array('style.css'),$this->template,'css',false);
 
 	}
 

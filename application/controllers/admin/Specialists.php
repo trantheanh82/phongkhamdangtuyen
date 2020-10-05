@@ -47,7 +47,11 @@ class Specialists extends Admin_Controller {
   }
 
   function delete($id){
+    if($this->specialist_model->delete($id)){
+      $this->session->set_flashdata('message','a Specialist has been deleted.');
 
+      redirect('admin/specialists/','refresh');
+    }
   }
 
   function submit(){

@@ -30,7 +30,7 @@ $lang['Your Message']                 = "Lời nhắn";
 $lang['Booking']                 = "Đặt lịch";
 
 /*Look up Patient*/
-$lang['Look up patient'] = "Tra cứu bệnh án" ;
+$lang['Look up patient'] = "Tra cứu kết quả" ;
 $lang['Patient Code'] = "Mã số bệnh án" ;
 $lang['Your Birthday Year'] = "Năm sinh" ;
 $lang['Date'] = "Ngày khám bệnh" ;

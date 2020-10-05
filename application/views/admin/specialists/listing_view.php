@@ -40,7 +40,7 @@
 
 						<td class='text-center'><?=$v->active?></td>
 						<td class='text-center'><?=$v->sort?></td>
-						<td class='text-center'><?=anchor($edit_link,'<i class="fa fa-edit"></i>',array('title'=>__('Edit',$this))).' '.anchor('admin/doctors/delete/'.$v->id,'<i class="fa fa-trash"></i>',array('title'=>__('Delete',$this),'class'=>'confirm_delete'))?></td>
+						<td class='text-center'><?=anchor($edit_link,'<i class="fa fa-edit"></i>',array('title'=>__('Edit',$this))).' '.anchor('admin/specialists/delete/'.$v->id,'<i class="fa fa-trash"></i>',array('title'=>__('Delete',$this),'class'=>'confirm_delete'))?></td>
 					</tr>
 				<?php
 						endforeach;

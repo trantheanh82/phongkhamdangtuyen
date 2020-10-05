@@ -64,7 +64,7 @@ class Specialist_model extends MY_Model
 	                            ->where(array('active'=>'Y'))
 															//->set_cache($language.'_get_home_items')
 															->order_by('sort','ASC')
-															->limit(8)
+															->limit(10)
 	                            ->get_all();
 
 		}
@@ -132,6 +132,20 @@ class Specialist_model extends MY_Model
 						->order_by('sort','ASC')
 						->get_all();
 
+		}
+		
+		public function delete($id=null){
+			$this->load->model('translation_model');
+			$this->load->model('slug_model');
+			$this->load->model('doctor_specialist_model');
+			
+			$this->translation_model->delete(array('model_id'=>$id,'model'=>'specialist'));
+			$this->slug_model->delete(array('model_id'=>$id,'model'=>'specialist'));
+			$this->doctor_specialist_model->delete(array('specialist_id'=>$id));
+			
+			if(parent::delete($id)>0){
+				return true;
+			}
 		}
 
 }

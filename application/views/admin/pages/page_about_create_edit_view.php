@@ -49,29 +49,24 @@
 
             <div class='form-group'>
 							<label for="inputEmail3" class="control-label"><?=lang("Slug")?></label>
-							<div class="">
                <!-- <input type="input" name='slug' class="form-control slug" id="slug" placeholder="<?=lang("Slug")?>">-->
                 <?=form_input('relation[slug]['.$lang['slug'].'][slug]',value(isset($item->slug[$lang['slug']]->slug)?$item->slug[$lang['slug']]->slug:""),array('class'=>'form-control '.$lang['slug'].'_slug','id'=>'slug','placeholder'=>lang("Slug")))?>
-	            </div>
+	            
 						</div>
 
 						<div class='form-group'>
 							<label for="inputEmail3" class="control-label"><?=lang("Description")?></label>
-							<div class="">
+							<div class="inline-content-editor">
 								<?php echo form_textarea('relation[translation]['.$lang['slug'].'][content][description]',value(isset($item->content[$lang['slug']]->description)?$item->content[$lang['slug']]->description:""),array('class'=>'form-control basic-editor','id'=>$lang['slug'].'_description','contenteditable'=>true));?>
-				            </div>
+				      </div>
 						</div>
 
             <div class='form-group'>
 	            <label for="inputEmail3" class="control-label"><?=lang("Content")?></label>
-							<?php echo form_textarea('relation[translation]['.$lang['slug'].'][content][content]',value(isset($item->content[$lang['slug']]->content)?$item->content[$lang['slug']]->content:""),array('class'=>'form-control article-editor','id'=>$lang['slug'].'_article','contenteditable'=>true,'style'=>'width:100%;border:1px solid #333'));?>
-            </div>
-
-
-						<div class='form-group'>
-	            <label for="inputEmail3" class="control-label"><?=lang("Our Mission")?></label>
-							<?php echo form_textarea('relation[translation]['.$lang['slug'].'][content][mission]',value(isset($item->content[$lang['slug']]->mission)?$item->content[$lang['slug']]->mission:""),array('class'=>'form-control article-editor','id'=>$lang['slug'].'_mission','contenteditable'=>true,'style'=>'width:100%;border:1px solid #333'));?>
-            </div>
+							<div class='inline-content-editor'>
+								<?php echo form_textarea('relation[translation]['.$lang['slug'].'][content][content]',value(isset($item->content[$lang['slug']]->content)?$item->content[$lang['slug']]->content:""),array('class'=>'form-control article-editor','id'=>$lang['slug'].'_article','contenteditable'=>true,'style'=>'width:100%;border:1px solid #333'));?>
+							</div>
+						</div>
 
             <!-- Meta tags -->
             <div class="">

@@ -34,7 +34,7 @@
 						<td class='text-center'><?=$v->id?></td>
 						<td class='text-center'><a href="<?=base_url()?>admin/pages/edit/<?=$v->id?>"><?=$img?></a>
 						<td><a href="<?=base_url()?>admin/pages/edit/<?=$v->id?>"><?=(!empty($v->translation->content->name)?$v->translation->content->name:"")?></a></td>
-						<td><?=getSnippet($v->translation->content->description,10)?> [<a href="<?=base_url()?>admin/pages/edit/<?=$v->id?>">...</a>]</td>
+						<td><?=getSnippet(strip_tags($v->translation->content->description),10)?> [<a href="<?=base_url()?>admin/pages/edit/<?=$v->id?>">...</a>]</td>
 						<td class='text-center'><?=$v->created_at?></td>
 						<td class='text-center'><?=$v->updated_at?></td>
 						<td class='text-center'><?=$v->sort?></td>

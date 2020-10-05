@@ -42,6 +42,8 @@ CKEDITOR.editorConfig = function( config ) {
 	config.filebrowserUploadUrl = '/filemanager/dialog.php?type=1&akey=abc&editor=ckeditor&fldr=';
 	config.filebrowserImageBrowseUrl = '/filemanager/dialog.php?type=1&akey=abc&editor=ckeditor&fldr=';
 
+  
+    config.extraPlugins = 'colorbutton,colordialog,stylesheetparser,sourcedialog';
 	//config styleset
 	//config.stylesSet = 'my_styles';
 	config.allowedContent = true;
@@ -50,11 +52,11 @@ CKEDITOR.editorConfig = function( config ) {
   config.stylesheetParser_skipSelectors = /(^body\.|^caption\.|\.high|^\.)/i;
 
   config.stylesheetParser_validSelectors = /\^(div|p|span|h1|h2|h3|h4|h5|h6|)\.\w+|^(\.w+\-\w+)/;
-
-  config.contentsCss = ["/assets/dangtuyen/css/style.css"];
+  
   config.stylesSet = [];
+  config.contentsCss = ["/assets/dangtuyen/css/editor_style.css"];
+  
 
-  config.extraPlugins = 'colorbutton,colordialog,stylesheetparser';
 
   config.image_alignClasses = [ 'align-left', 'align-center', 'align-right' ];
   config['placeholder'] = "Enter Content Here";
