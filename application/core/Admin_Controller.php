@@ -159,6 +159,9 @@ class Admin_Controller extends MY_Controller{
 		/*Notify Contact*/
 		$this->load->model('contact_model');
 		$this->data['notification_contact'] = $this->contact_model->where(array('view'=>'N'))->count_rows();
+		
+		$this->load->model('booking_model');
+		$this->data['notification_booking'] = $this->booking_model->where(array('view'=>'N'))->count_rows();
 
 	}
 

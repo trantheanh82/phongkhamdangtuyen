@@ -78,6 +78,7 @@ $lang['Press']				=	"Góc báo chí";
 $lang['We have']      = "Có";
 $lang['request call'] = "yêu cầu gọi lại";
 $lang['new contact']  = "liên hệ mới";
+$lang['new booking']  = "đặt lịch hẹn mới";
 
 /**/
 $lang['Active']     =   "Kích hoạt";

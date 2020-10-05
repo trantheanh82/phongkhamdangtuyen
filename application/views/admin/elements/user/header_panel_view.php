@@ -1,7 +1,7 @@
 <!-- Messages: style can be found in dropdown.less-->
 <?php
 //notification request call
-if(isset($notification_request_call) || isset($notification_contact)):
+if(isset($notification_request_call) || isset($notification_contact) || isset($notification_booking)):
 ?>
 <li>
 
@@ -10,9 +10,10 @@ if(isset($notification_request_call) || isset($notification_contact)):
 <li class="dropdown messages-menu">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
     <i class="fa fa-envelope-o"></i>
-    <span class="label<?=$notification_request_call>0 || $notification_contact>0?" label-success":""?>"><?=$notification_request_call+$notification_contact?></span>
+    <span class="label<?=$notification_request_call>0 || $notification_contact>0 || $notification_booking>0?" label-success":""?>"><?=$notification_request_call+$notification_contact+$notification_booking?></span>
   </a>
   <ul class="dropdown-menu">
+    <li class="header"><a href="/admin/booking"><i class='fa fa-calendar'></i><?=lang("We have")." ".$notification_booking." ".lang("new booking")?></a></li>
     <li class="header"><a href="/admin/requestcalls"><i class='fa fa-phone'></i> <?=lang("We have")." ".$notification_request_call." ".lang("request call")?></a></li>
     <li class="header"><a href="/admin/contacts"><i class='fa fa-address-card'></i><?=lang("We have")." ".$notification_contact." ".lang("new contact")?></a></li>
     <!--<li>
@@ -88,8 +89,6 @@ if(isset($notification_request_call) || isset($notification_contact)):
 endif; //notification request call
 ?>
           <!-- Tasks: style can be found in dropdown.less -->
-
-
           <li class="dropdown tasks-menu hide">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-flag-o"></i>

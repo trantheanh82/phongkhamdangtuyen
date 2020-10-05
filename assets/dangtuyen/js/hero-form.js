@@ -1,4 +1,5 @@
 // JavaScript Document
+var base_url = 'http://localhost:8010/';
 $(document).ready(function() {
 
     "use strict";
@@ -6,10 +7,7 @@ $(document).ready(function() {
     $(".hero-form").submit(function(e) {
         e.preventDefault();        
         var name = $(".name");
-        var email = $(".email");
         var phone = $(".phone");
-        var date = $(".date");
-        var doctor = $(".doctor");
         var flag = false;
         if (name.val() == "") {
             name.closest(".form-control").addClass("error");
@@ -18,49 +16,27 @@ $(document).ready(function() {
             return false;
         } else {
             name.closest(".form-control").removeClass("error").addClass("success");
-        } if (email.val() == "") {
-            email.closest(".form-control").addClass("error");
-            email.focus();
-            flag = false;
-            return false;
-        } else {
-            email.closest(".form-control").removeClass("error").addClass("success");
-        } if (phone.val() == "") {
+        } 
+        if (phone.val() == "") {
             phone.closest(".form-control").addClass("error");
             phone.focus();
             flag = false;
             return false;
-        } else {
-            phone.closest(".form-control").removeClass("error").addClass("success");
-        } if (date.val() == "") {
-            date.closest(".form-control").addClass("error");
-            date.focus();
-            flag = false;
-            return false;
-        } else {
-            date.closest(".form-control").removeClass("error").addClass("success");
-        } if (doctor.val() == "") {
-            doctor.closest(".form-control").addClass("error");
-            doctor.focus();
-            flag = false;
-            return false;
-        } else {
-            doctor.closest(".form-control").removeClass("error").addClass("success");
-            flag = true;
-        }
-        var dataString = "name=" + name.val() + "&email=" + email.val() + "&phone=" + phone.val() + "&date=" + date.val() + "&doctor=" + doctor.val();
+        } 
+        var dataString = "name=" + name.val() +  "&phone=" + phone.val();
         $(".loading").fadeIn("slow").html("Loading...");
         $.ajax({
             type: "POST",
             data: dataString,
-            url: "php/heroForm.php",
+            url: base_url + "vi/bookingappointments/booking",
             cache: false,
             success: function (d) {
                 $(".form-control").removeClass("success");
+                console.log(d);
                     if(d == 'success') // Message Sent? Show the 'Thank You' message and hide the form
-                        $('.loading').fadeIn('slow').html('<font color="#00596e">Mail sent Successfully.</font>').delay(3000).fadeOut('slow');
+                        $('.loading').fadeIn('slow').html('<font color="#fff">Thông tin đã được Đặng Tuyền tiếp nhận.</font>').delay(5000).fadeOut('slow');
                          else
-                        $('.loading').fadeIn('slow').html('<font color="#ff5607">Mail not sent.</font>').delay(3000).fadeOut('slow');
+                        $('.loading').fadeIn('slow').html('<font color="#f00">Mail not sent.</font>').delay(3000).fadeOut('slow');
                                 }
         });
         return false;

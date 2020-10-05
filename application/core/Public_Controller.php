@@ -107,6 +107,21 @@ class Public_Controller extends MY_Controller{
 		return $public_menu;
 
 	}
+	
+	/**
+	 * [getEmailConfig description]
+	 * @return [type] [description]
+	 */
+	function getEmailConfig(){
+		$config['smtp_host'] = $this->data['Settings']['smtp_host'];
+		$config['smtp_user'] = $this->data['Settings']['smtp_user'];
+		$config['smtp_pass'] = $this->data['Settings']['smtp_password'];
+		$config['protocol'] = 'smtp';
+		$config['smtp_port'] = '587';
+		$config['mailtype'] = "html";
+		
+		return $config;
+	}
 
 	/**
 	*
