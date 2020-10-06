@@ -49,7 +49,12 @@
                     
                     if(!empty($Settings['company_email']))
                     echo "<p>Email: <a href=\"mailto:".$Settings['company_email']."\" class=\"orange-color\">".$Settings['company_email']."</a></p>";
-                    ?>
+										
+										if(!empty($Settings['fb_fanpage'])){
+											echo "<p>Email: <a href=\"".$Settings['fb_fanpage']."\" class=\"orange-color\">".$Settings['fb_fanpage']."</a></p>";
+
+										}
+										?>
 								
 		 					</div>
 

@@ -1,3 +1,5 @@
+<?=$this->load->view($template.'/modules/banners/m_banner_8')?>
+
 <!-- FOOTER-3
 			============================================= -->
 			<footer id="footer-3" class="wide-40 footer division">
