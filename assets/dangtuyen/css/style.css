@@ -757,7 +757,7 @@ span.id-color {
 
 .section-title {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .section-title h3.h3-md {
@@ -4837,11 +4837,11 @@ p.footer-copyright span {
 
 .foo-socials a {
   display: block;
-  background-color: transparent;
-  border: 2px solid #666;
+  background-color: #1877f2;
+  border: 2px solid #1877f2;
   width: 36px;
   height: 36px;
-  color: #666;
+  color: #fff;
   font-size: 16px;
   line-height: 34px!important;
   margin-right: 4px;
@@ -5707,7 +5707,7 @@ ul.terms-list li:last-child {
   width: 45px;
   height: 45px;
   position: fixed;
-  bottom: 20px;
+  bottom: 100px;
   right: 30px;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;

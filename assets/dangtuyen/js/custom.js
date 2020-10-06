@@ -96,7 +96,7 @@
 			// Active point overlay
 			if (o.activeOverlay) {
 				$("body").append("<div id='"+ o.scrollName +"-active'></div>");
-				$(scrollId+"-active").css({ 'position': 'absolute', 'top': o.topDistance+'px', 'width': '100%', 'border-top': '1px dotted '+o.activeOverlay, 'z-index': '2147483647' });
+				$(scrollId+"-active").css({ 'position': 'absolute', 'top': o.topDistance+'px', 'width': '100%', 'border-top': '1px dotted '+o.activeOverlay, 'z-index': '999' });
 			}
 
 			// Scroll function
