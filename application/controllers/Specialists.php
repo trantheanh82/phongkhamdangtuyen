@@ -44,9 +44,12 @@ class Specialists extends Public_Controller {
     $this->data['page'] = $this->page;
     $this->data['subpage_name'] = $this->data['specialist']->translation->content->name;
     $this->data['doctors'] = $this->doctor_model->get_items($this->current_lang);
-
+    
+    /*Side Bar*/
     $this->data['other_specialists'] = $this->specialist_model->get_other($this->data['specialist']->id,$this->current_lang);
     $this->data['services'] = $this->service_model->get_items($this->current_lang);
+    $this->data['lastest_posts']  = $this->article_model->get_lastest_article($this->current_lang,5);
+
 
     /*SEO*/
     $this->data['page_title'] = $this->data['specialist']->translation->content->meta_title;

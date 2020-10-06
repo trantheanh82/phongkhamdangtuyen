@@ -6,7 +6,7 @@
 
 	<ul class="blog-category-list clearfix">
     <?php
-        $parent_link = base_url().$page->slug->slug.'/';
+        $parent_link = base_url().'chuyen-khoa/';
         foreach($other_specialists as $k=>$v):
           $link = $parent_link.$v->slug->slug;
     ?>

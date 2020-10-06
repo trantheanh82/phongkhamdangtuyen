@@ -55,6 +55,15 @@ class Services extends Public_Controller {
 			$this->breadcrumbs->push($this->data['item']->translation->content->name,"/");
 			$this->data['page_name'] = $this->data['item']->translation->content->name;
 			
+			$this->data['other_services'] = $this->service_model->get_items($this->current_lang);
+			$this->data['specialists'] = $this->specialist_model->get_all_items($this->current_lang);
+			$this->data['lastest_posts']  = $this->article_model->get_lastest_article($this->current_lang,5);
+
+			foreach($this->data['other_services'] as $k=>$v){
+				if($v->id == $this->data['item']->id)
+					unset($this->data['other_services']->$k);
+			}
+
 			/*SEO*/
       $this->data['page_title'] = $this->data['item']->translation->content->meta_title;
       $this->data['meta_description'] = $this->data['item']->translation->content->meta_description;

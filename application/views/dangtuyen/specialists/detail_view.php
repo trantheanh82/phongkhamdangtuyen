@@ -31,8 +31,9 @@
 							<?=$this->load->view($template.'/modules/specialists/m_other_specialists',array('other_specialists'=>$other_specialists))?>
 							
 							<?=$this->load->view($template.'/modules/services/m_services',array('services'=>$services))?>
-
-
+							
+							<?=$this->load->view($template.'/modules/articles/m_lastest_posts',array('lastest_posts'=>$lastest_posts));?>
+							
 							<!-- IMAGE WIDGET -->
 							<div id="image-widget" class="sidebar-div">
 								<a href="#">

@@ -6,3 +6,5 @@ $lang['Related Services'] = 'Dịch vụ khác';
 $lang['Service name']	=	"Tên Dịch Vụ";
 $lang['Description']	=	"Mô tả";
 $lang['Content']			=	"Nội dung";
+
+$lang['Other Specialists'] = "Chuyên khoa";
