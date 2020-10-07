@@ -5871,7 +5871,6 @@ nav a#pull {
   margin-top:0.8rem;
   }
 #tabs-1 .service-title{
-  background-color:#ececec;
   padding:20px 0px 10px;
   text-align:center;
 }
@@ -5882,7 +5881,7 @@ nav a#pull {
 }
 
 #tabs-1 .service-title:hover{
-  background:#20a258;
+  background:#28b464;
   color:#fff;
 }
 
@@ -5895,4 +5894,10 @@ nav a#pull {
   -webkit-box-shadow: -2px 2px 23px -2px rgba(255,255,255,0.64);
 -moz-box-shadow: -2px 2px 23px -2px rgba(255,255,255,0.64);
 box-shadow: -2px 2px 23px -2px rgba(255,255,255,0.64);
+}
+
+.box-shadow-dark{
+  -webkit-box-shadow: -1px 1px 11px -2px rgba(196,196,196,1);
+-moz-box-shadow: -1px 1px 11px -2px rgba(196,196,196,1);
+box-shadow: -1px 1px 11px -2px rgba(196,196,196,1);
 }

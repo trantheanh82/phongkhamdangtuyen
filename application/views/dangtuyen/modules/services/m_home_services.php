@@ -1,7 +1,7 @@
 <!-- SERVICES
 ============================================= -->
 <?php if(!empty($items)):?>
-<section id="tabs-1" class="wide-100 tabs-section division" style="background:#f5f5f5;">
+<section id="tabs-1" class="wide-100 tabs-section division">
   <div class="container">
     <?php if(isset($content)):?>
     <!-- SECTION TITLE -->
@@ -21,8 +21,8 @@
       foreach($items as $k=>$v):
         $link = base_url()."dich-vu/".$v->slug->slug;
     ?>
-      <div class='col-lg-6 col-md-6 mb-2 <?=($i%2==0)?'pl-4':'pr-4'?>'>
-        <div class='sbox mb-5'>
+      <div class='col-lg-6 col-md-6 mb-2 <?=($i%2==0)?'pl-lg-4':'pr-lg-4'?>'>
+        <div class='sbox mb-5 box-shadow-dark'>
 
         <?php if(!empty($v->image))
               echo '<div class="tab-img">'.img($v->image,'',array('class'=>'img-fluid','alt'=>$v->translation->content->name)).'</div>';
