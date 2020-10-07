@@ -42,16 +42,17 @@ CKEDITOR.editorConfig = function( config ) {
 	config.filebrowserUploadUrl = '/filemanager/dialog.php?type=1&akey=abc&editor=ckeditor&fldr=';
 	config.filebrowserImageBrowseUrl = '/filemanager/dialog.php?type=1&akey=abc&editor=ckeditor&fldr=';
 
-  
+  config.protectedSource.push(/<i[^>]*><\/i>/g);
+
     config.extraPlugins = 'colorbutton,colordialog,stylesheetparser,sourcedialog';
 	//config styleset
 	//config.stylesSet = 'my_styles';
 	config.allowedContent = true;
-	config.extraAllowedContent = 'div(*) span(*)';
+	config.extraAllowedContent = 'div(*),span(*),p(*),i(*)';
 
   config.stylesheetParser_skipSelectors = /(^body\.|^caption\.|\.high|^\.)/i;
 
-  config.stylesheetParser_validSelectors = /\^(div|p|span|h1|h2|h3|h4|h5|h6|)\.\w+|^(\.w+\-\w+)/;
+  config.stylesheetParser_validSelectors = /\^(div|p|span|h1|h2|h3|h4|h5|h6|i)\.\w+|^(\.w+\-\w+)/;
   
   config.stylesSet = [];
   config.contentsCss = ["/assets/dangtuyen/css/editor_style.css"];
