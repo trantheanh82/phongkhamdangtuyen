@@ -8,3 +8,5 @@ $lang['Responsibility'] = "Trách nhiệm";
 
 $lang['View more detail']   = "Tìm hiểu thêm";
 
+$lang['Other Specialists'] = "Khám chữa bệnh";
+

@@ -93,6 +93,9 @@ $lang['View more info']     = "Tìm hiểu thêm";
 /*Doctors*/
 $lang['Our Doctors']        = "Đội ngũ bác sĩ";
 
+/**/
+$lang['Recruitment']      = "Tuyển dụng";
+
 /*Statistics*/
 $lang['Happy Patients'] = "Bệnh nhân tin tưởng";
 $lang['Qualified Doctors']     = "Bác sĩ tận tâm";
