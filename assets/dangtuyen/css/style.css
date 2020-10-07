@@ -280,8 +280,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #222;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
   letter-spacing: -0.25px;
 }
 
@@ -5865,6 +5865,29 @@ nav a#pull {
     max-width: 100%;
     height: auto;
 }
+
+/*Service*/
+#tabs-1 .sbox{
+  margin-top:0.8rem;
+  }
+#tabs-1 .service-title{
+  background-color:#f1f1f1;
+  padding:20px 0px 10px;
+  text-align:center;
+}
+
+#tabs-1 .service-title h4 a{
+  color:#00923f;
+}
+
+#tabs-1 .service-title:hover{
+  background:#00923f;
+  color:#fff;
+}
+#tabs-1 .service-title:hover h4 a{
+  color:#fff;
+}
+/**/
 
 .box-shadow{
   -webkit-box-shadow: -2px 2px 23px -2px rgba(255,255,255,0.64);
