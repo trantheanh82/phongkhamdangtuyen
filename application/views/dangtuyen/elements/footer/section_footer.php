@@ -81,7 +81,7 @@
 								<!-- Footer Links -->
 								<ul class="foo-links clearfix">
 									<li><a href="<?=base_url()?>/gioi-thieu/gioi-thieu"><?=lang('About us')?></a></li>
-									<li><a href="<?=base_url()?>/gioi-thieu/tuyen-dung"><?=lang('Rescruitment')?></a></li>
+									<li><a href="<?=base_url()?>/gioi-thieu/tuyen-dung"><?=lang('Recruitment')?></a></li>
 									<li><a href="<?=base_url()?>/gioi-thieu/bac-si"><?=lang('Our Doctors')?></a></li>
 								</ul>
 
