@@ -1,7 +1,7 @@
 <!-- SERVICES
 ============================================= -->
 <?php if(!empty($items)):?>
-<section id="tabs-1" class="wide-100 tabs-section division">
+<section id="tabs-1" class="wide-100 tabs-section division" style="background:#f5f5f5;">
   <div class="container">
     <?php if(isset($content)):?>
     <!-- SECTION TITLE -->

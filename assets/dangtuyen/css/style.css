@@ -49,7 +49,7 @@ body {
 /*  SPACING & INDENTS
 /*------------------------------------------*/
 
-.wide-100 { padding-top: 100px; padding-bottom: 100px; }
+.wide-100 { padding-top: 50px; padding-bottom: 50px; }
 .wide-90 { padding-top: 100px; padding-bottom: 90px; }
 .wide-80 { padding-top: 50px; padding-bottom: 80px; }
 .wide-70 { padding-top: 100px; padding-bottom: 70px; }
@@ -5871,19 +5871,21 @@ nav a#pull {
   margin-top:0.8rem;
   }
 #tabs-1 .service-title{
-  background-color:#f1f1f1;
+  background-color:#ececec;
   padding:20px 0px 10px;
   text-align:center;
 }
 
 #tabs-1 .service-title h4 a{
-  color:#00923f;
+  color:#00612a;
+  font-size: 1.4rem;
 }
 
 #tabs-1 .service-title:hover{
-  background:#00923f;
+  background:#20a258;
   color:#fff;
 }
+
 #tabs-1 .service-title:hover h4 a{
   color:#fff;
 }
