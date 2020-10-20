@@ -206,7 +206,10 @@ class MY_Controller extends MX_Controller {
 
 	public function load_languages($admin=true){
 		$controller_name = $this->router->fetch_class();
-	  $this->lang->load(($admin?"admin/":"").$controller_name.'_lang');
+
+		if(file_exists(($admin?"admin/":"").$controller_name.'_lang.php')){
+	  	$this->lang->load(($admin?"admin/":"").$controller_name.'_lang');
+		}
 	}
 
 	protected function get_client_ip() {

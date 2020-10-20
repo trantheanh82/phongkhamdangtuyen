@@ -53,16 +53,14 @@ CKEDITOR.editorConfig = function( config ) {
   config.stylesheetParser_skipSelectors = /(^body\.|^caption\.|\.high|^\.)/i;
 
   config.stylesheetParser_validSelectors = /\^(div|p|span|h1|h2|h3|h4|h5|h6|i)\.\w+|^(\.w+\-\w+)/;
-  
+
   config.stylesSet = [];
   config.contentsCss = ["/assets/dangtuyen/css/editor_style.css"];
-  
+
 
 
   config.image_alignClasses = [ 'align-left', 'align-center', 'align-right' ];
   config['placeholder'] = "Enter Content Here";
 
-
 	//config.options.fileRoot = '/assets/upload/';
 };
-

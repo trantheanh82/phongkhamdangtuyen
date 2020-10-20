@@ -17,16 +17,23 @@
 										<input type="tel" name="phone" class="form-control phone box-shadow" placeholder="<?=lang("Enter Your Phone Number")?>*" required>
 									</div>
 									<!-- Contact Form Input -->
-								 <!--<div id="input-date" class="col-lg-6">
+								 <div id="input-date" class="col-lg-6">
 									 <input id="datetimepicker" type="text" name="date" class="form-control date box-shadow" placeholder="<?=lang("Appointment Date")?>" required>
 								 </div>
 
-								 <div id="input-message" class="col-lg-6 input-message">
+								 <!--<div id="input-message" class="col-lg-6 input-message">
 									 <input class="form-control message box-shadow" name="message" placeholder="<?=lang('Your Message')?> ..." />
 								 </div>-->
+								 <div id="input-doctor" class="col-md-6 input-doctor">
+						                    <select id="inlineFormCustomSelect2" name="doctor" class="custom-select doctor" required="">
+						                        <option value="">Chọn nơi khám</option>  
+																		<option>Tại phòng khám</option>
+						                      	<option>Khám tại nhà</option>
+						                    </select>
+						                </div>
 
 								 <!-- Contact Form Button -->
-								 <div class="col-lg-6 offset-lg-3 form-btn  text-center">
+								 <div class="col-lg-6 offset-lg-3 form-btn">
 									 <button type="submit" class="btn btn-orange tra-white-hover submit text-uppercase font-weight-bold box-shadow"><?=lang("Booking")?></button>
 								 </div>
 
