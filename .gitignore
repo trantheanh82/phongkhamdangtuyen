@@ -3,3 +3,5 @@
 /application/cache*
 /application/logs/*
 /resources/*
+/application/config/config.php
+/application/config/database.php

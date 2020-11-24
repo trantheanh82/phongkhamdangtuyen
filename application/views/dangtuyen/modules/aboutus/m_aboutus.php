@@ -10,7 +10,7 @@
         <div class="abox-4 mb-40 wow fadeInUp" data-wow-delay="0.4s">
 
           <!-- Image -->
-          <img class="img-fluid" src="<?=base_url().'assets/'.$template?>/images/quality_care_800x600.jpg" alt="about-image" />
+          <img class="img-fluid" src="<?=base_url()?>assets/dangtuyen/images/quality_care_800x600.jpg" alt="about-image" />
 
           <!-- Text -->
           <div class="abox-4-txt">
@@ -33,7 +33,7 @@
         <div class="abox-4 mb-40 wow fadeInUp" data-wow-delay="0.6s">
 
           <!-- Image -->
-          <img class="img-fluid" src="<?=base_url().'assets/'.$template?>/images/emergency_help_800x600.jpg" alt="about-image" />
+          <img class="img-fluid" src="<?=base_url()?>assets/dangtuyen/images/emergency_help_800x600.jpg" alt="about-image" />
 
           <!-- Text -->
           <div class="abox-4-txt">

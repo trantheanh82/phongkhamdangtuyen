@@ -9,7 +9,7 @@
 			    	<span class="smllogo">
               <?=img($Settings['company_logo_2'],'', array('height'=>'44px','alt'=>$Settings['company_name'],'class'=>'img-responsive'))?>
             </span>
-			    	<a href="tel:<?=$Settings['company_phone_1']?>" class="callusbtn"><i class="fas fa-phone"></i></a>
+			    	<a href="return false;" class="searchbtn"><i class="fas fa-search"></i></a>
 			 	</div>
 
 

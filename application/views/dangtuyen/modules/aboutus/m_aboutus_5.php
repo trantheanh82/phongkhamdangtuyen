@@ -1,5 +1,6 @@
 <!-- ABOUT-5
 ============================================= -->
+<?php $template = 'dangtuyen';?>
 <section id="about-5" class="bg-lightgrey pt-100 about-section division">
   <div class="container">
     <div class="row d-flex align-items-center">

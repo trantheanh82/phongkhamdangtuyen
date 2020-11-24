@@ -655,12 +655,9 @@ video {
   border-right: none;
   text-align: left;
   padding: 15px 0px;
-  background: #fff;
   background-image: none;
   border-right: 0 none;
   display: block;
-  background-color: #fff;
-  color: #888;
   font-size: 15px;
   font-weight: 400;
   -webkit-transition: all 400ms ease-in-out;
@@ -876,7 +873,8 @@ video {
     min-height: 100%;
     width: 240px;
     width: 300px;
-    background: #fff;
+    background: #008d35;
+    /*background: #fff;*/
     padding-bottom: 0;
     margin-left: -240px;
     margin-left: -300px;
@@ -898,6 +896,9 @@ video {
     position: relative;
     white-space: inherit;
     clear: right;
+    -webkit-box-shadow: -1px 4px 17px -1px rgba(7,66,9,1);
+    -moz-box-shadow: -1px 4px 17px -1px rgba(7,66,9,1);
+    box-shadow: -1px 4px 17px -1px rgba(7,66,9,1);
   }
 
   @supports (-webkit-overflow-scrolling: touch) {
@@ -906,14 +907,25 @@ video {
     }
   }
 
-  .wsmenu>.wsmenu-list>li>a {
+  .wsmenu >.wsmenu-list > li a {
+    color: #e6fff0;
+}
+
+
+
+.wsmenu>.wsmenu-list>li>.wsmegamenu .link-list li a i{
+  color: #fff;
+}
+
+  .wsmenu > .wsmenu-list > li > a {
     padding: 12px 32px 12px 17px;
     font-size: 15px;
     text-align: left;
     border-right: solid 0px;
     background-color: transparent;
-    color: #666666;
-    line-height: 25px;
+    /*color: #666666;*/
+    color: #e6fff0;
+    line-height: 35px;
     border-bottom: 1px solid;
     border-bottom-color: rgba(0, 0, 0, 0.13);
     position: static;
@@ -942,6 +954,7 @@ video {
   .wsmenu>.wsmenu-list>li:hover>a {
     background-color: rgba(0, 0, 0, 0.08);
     text-decoration: none;
+    color: #fff;
   }
 
   .wsmenu>.wsmenu-list>li>a>.hometext {
@@ -953,7 +966,8 @@ video {
     display: none;
     position: relative;
     top: 0px;
-    background-color: #fff;
+    /*background-color: #fff;*/
+    background: rgb(14, 167, 71);
     border: none;
     padding: 0px;
     opacity: 1;
@@ -971,9 +985,11 @@ video {
 
   .wsmenu>.wsmenu-list>li>ul.sub-menu>li>a {
     line-height: 20px;
-    font-size: 13px;
+    font-size: 1rem; /*13px;*/
     padding: 10px 0px 10px 16px;
-    color: #383838;
+    /*color: #383838;*/
+    color: #daf9e7;
+    border-bottom: 1px solid #01bb47;
   }
 
   .wsmenu>.wsmenu-list>li>ul.sub-menu>li span+a {
@@ -1107,7 +1123,7 @@ video {
 
   /* ================== Mobile Mega Menus CSS  ================== */
   .wsmenu>.wsmenu-list>li>.wsmegamenu {
-    color: #666666;
+    color: #e6fff0;
     display: none;
     position: relative;
     top: 0px;
@@ -1126,16 +1142,18 @@ video {
     transition: inherit;
     border-bottom: 1px solid rgba(0, 0, 0, 0.13);
     -webkit-transform-style: flat;
+    background: rgb(14, 167, 71);
   }
 
   .wsmenu>.wsmenu-list>li>.wsmegamenu.halfmenu {
     width: 100%;
     margin: 0px;
     padding: 5px 0px 10px 0px;
+    background: rgb(14, 167, 71);
   }
 
   .wsmenu>.wsmenu-list>li>.wsmegamenu .title {
-    color: #666666;
+    color: #fff;
     font-size: 15px;
     padding: 10px 8px 10px 0px;
   }
@@ -1152,7 +1170,7 @@ video {
     line-height: normal;
     font-size: 13px;
     background-color: #e7e7e7;
-    color: #666666;
+    color: #d1efdc;
   }
 
   .wsmenu>.wsmenu-list>li>.wsmegamenu>ul>li>a:hover {
@@ -1161,11 +1179,19 @@ video {
 
   .wsmenu>.wsmenu-list>li>.wsmegamenu ul li.title {
     line-height: 26px;
-    color: #666666;
+    color: #fff;
     margin: 0px;
     font-size: 15px;
     padding: 7px 0px;
     background-color: transparent;
+  }
+
+  .wsmenu>.wsmenu-list>li>.wsmegamenu .link-list li {
+    border-bottom: 1px dashed #12bd52;
+}
+
+  .wsmenu>.wsmenu-list>li>.wsmegamenu .wsmwnutxt {
+    color:#eff1ef;
   }
 
   .wsmenu>.wsmenu-list>li>.wsmegamenu.halfdiv {
@@ -1241,8 +1267,8 @@ video {
     width: 100%;
   }
 
-  .callusbtn {
-    color: #e51e18;
+  .searchbtn {
+    color: #ffa12f;
     font-size: 18px;
     position: absolute;
     right: 5px;
@@ -1252,13 +1278,13 @@ video {
     padding: 12px 14px;
   }
 
-  .callusbtn i {
+  .searchbtn i {
     vertical-align: top;
-    margin-top: 4px;
+    margin-top: 0.9rem;
   }
 
-  .callusbtn:hover i {
-    color: #a9a9a9;
+  .searchbtn:hover i {
+    color: #008d34;
   }
 
   /* Mobile Toggle Menu icon (X ICON) */
@@ -1428,7 +1454,7 @@ video {
     height: 100%;
     border-width: 1.5px 1.5px 0 0;
     border-style: solid;
-    border-color: rgba(0, 0, 0, 0.40);
+    border-color: rgba(255, 255, 255, 1);
     transition: 0.2s ease;
     display: block;
     transform-origin: 100% 0;
