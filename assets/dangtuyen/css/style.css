@@ -764,6 +764,7 @@ span.id-color {
 .section-title h3.h3-md {
   line-height: 1;
   margin-bottom: 10px;
+  font-weight: 400;
 }
 
 .section-title p {
