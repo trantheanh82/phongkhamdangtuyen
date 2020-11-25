@@ -1,6 +1,6 @@
 <!-- SERVICES-2
 ============================================= -->
-<section id="services-2" class="wide-70 services-section division">
+<section id="services-2" class="bg-lightgrey wide-70 services-section division">
   <div class="container">
 
 
