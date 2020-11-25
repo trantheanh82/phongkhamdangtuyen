@@ -5909,6 +5909,11 @@ nav a#pull {
 #tabs-1 .sbox{
   margin-top:0.8rem;
   padding: 15px;
+  -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+    -ms-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
   }
 #tabs-1 .service-title{
   padding:20px 0px 10px;
@@ -5916,7 +5921,7 @@ nav a#pull {
 }
 
 #tabs-1 .service-title h4 a{
-  color:#3e764b;
+  color: #24923f;
   font-size: 1.2rem;
 }
 
@@ -5926,8 +5931,8 @@ nav a#pull {
 
 #tabs-1 .sbox:hover {
   -webkit-box-shadow: 1px 1px 41px 1px rgba(133,133,133,1);
--moz-box-shadow: 1px 1px 41px 1px rgba(133,133,133,1);
-box-shadow: 1px 1px 41px 1px rgba(133,133,133,1);
+  -moz-box-shadow: 1px 1px 41px 1px rgba(133,133,133,1);
+  box-shadow: 1px 1px 41px 1px rgba(133,133,133,1);
 }
 
 #tabs-1 .sbox:hover h4 a{
