@@ -25,7 +25,7 @@
             $link = $parent_link.$v->slug->slug;
          ?>
       <!-- SERVICE BOX #1 -->
-      <div class="col-6 col-sm-6 col-lg-4">
+      <div class="col-sm-6 col-lg-4">
         <div class="sbox-2 wow fadeInUp" data-wow-delay="<?=$data_wow_delay?>s">
           <a href="<?=$link?>">
 
