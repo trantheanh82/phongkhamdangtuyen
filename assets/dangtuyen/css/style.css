@@ -5924,11 +5924,17 @@ nav a#pull {
       color: #fd7909;
 }
 
-#tabs-1 .sbox:hover, #tabs-1 .sbox:hover h4 a{
+#tabs-1 .sbox:hover {
   -webkit-box-shadow: 1px 1px 41px 1px rgba(133,133,133,1);
 -moz-box-shadow: 1px 1px 41px 1px rgba(133,133,133,1);
 box-shadow: 1px 1px 41px 1px rgba(133,133,133,1);
 }
+
+#tabs-1 .sbox:hover h4 a{
+  color: #fd7909;
+}
+
+
 /**/
 
 .box-shadow{
