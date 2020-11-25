@@ -21,7 +21,7 @@
       foreach($items as $k=>$v):
         $link = base_url()."dich-vu/".$v->slug->slug;
     ?>
-      <div class='col-lg-4 col-md-6 mb-2 <?=($i%2==0)?'pl-lg-4':'pr-lg-4'?>'>
+      <div class='col-lg-4 col-md-6 col-sm-6 mb-2 <?=($i%2==0)?'pl-lg-4':'pr-lg-4'?>'>
         <div class='sbox mb-5 box-shadow-dark'>
 
         <?php if(!empty($v->image))
