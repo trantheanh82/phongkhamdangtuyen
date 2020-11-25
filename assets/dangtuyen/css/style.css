@@ -2605,6 +2605,18 @@ td.text-right {
   background: #004861;
 }
 
+/*Section*/
+.section-title h3:after{
+  background: #f26225;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
+  height: 4px;
+  width: 155px;
+  right: 0;
+}
 /*------------------------------------------*/
 /*  SERVICE DETAILS
 /*------------------------------------------*/
