@@ -18,14 +18,14 @@
     $data_wow_delay = 0.4;
 ?>
     <div class="row">
-      
-      <?php 
-        $parent_link = base_url().'chuyen-khoa/';  
+
+      <?php
+        $parent_link = base_url().'chuyen-khoa/';
         foreach($items as $k=>$v):
             $link = $parent_link.$v->slug->slug;
          ?>
       <!-- SERVICE BOX #1 -->
-      <div class="col-6 col-sm-6 col-lg-3">
+      <div class="col-6 col-sm-6 col-lg-4">
         <div class="sbox-2 wow fadeInUp" data-wow-delay="<?=$data_wow_delay?>s">
           <a href="<?=$link?>">
 
