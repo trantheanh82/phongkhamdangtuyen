@@ -12,7 +12,7 @@
     <div class="row">
       <div class="col-lg-10 offset-lg-1 section-title">
 
-        <h3 class="h3-md darkgreen-color"><?=$content?></h3>
+        <?=$content?>
 
       </div>
     </div>	 <!-- END SECTION TITLE -->
