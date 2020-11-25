@@ -669,6 +669,7 @@ ul.content-list li:last-child {
 .video-btn.play-icon-white { background-color: #fff; color: #333; border-color: #fff; }
 .video-btn.play-icon-tra { background-color: transparent; color: #fff; border-color: #fff; }
 .video-btn.play-icon-blue { background-color: #00a3c8; border-color: #00a3c8; }
+.video-btn.play-icon-green { background-color: #019240;border-color: #068c40;}
 .video-btn.play-icon-lime { background-color: #89be19; border-color: #89be19; }
 
 /*------------------------------------------*/
@@ -1984,6 +1985,7 @@ p.header-widget-phone {
 #about-3 {
  position: relative;
  margin-top: -40px;
+ margin-bottom: 40px;;
  z-index: 99;
 }
 
@@ -2027,13 +2029,36 @@ p.header-widget-phone {
 
 #abox-1 { background-image: url(/assets/dangtuyen/images/box-1.jpg);background-position:bottom;border-radius: 6px 0 0 6px; }
 #abox-2 { background-color: #088edd; }
-#abox-3 { background-color: #1977cc; }
+#abox-3 { background-color: none; /*#1977cc;*/ min-height:  }
 #abox-4 { background-image: url(/assets/dangtuyen/images/box-4.jpg);background-position:bottom;background-color: #02a247;  border-radius: 0 6px 6px 0; }
 
+
 .abox-1 {
-  height: 300px;
   padding: 45px 30px;
+  padding-bottom: 25px;
   overflow: hidden;
+  /**/
+    background: url(/assets/dangtuyen/images/abox-1-bg.jpg) bottom left;
+    -webkit-box-shadow: 1px 1px 15px 0px rgba(133,133,133,1);
+    -moz-box-shadow: 1px 1px 15px 0px rgba(133,133,133,1);
+    box-shadow: 1px 1px 15px 0px rgba(133,133,133,1);
+}
+
+.abox-1 h4{
+  padding-right: 25px;
+  padding-left: 25px;
+  line-height: 37px;
+}
+
+.abox-1:hover{
+  margin-top:-50px;
+  -webkit-box-shadow: 1px 1px 27px 0px rgba(133,133,133,1);
+-moz-box-shadow: 1px 1px 27px 0px rgba(133,133,133,1);
+box-shadow: 1px 1px 27px 0px rgba(133,133,133,1);
+}
+
+.abox-1{
+  transition: all 250ms ease-in-out;
 }
 
 .abox-2 {

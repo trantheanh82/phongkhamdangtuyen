@@ -66,7 +66,7 @@
 	          <div class="checkbox">
 	            <label>
 	              <?=form_hidden('active', 'N')?>
-	              <?=form_checkbox('active', 'Y', (!isset($item)?"checked":($item->active== 'Y')?"true":false), array('class'=>'minimal'))?>
+	              <?=form_checkbox('active', 'Y', (!isset($item)?"checked":(($item->active== 'Y')?"true":false)), array('class'=>'minimal'))?>
 	            </label>
 	          </div>
 	        </div>

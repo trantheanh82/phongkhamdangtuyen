@@ -16,17 +16,17 @@ require dirname(__FILE__).'/Modules.php';
  *
  * @copyright	Copyright (c) 2015 Wiredesignz
  * @version 	5.5
- * 
+ *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
  * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
  * copies of the Software, and to permit persons to whom the Software is
  * furnished to do so, subject to the following conditions:
- * 
+ *
  * The above copyright notice and this permission notice shall be included in
  * all copies or substantial portions of the Software.
- * 
+ *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -51,13 +51,13 @@ class MX_Router extends CI_Router
 		{
 			foreach(range(0, 2) as $v)
 			{
-				
+
 				isset($segments[$v]) && $segments[$v] = str_replace('-', '_', $segments[$v]);
 			}
 		}
 
 		if($segments[0] == 'admin' && isset($segments[1])){
-			
+
 	        if (isset($segments[2])){
 	            $this->set_method($segments[2]);
 	            $segments[2] = $segments[2];
@@ -65,41 +65,41 @@ class MX_Router extends CI_Router
 	            $this->set_method('index');
 	            $segments[2] = 'index';
 	        }
-			
+
 			//echo APPPATH.'controllers/admin/'.ucfirst($segments[1]).EXT;
-			
+
 			if(file_exists(APPPATH.'controllers/admin/'.ucfirst($segments[1]).EXT)){
 				$this->directory    = '../controllers/admin/';
-				
+
 			}else{
-				
-				$this->directory    = '../modules/'.$segments[1].'/controllers/admin/'; 
+
+				$this->directory    = '../modules/'.$segments[1].'/controllers/admin/';
 	        }
 	        $this->module       = $segments[1];
 	        $this->class        = $segments[1];
-	
+
 	        $segments[1] = $segments[1];
-	
-	
+
+
 	        unset($segments[0]);
 	        $this->uri->rsegments = $segments;
 	    }else{
 			$segments = $this->locate($segments);
-			
+
 			if($this->located == -1)
 			{
 				$this->_set_404override_controller();
 				return;
 			}
-	
+
 			if(empty($segments))
 			{
 				$this->_set_default_controller();
 				return;
 			}
-			
+
 			$this->set_class($segments[0]);
-			
+
 			if (isset($segments[1]))
 			{
 				$this->set_method($segments[1]);
@@ -108,14 +108,14 @@ class MX_Router extends CI_Router
 			{
 				$segments[1] = 'index';
 			}
-	       
-			
+
+
 			array_unshift($segments, NULL);
 			unset($segments[0]);
 			$this->uri->rsegments = $segments;
 		}
 	}
-	
+
 	protected function _set_404override_controller()
 	{
 		$this->_set_module_path($this->routes['404_override']);
@@ -130,7 +130,7 @@ class MX_Router extends CI_Router
 		}
 
 		parent::_set_default_controller();
-		
+
 		if(empty($this->class))
 		{
 			$this->_set_404override_controller();
@@ -166,7 +166,7 @@ class MX_Router extends CI_Router
 				{
 					/* module sub-directory exists? */
 					if(is_dir($source.$directory.'/'))
-					{	
+					{
 						$source .= $directory.'/';
 						$this->directory .= $directory.'/';
 
@@ -213,7 +213,7 @@ class MX_Router extends CI_Router
 		{
 			$this->directory = $directory;
 		}
-		
+
 		/* application sub-directory controller exists? */
 		if($directory)
 		{
@@ -225,7 +225,7 @@ class MX_Router extends CI_Router
 
 			/* application sub-sub-directory controller exists? */
 			if($controller)
-			{ 
+			{
 				if(is_file(APPPATH.'controllers/'.$module.'/'.$directory.'/'.ucfirst($controller).$ext))
 				{
 					$this->directory = $module.'/'.$directory.'/';
@@ -246,7 +246,7 @@ class MX_Router extends CI_Router
 		{
 			return $segments;
 		}
-		
+
 		$this->located = -1;
 	}
 
@@ -257,7 +257,7 @@ class MX_Router extends CI_Router
 		{
 			// Are module/directory/controller/method segments being specified?
 			$sgs = sscanf($_route, '%[^/]/%[^/]/%[^/]/%s', $module, $directory, $class, $method);
-			
+
 			// set the module/controller directory location if found
 			if ($this->locate(array($module, $directory, $class)))
 			{
@@ -280,10 +280,10 @@ class MX_Router extends CI_Router
 	public function set_class($class)
 	{
 		$suffix = $this->config->item('controller_suffix');
-		if (strpos($class, $suffix) === FALSE)
+		if ($suffix && strpos($class, $suffix) === FALSE)
 		{
 			$class .= $suffix;
 		}
 		parent::set_class($class);
 	}
-}	
+}

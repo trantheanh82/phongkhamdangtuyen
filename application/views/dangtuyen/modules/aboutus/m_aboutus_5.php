@@ -1,52 +1,70 @@
-<!-- ABOUT-5
-============================================= -->
-<?php $template = 'dangtuyen';?>
-<section id="about-5" class="bg-lightgrey pt-100 about-section division">
-  <div class="container">
-    <div class="row d-flex align-items-center">
+<!-- Secion giới thiệu -->
+<section id="video-2" class="wide-60 video-section division">
+			 	<div class="container">
+			 		<div class="row d-flex align-items-center">
+
+						<!-- VIDEO TEXT -->
+			 			<div class="col-md-6">
+			 				<div class="txt-block pc-30 mb-40 wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+
+			 					<!-- Section ID -->
+					 			<span class="section-id darkgreen-color">GIỚI THIỆU TỔNG QUAN</span>
+
+			 					<!-- Title -->
+			 					<h3 class="h3-md green-color">Phòng Khám Đa Khoa <span style='color:#f00'>Đăng Tuyền</span></h3>
+
+			 					<!-- CONTENT BOX #1 -->
+								<div class="box-list m-top-15">
+									<div class="box-list-icon"><i class="fas fa-genderless"></i></div>
+									<p>Nemo ipsam egestas volute turpis dolores ut aliquam quaerat sodales sapien undo pretium
+									   purus feugiat dolor impedit
+									</p>
+								</div>
+
+								<!-- CONTENT BOX #2 -->
+								<div class="box-list">
+									<div class="box-list-icon"><i class="fas fa-genderless"></i></div>
+									<p>Gravida quis vehicula magna luctus tempor quisque vel laoreet turpis urna augue,
+									   viverra a augue eget dictum
+									</p>
+								</div>
+
+								<!-- CONTENT BOX #3 -->
+								<div class="box-list">
+									<div class="box-list-icon"><i class="fas fa-genderless"></i></div>
+									<p>Nemo ipsam egestas volute turpis dolores ut aliquam quaerat sodales sapien undo pretium
+									   purus feugiat dolor impedit
+									</p>
+								</div>
+
+								<a href="who-we-are.html" class="btn btn-orange orange-hover mt-25">Tìm hiểu thêm</a>
+			 				</div>
+			 			</div>
+			 			<!-- VIDEO LINK -->
+			 			<div class="col-md-6">
+			 				<div class="video-preview mb-40 text-center wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+
+				 				<!-- Change the link HERE!!! -->
+								<a class="video-popup1" href="https://www.youtube.com/embed/wQ2TN_gI3sE">
+
+									<!-- Play Icon -->
+									<div class="video-btn play-icon-green">
+										<div class="video-block-wrapper">
+											<i class="fas fa-play"></i>
+										</div>
+									</div>
+
+									<!-- Preview -->
+									<img class="img-fluid" src="/assets/dangtuyen/images/video-gioithieu.jpg" alt="video-photo">
 
 
-      <!-- IMAGE BLOCK -->
-      <div class="col-lg-6">
-        <div class="about-img text-center wow fadeInUp" data-wow-delay="0.6s">
-          <img class="img-fluid" src="<?=base_url().'assets/'.$template?>/images/image-03.png" alt="about-image">
-        </div>
-      </div>
+								</a>
+
+					 		</div>
+			 			</div>	<!-- END VIDEO LINK -->
 
 
-      <!-- TEXT BLOCK -->
-      <div class="col-lg-6">
-        <div class="txt-block pc-30 wow fadeInUp" data-wow-delay="0.4s">
-
-          <!-- Section ID -->
-          <span class="section-id blue-color">Welcome to MedService</span>
-
-          <!-- Title -->
-          <h3 class="h3-md steelblue-color">Complete Medical Solutions in One Place</h3>
-
-          <!-- Text -->
-          <p>Porta semper lacus cursus, feugiat primis ultrice in ligula risus auctor tempus feugiat
-             dolor lacinia cubilia curae integer congue leo metus, eu mollislorem primis in orci integer
-             metus mollis faucibus. An enim nullam tempor sapien gravida donec pretium and ipsum porta
-             justo integer at velna vitae auctor integer congue
-          </p>
-
-          <!-- Singnature -->
-          <div class="singnature mt-35">
-
-            <!-- Text -->
-            <p class="p-small mb-15">Randon Pexon, Head of Clinic</p>
-
-            <!-- Singnature Image -->
-            <!-- Recommended sizes for Retina Ready displays is 400x68px; -->
-            <img class="img-fluid" src="<?=base_url().'assets/'.$template?>/images/signature.png" width="200" height="34" alt="signature-image" />
-
-          </div>
-
-        </div>
-      </div>	<!-- END TEXT BLOCK -->
-
-
-    </div>    <!-- End row -->
-  </div>	   <!-- End container -->
-</section>	<!-- END ABOUT-5 -->
+			 		</div>	    <!-- End row -->
+			 	</div>	    <!-- End container -->
+			</section>
+<!-- end section giới thiệu -->

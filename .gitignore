@@ -5,3 +5,6 @@
 /resources/*
 /application/config/config.php
 /application/config/database.php
+application/config/database.php
+application/config/config.php
+assets/dangtuyen/css/menu0.css
