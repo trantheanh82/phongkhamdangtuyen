@@ -5908,6 +5908,7 @@ nav a#pull {
 /*Service*/
 #tabs-1 .sbox{
   margin-top:0.8rem;
+  padding: 15px;
   }
 #tabs-1 .service-title{
   padding:20px 0px 10px;
@@ -5915,13 +5916,8 @@ nav a#pull {
 }
 
 #tabs-1 .service-title h4 a{
-  color:#00612a;
-  font-size: 1.4rem;
-}
-
-#tabs-1 .service-title:hover{
-  background:#28b464;
-  color:#fff;
+  color:#3e764b;
+  font-size: 1.2rem;
 }
 
 #tabs-1 .service-title:hover h4 a{

@@ -27,7 +27,7 @@
         <?php if(!empty($v->image))
               echo '<div class="tab-img">'.img($v->image,'',array('class'=>'img-fluid','alt'=>$v->translation->content->name)).'</div>';
         ?>
-          <div class='service-title'  style='font-weight:bold;'>
+          <div class='service-title text-center'  style='font-weight:bold;'>
             <h4 class='h4-md h5-title text-uppercase'><?=anchor($link,$v->translation->content->name)?></h4>
           </div>
         </div>
