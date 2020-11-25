@@ -35,7 +35,7 @@
             </div>
 
             <!-- Title -->
-            <h5 class="h5-sm sbox-2-title darkgreen-color"><?=$v->translation->content->name?></h5>
+            <h5 class="h5-sm sbox-2-title green-color"><?=$v->translation->content->name?></h5>
 
           </a>
         </div>
