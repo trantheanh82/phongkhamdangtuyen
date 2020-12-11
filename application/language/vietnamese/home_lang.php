@@ -8,6 +8,8 @@ $lang["Position field is required"] 									= "Yêu cầu nhập Chức vụ";
 $lang['Need to consultant about']               = "Tôi cần tư vấn về...";
 $lang["Please choose a topic"] 									= "Vui lòng chọn 1 dịch vụ...";
 
+$lang['Vaccinations'] = "Tiêm chủng";
+
 $lang["Send Request"] 									= "Gửi yêu cầu";
 $lang["Name"] 									= "Họ & tên";
 $lang["Email"] 									= "Email";

@@ -17,7 +17,7 @@
 			}
 	}
 
- 	echo form_open('admin/services/submit/'.$type,array('role'=>'form','class'=>'form-horizontal','method'=>'post','id'=>'main_form_submit'));
+ 	echo form_open('admin/vaccinations/submit/'.$type,array('role'=>'form','class'=>'form-horizontal','method'=>'post','id'=>'main_form_submit'));
 
 	if(isset($item->id)){
 		echo form_hidden('id',$item->id);
