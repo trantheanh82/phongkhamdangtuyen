@@ -2928,6 +2928,7 @@ td.text-right {
   transition: all 450ms ease-in-out;
   text-transform: uppercase;
     font-weight: 600;
+        border: 1px solid #ddd;
 }
 
 #tabs-2 .nav-pills .nav-link {

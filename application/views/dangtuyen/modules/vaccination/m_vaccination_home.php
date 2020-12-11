@@ -76,55 +76,6 @@
 												<p class="mb-30"><?=strip_tags($v->translation->content->description)?>
 												</p>
 
-												<!-- Options List -->
-												<div class="row">
-
-													<div class="col-xl-6">
-
-														<!-- Option #1 -->
-														<div class="box-list">
-															<div class="box-list-icon green-color"><i class="fas fa-angle-double-right"></i></div>
-															<p class="p-sm">Nemo ipsam egestas volute and turpis dolores quaerat</p>
-														</div>
-
-														<!-- Option #2 -->
-														<div class="box-list">
-															<div class="box-list-icon blue-color"><i class="fas fa-angle-double-right"></i></div>
-															<p class="p-sm">Magna luctus tempor</p>
-														</div>
-
-														<!-- Option  #3 -->
-														<div class="box-list">
-															<div class="box-list-icon blue-color"><i class="fas fa-angle-double-right"></i></div>
-															<p class="p-sm">An enim nullam tempor at pretium purus blandit</p>
-														</div>
-
-													</div>
-
-													<div class="col-xl-6">
-
-														<!-- Option #4 -->
-														<div class="box-list">
-															<div class="box-list-icon blue-color"><i class="fas fa-angle-double-right"></i></div>
-															<p class="p-sm">Magna luctus tempor blandit a vitae suscipit mollis</p>
-														</div>
-
-														<!-- Option #5 -->
-														<div class="box-list">
-															<div class="box-list-icon blue-color"><i class="fas fa-angle-double-right"></i></div>
-															<p class="p-sm">Nemo ipsam egestas volute turpis dolores quaerat</p>
-														</div>
-
-														<!-- Option #6 -->
-														<div class="box-list">
-															<div class="box-list-icon blue-color"><i class="fas fa-angle-double-right"></i></div>
-															<p class="p-sm">An enim nullam tempor</p>
-														</div>
-
-													</div>
-
-												</div>	<!-- End Options List -->
-
 												<!-- Button -->
 												<a href="<?=$link?>" class="btn btn-orange orange-hover mt-30"><?=lang('Tìm hiểu thêm')?></a>
 
