@@ -2609,7 +2609,7 @@ td.text-right {
 
 /*Section*/
 .section-title h3:after{
-  background: #f26225;
+  background: #ffa12f;
   content: "";
   position: absolute;
   left: 0;
@@ -2964,8 +2964,8 @@ td.text-right {
   /*background-color: #00a3c8;
   border-color: #00a3c8;
   color: #fff;*/
-  background-color: #f26225;
-  border-color: #f26225;
+  background-color: #ffa12f;
+  border-color: #ffa12f;
   color: #ffffff;
 }
 
