@@ -34,7 +34,7 @@
 							    	<!-- TAB-1 LINK -->
 								  	<li class="nav-item icon-xs">
 								    	<a class="nav-link <?=$i==1?"active":""?>" id="tab1-list" data-toggle="pill" href="#tab-<?=$v->id?>" role="tab" aria-controls="tab-<?=$v->id?>" aria-selected="true">
-								    		<span class="flaticon-083-stethoscope"></span> <?=$v->translation->content->name?>
+								    		<span class="<?=$v->icon?>"></span> <?=$v->translation->content->name?>
 								    	</a>
 								  	</li>
                   <?php
