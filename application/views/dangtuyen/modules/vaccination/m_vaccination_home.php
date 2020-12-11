@@ -8,13 +8,9 @@
             <div class="col-lg-10 offset-lg-1 section-title">
 
               <!-- Title 	-->
-              <h3 class="h3-md darkgreen-color"><?=lang("Vaccinations")?></h3>
+              <?=$content?>
 
               <!-- Text -->
-              <!--<p>Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero at tempus,
-                 blandit posuere ligula varius congue cursus porta feugiat
-              </p>-->
-
             </div>
           </div>	 <!-- END SECTION TITLE -->
 
