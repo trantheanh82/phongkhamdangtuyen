@@ -658,7 +658,7 @@ video {
   background-image: none;
   border-right: 0 none;
   display: block;
-  font-size: 15px;
+  font-size: 1.2rem;
   font-weight: 400;
   -webkit-transition: all 400ms ease-in-out;
   -moz-transition: all 400ms ease-in-out;
@@ -985,7 +985,7 @@ video {
 
   .wsmenu>.wsmenu-list>li>ul.sub-menu>li>a {
     line-height: 20px;
-    font-size: 1rem; /*13px;*/
+    font-size: 1.2rem; /*13px;*/
     padding: 10px 0px 10px 16px;
     /*color: #383838;*/
     color: #daf9e7;
