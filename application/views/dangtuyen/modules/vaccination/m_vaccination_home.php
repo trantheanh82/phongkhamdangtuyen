@@ -1,6 +1,6 @@
 <!-- TABS-1
 			============================================= -->
-			<section id="tabs-1" class="wide-100 tabs-section division">
+			<section id="tabs-1" class="bg-lightgrey wide-100 tabs-section division">
 				<div class="container">
 
           <!-- SECTION TITLE -->
