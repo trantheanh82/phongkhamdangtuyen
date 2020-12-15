@@ -1,0 +1,2 @@
+brand color green: #00923f
+brand color red: #e51e18
