@@ -754,7 +754,7 @@ span.id-color {
 
 /*------------------------------------------*/
 /*  SECTION TITLE
-/*------------------------------------------*/
+/*---------------------------------df---------*/
 
 .section-title {
   text-align: center;
@@ -2609,6 +2609,7 @@ td.text-right {
 }
 
 /*Section*/
+/*
 .section-title h3:after{
   background: #ffa12f;
   content: "";
@@ -2619,7 +2620,7 @@ td.text-right {
   height: 4px;
   width: 155px;
   right: 0;
-}
+}*/
 /*------------------------------------------*/
 /*  SERVICE DETAILS
 /*------------------------------------------*/
