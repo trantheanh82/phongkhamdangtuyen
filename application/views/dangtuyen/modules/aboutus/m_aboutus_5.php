@@ -11,7 +11,7 @@
 					 			<span class="section-id darkgreen-color">GIỚI THIỆU TỔNG QUAN</span>
 
 			 					<!-- Title -->
-			 					<h3 class="h3-md green-color">Phòng Khám Đa Khoa <span style='color:#f00'>Đăng Tuyền</span></h3>
+			 					<h3 class="h3-md green-color">PHONG KHÁM ĐA KHOA <span style='color:#f00'>ĐẶNG TUYỀN</span></h3>
 
 			 					<!-- CONTENT BOX #1 -->
 								<div class="box-list m-top-15">
