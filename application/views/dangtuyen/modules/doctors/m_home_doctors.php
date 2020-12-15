@@ -1,6 +1,6 @@
 <!-- DOCTORS-1
 ============================================= -->
-<section id="doctors-1" class="wide-40 doctors-section division bg-lightgrey">
+<section id="doctors-1" class="wide-40 doctors-section division">
   <div class="container">
 
 
