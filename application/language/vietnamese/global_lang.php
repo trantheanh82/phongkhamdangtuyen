@@ -108,7 +108,7 @@ $lang['Select Booking or Vaccinations']  = "Chọn Khám Bệnh hoặc Tiêm Ch�
 $lang['Medical Examination'] = "Khám bệnh";
 $lang['Vaccinations']       = "Tiêm Chủng";
 $lang['Confirm a Booking']    = "XÁC NHẬN ĐẶT LỊCH";
-$lang['BOOKING APPOINTMENT ONLINE'] = "ĐẶT LỊCH KHÁM - TIÊM CHỦNG ONLINE";
+$lang['BOOKING APPOINTMENT ONLINE'] = "ĐẶT LỊCH KHÁM - TIÊM CHỦNG";
 $lang['COLLECTION BLOOD']     =   "LẤY MẪU XÉT NGHIỆM TẠI NHÀ";
 
 /*functionale*/
