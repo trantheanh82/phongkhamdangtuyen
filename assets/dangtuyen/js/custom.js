@@ -439,13 +439,17 @@
 					if(!collection_blood){
 						inlineFormCustomSelect2.innerHTML  = "";
 						inlineFormCustomSelect2.appendChild(addOption('collection_blood','Lấy mẫu xét nghiệm tại nhà'));
+						$('#booking_online').attr("src","/assets/dangtuyen/images/blood-test.jpg");
 						collection_blood = true;
 						examination = false;
+
 					}
 			}
 
 			if(modal_type == "booking"){
 				if(!examination){
+
+					$('#booking_online').attr("src","/assets/dangtuyen/images/booking_image.jpg");
 					inlineFormCustomSelect2.innerHTML  = "";
 					inlineFormCustomSelect2.appendChild(addOption('','Chọn Khám Bệnh hoặc Tiêm Chủng'));
 					inlineFormCustomSelect2.appendChild(addOption('examination','1. Khám Bệnh'));
