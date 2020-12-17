@@ -12,7 +12,7 @@
 
 
 				<!-- ABOUT BOX #3 -->
-				<div id="abox-3" class="col-md-4 col-lg-4  wow fadeInUp"  data-wow-delay="0.6s" data-toggle="modal" data-modal-type="collection_blood" data-target="#bookingModal" data-modal-title="<?=lang("COLLECTION BLOOD")?>" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+				<div id="abox-3" class="col-md-4 col-lg-4  wow fadeInUp"  data-wow-delay="0.6s" data-toggle="modal" data-modal-type="collection_blo" data-target="#bookingModal" data-modal-title="<?=lang("COLLECTION BLOOD")?>" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
 					<div class="abox-1 green-color text-center">
 						<?=img('/assets/dangtuyen/images/icon-blood-test.png','',array('class'=>'img-fluid'))?>
 						<h4 class="h5-md mt-30">ĐĂNG KÝ LẤY MẪU XÉT NGHIỆM</h4>
@@ -21,7 +21,7 @@
 				</div>
 
 				<!-- ABOUT BOX #3 -->
-				<div id="abox-3" class="col-md-4 col-lg-4  wow fadeInUp"  data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
+				<div id="abox-3" class="col-md-4 col-lg-4  wow fadeInUp" onclick="window.open('http://ykhoadangtuyen.com');"  data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
 						<div class="abox-1 green-color text-center">
 							<?=img('/assets/dangtuyen/images/icon-search.png','',array('class'=>'img-fluid'))?>
 							<h4 class="h5-md mt-30">TRA CỨU KẾT QUẢ ONLINE</h4>

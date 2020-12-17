@@ -5962,3 +5962,7 @@ box-shadow: -1px 1px 11px -2px rgba(196,196,196,1);
 .modal-content{
   border:none;
 }
+
+#abox-3:hover{
+  cursor: pointer;
+}
