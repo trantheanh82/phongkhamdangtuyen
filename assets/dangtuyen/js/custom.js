@@ -424,13 +424,46 @@
 			5: 'This email address looks fake or invalid. Please enter a real email address'
 		};
 
-
+		var collection_blood = false;
+		var examination = false;
 		$('#bookingModal').on('show.bs.modal',function(event){
 			var button = $(event.relatedTarget)
 			var modal_title = button.data('modal-title')
+			var modal_type = button.data('modal-type');
+
+			console.log(modal_type);
 
 			var modal = $(this);
 			modal.find('.modal-title').text(modal_title);
+			if(modal_type == "collection_blood"){
+					if(!collection_blood){
+						inlineFormCustomSelect2.innerHTML  = "";
+						inlineFormCustomSelect2.appendChild(addOption('collection_blood','Lấy mẫu xét nghiệm tại nhà'));
+						collection_blood = true;
+						examination = false;
+					}
+			}
+
+			if(modal_type == "booking"){
+				if(!examination){
+					inlineFormCustomSelect2.innerHTML  = "";
+					inlineFormCustomSelect2.appendChild(addOption('','Chọn Khám Bệnh hoặc Tiêm Chủng'));
+					inlineFormCustomSelect2.appendChild(addOption('examination','1. Khám Bệnh'));
+					inlineFormCustomSelect2.appendChild(addOption('vaccinations','2. Tiêm Chủng'));
+					examination = true;
+					collection_blood = false;
+				}
+			}
 
 		})
 	});
+
+	function addOption(value,text){
+		var option = document.createElement("option");
+		option.value = value;
+		var option_text = document.createTextNode(text);
+
+		option.appendChild(option_text);
+
+		return option;
+	}
