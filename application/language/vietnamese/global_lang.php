@@ -104,6 +104,12 @@ $lang['Partners']     = "Đối tác uy tín";
 
 /*Booking*/
 $lang['Book an appointment'] = "Đặt lịch khám";
+$lang['Select Booking or Vaccinations']  = "Chọn Khám Bệnh hoặc Tiêm Chủng";
+$lang['Medical Examination'] = "Khám bệnh";
+$lang['Vaccinations']       = "Tiêm Chủng";
+$lang['Confirm a Booking']    = "Xác nhận đặt lịch";
+$lang['BOOKING APPOINTMENT ONLINE'] = "ĐẶT LỊCH KHÁM - TIÊM CHỦNG ONLINE";
+$LANG['COLLECTION BLOOD']     =   "LẤY MẪU XÉT NGHIỆM TẠI NHÀ";
 
 /*functionale*/
 $lang['View All']         = "Xem Tất Cả";

@@ -115,6 +115,8 @@ $route['^(\w{2})/assets^(.*)'] = '/assets$2';
 $route['^(\w{2})/api/^(.*)'] = '/api/$2';
 $route['^(\w{2})/filenamager/^(.*)'] = '/filemanager/$2';
 
+$route['^(\w{2})/booking'] = '/bookingappointments/booking';
+
 $route['^(\w{2})/(.*)'] = '$2';
 
 /*for modules*/

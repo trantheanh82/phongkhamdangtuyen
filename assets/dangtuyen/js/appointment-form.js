@@ -5,15 +5,41 @@ $(document).ready(function() {
 
     $(".appointment-form").submit(function(e) {
         e.preventDefault();
-        var department = $(".department");
-        var doctor = $(".doctor");
+        var type = $(".type");
+        var name = $(".name");
+        var phone = $(".phone");
+        /*var doctor = $(".doctor");
         var patient = $(".patient");
         var date = $(".date");
-        var name = $(".name");
         var email = $(".email");
-        var phone = $(".phone");
-        var msg = $(".message");
+        var msg = $(".message");*/
         var flag = false;
+
+        if (type.val() == "") {
+            type.closest(".form-control").addClass("error");
+            type.focus();
+            flag = false;
+            return false;
+        } else {
+            type.closest(".form-control").removeClass("error").addClass("success");
+        }
+        if (name.val() == "") {
+            name.closest(".form-control").addClass("error");
+            name.focus();
+            flag = false;
+            return false;
+        } else {
+            name.closest(".form-control").removeClass("error").addClass("success");
+        }
+
+        if (phone.val() == "") {
+            phone.closest(".form-control").addClass("error");
+            phone.focus();
+            flag = false;
+            return false;
+        } else {
+            phone.closest(".form-control").removeClass("error").addClass("success");
+        }
         /*if (department.val() == "") {
             department.closest(".form-control").addClass("error");
             department.focus();
@@ -28,7 +54,7 @@ $(document).ready(function() {
             return false;
         } else {
             doctor.closest(".form-control").removeClass("error").addClass("success");
-        } */if (patient.val() == "") {
+        } if (patient.val() == "") {
             patient.closest(".form-control").addClass("error");
             patient.focus();
             flag = false;
@@ -56,7 +82,7 @@ $(document).ready(function() {
             return false;
         } else {
             email.closest(".form-control").removeClass("error").addClass("success");
-        }*/ if (phone.val() == "") {
+        }if (phone.val() == "") {
             phone.closest(".form-control").addClass("error");
             phone.focus();
             flag = false;
@@ -71,13 +97,14 @@ $(document).ready(function() {
         } else {
             msg.closest(".form-control").removeClass("error").addClass("success");
             flag = true;
-        }
-        var dataString = "department=" + department.val() + "&doctor=" + doctor.val() + "&patient=" + patient.val() + "&date=" + date.val() + "&name=" + name.val() + "&email=" + email.val() + "&phone=" + phone.val() + "&msg=" + msg.val();
+        }*/
+        //var dataString = "department=" + department.val() + "&doctor=" + doctor.val() + "&patient=" + patient.val() + "&date=" + date.val() + "&name=" + name.val() + "&email=" + email.val() + "&phone=" + phone.val() + "&msg=" + msg.val();
+        var dataString = "name=" + name.val() + "&phone=" + phone.val() + "&type=" + type.val();
         $(".loading").fadeIn("slow").html("Loading...");
         $.ajax({
             type: "POST",
             data: dataString,
-            url: "php/appointmentForm.php",
+            url: "/vi/booking",
             cache: false,
             success: function (d) {
                 $(".form-control").removeClass("success");
@@ -92,8 +119,5 @@ $(document).ready(function() {
     $("#reset").on('click', function() {
         $(".form-control").removeClass("success").removeClass("error");
     });
-    
+
 })
-
-
-

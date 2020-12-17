@@ -21,6 +21,8 @@
     <meta property="og:site_name" content="<?=$Settings['company_name']. ': '.$page_title?>">
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="/<?=$Settings['company_favicon']?>">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <?php echo $before_head?>
 </head>
 
