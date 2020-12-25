@@ -764,7 +764,7 @@ span.id-color {
 
 .section-title h3.h3-md {
   line-height: 1;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-weight: 500;
     text-transform: uppercase;
 }
@@ -2894,7 +2894,7 @@ td.text-right {
   =========================================================================== */
 
 #tabs-1 .section-title {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 #pills-tab {
