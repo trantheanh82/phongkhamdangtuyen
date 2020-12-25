@@ -17,7 +17,7 @@
 			}
 	}
 
- 	echo form_open('admin/services/submit/'.$type,array('role'=>'form','class'=>'form-horizontal','method'=>'post','id'=>'main_form_submit'));
+ 	echo form_open('admin/healthcares/submit/'.$type,array('role'=>'form','class'=>'form-horizontal','method'=>'post','id'=>'main_form_submit'));
 
 	if(isset($item->id)){
 		echo form_hidden('id',$item->id);
@@ -42,7 +42,7 @@
 						<div class="tab-pane<?=$lang['slug']==$current_lang['slug']?" active":""?>" id="<?=$lang['slug']?>">
 
 						<div class='form-group'>
-              <label for="inputEmail3" class="control-label"><?=lang("Service name")?></label>
+              <label for="inputEmail3" class="control-label"><?=lang("Package name")?></label>
                 <!--<input type="input" name='title' class="form-control make_slug" id="title" placeholder="<?=lang("Title")?>">-->
                 <?=form_input('relation[translation]['.$lang['slug'].'][content][name]',value(isset($item->content[$lang['slug']]->name)?$item->content[$lang['slug']]->name:""),
 								array('id'=>$lang['slug'].'_slug','class'=>'form-control make_slug editor cke_editable cke_editable_inline cke_contents_ltr cke_show_borders','placeholder'=>lang("Title")))?>
@@ -125,12 +125,10 @@
 					<div class=''>
 						<div style="padding:5px;max-height:300px;overflow: scroll;border:1px solid #d2d6de;">
 						<?php
-						$check = "checked";
 							foreach($list_cats as $key=>$value):
-
-								if(isset($item)){
-									if($key == $item->category_id){ $check = "checked";}
-								}
+								$check = "checked";
+								if(isset($item))
+									if($key == $item->category_id) $check = "checked";
 						?>
 								<div class="checkbox">
                     <label>
@@ -139,7 +137,6 @@
                     </label>
                   </div>
 						<?php
-						$check = "";
 							endforeach;
 						?>
 						</div>

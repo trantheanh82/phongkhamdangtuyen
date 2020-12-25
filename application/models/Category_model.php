@@ -9,7 +9,6 @@ class Category_model extends MY_Model
 
 	function __construct(){
 
-
 		$this->has_many_pivot['articles'] = array(
 			'foreign_model'=>'article_model',
 			'pivot_table'=>	'articles_categories',
@@ -46,8 +45,11 @@ class Category_model extends MY_Model
 		//$lists = $this->get_all();
 		$lists = $this->with_translation('where: `model`=\''.$this->name.'\' AND `language`=\''.$current_lang.'\'')->where(array('model'=>$model,'active'=>'Y'))->order_by('sort','asc')->set_cache($model.'_'.$current_lang)->get_all();
 		$dropdown = array();
-		foreach($lists as $k=>$value){
-			$dropdown[$value->id] = $value->translation->content->name;
+
+		if(!empty($lists)){
+			foreach($lists as $k=>$value){
+				$dropdown[$value->id] = $value->translation->content->name;
+			}
 		}
 
 		return $dropdown;
@@ -73,6 +75,18 @@ class Category_model extends MY_Model
 								->get_all();
 	}
 
+	function get_service_menu($lang){
+		$conditions = "where:`model`='category' and `language`='".$lang."'";
+
+		$items =  $this->with_translation($conditions)
+								->with_slug($conditions)
+								->where(array('model'=>'service','on_menu'=>'Y','active'=>'Y'))
+								->order_by('sort','ASC')
+								//->set_cache('service_'.$lang)
+								->get_all();
+		return $items;
+	}
+
 	function get_mega_menu($current_lang,$model){
 		$conditions = "where:`model`='".$this->name."' and `language`='".$current_lang."'";
 
@@ -85,7 +99,6 @@ class Category_model extends MY_Model
 										->get_all();
 
 		$menu->feature_post = $this->article_model->get_feature_post($current_lang);
-
 		$menu->lastest_posts = $this->article_model->get_lastest_article($current_lang,3);
 
 		return $menu;
@@ -145,6 +158,21 @@ class Category_model extends MY_Model
 		$item = $this->with_slug("where:`model`='category' and `language`='".$lang."'")->where('id',$id)->get();
 
 		return $item;
+	}
+
+	function get_home_service_category($lang){
+		$items = $this->with_translation("where:`model`='category' and `language`='".$lang."'")
+										->with_slug("where:`model`='category' and `language`='".$lang."'")->fields('icon')->where(array('active'=>'Y','model'=>'service'))->order_by('sort','ASC')->get_all();
+
+		return $items;
+	}
+
+	function get_items($conditions,$lang){
+		$conditions = array_merge(array('active'=>'Y'),$conditions);
+		$items = $this->where($conditions)->with_translation("where:`model`='category' and `language`='".$lang."'")
+										->with_slug("where:`model`='category' and `language`='".$lang."'")->fields('icon')->order_by('sort','ASC')->get_all();
+
+		return $items;
 	}
 
 }

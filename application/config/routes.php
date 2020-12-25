@@ -1,4 +1,4 @@
-<?php
+ <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 /*
@@ -94,8 +94,14 @@ $route['^(\w{2})/(specialists|chuyen-khoa)'] = '/specialists';
 $route['^(\w{2})/(specialists|chuyen-khoa)/(:any)'] = '/specialists/index/$3';
 
 /*Service or Dich-vu*/
-$route['^(\w{2})/(service|dich-vu|goi-kham-benh)'] = '/services';
+$route['^(\w{2})/(service|dich-vu)'] = '/services';
 $route['^(\w{2})/(service|dich-vu|services|goi-kham-benh)/(:any)'] = '/services/index/$3';
+
+$route['^(\w{2})/(service|dich-vu|services|goi-kham-benh)/(:any)/(:any)'] = '/services/index/$3/$4';
+
+/*Gói khám sức khỏe*/
+$route['^(\w{2})/(healthcares|goi-kham-suc-khoe)'] = '/healthcare';
+$route['^(\w{2})/(healthcares|goi-kham-suc-khoe)/(:any)'] = '/healthcare/index/$3';
 
 /*Service or Dich-vu*/
 $route['^(\w{2})/(about-us|gioi-thieu)/(doctors|bac-si)'] = '/pages/doctors';
@@ -104,6 +110,10 @@ $route['^(\w{2})/(about-us|gioi-thieu)/(doctors|bac-si)'] = '/pages/doctors';
 /*Artice*/
 $route['^(\w{2})/(articles|article|tin-tuc)/(:any)/(:any)-chi-tiet'] = '/articles/detail/$3/$4';
 $route['^(\w{2})/(articles|article|tin-tuc)/(.+)'] = '/articles/index/$3';
+
+/**/
+$route['^(\w{2})/(vaccinations|tiem-ngua)'] = '/vaccinations';
+$route['^(\w{2})/(vaccinations|tiem-ngua)/(:any)'] = '/vaccinations/index/$3';
 
 
 

@@ -24,6 +24,15 @@ class Service_model extends MY_Model
 	    return $this->where(array('active'=>'Y'))->fields(array('name','slug','image','description'))->order_by('sort','asc')->get_all();
     }
 
+		public function get_services_v2($lang,$conditions = array()){
+			$conditions = array_merge($conditions,array('active'=>'Y'));
+	    return $this->where($conditions)
+										->with_translation('fields:content|where:`model`="'.$this->name.'" and `language`="'.$lang.'"')
+										->with_slug('fields:slug|where:`model`="'.$this->name.'" and `language`="'.$lang.'"')
+										->order_by('sort','asc')
+										->get_all();
+    }
+
 		public function get_dropdown_services($lang){
 			$items = $this->with_translation('fields:content|where:`model`="'.$this->name.'" and `language`="'.$lang.'"')
 										->where('active','Y')
@@ -94,5 +103,17 @@ class Service_model extends MY_Model
 										->order_by('sort','ASC')
 										->set_cache($slug.'_'.$lang)
 										->get();
+		}
+
+		public function get_items_by_slug($slug,$lang){
+			$slug = $this->slug_model->where(array('slug'=>$slug,'model'=>'category'))->get();
+
+			$items = $this->with_translation('where:`translations`.`model`="service" and `language`="'.$lang.'"')
+										->with_slug('where:`model`="service" and `language`="'.$lang.'"')
+										->where(array('active'=>'Y','category_id'=>$slug->model_id))
+										->order_by('sort','ASC')
+										///->set_cache($slug.'_'.$lang)
+										->get_all();
+			return $items;
 		}
 }

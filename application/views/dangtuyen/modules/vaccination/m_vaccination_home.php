@@ -48,7 +48,7 @@
                 <?php if(!empty($items)):
                   $i = 1;
                           foreach($items as $k=>$v):
-                            $link = "";
+                            $link = site_url().'/'.lang('vaccinations').'/'.$v->slug->slug;
                             ?>
 								<!-- TAB-1 CONTENT -->
 								<div class="tab-pane fade show <?=$i==1?"active":""?>" id="tab-<?=$v->id?>" role="tabpanel" aria-labelledby="tab1-list">

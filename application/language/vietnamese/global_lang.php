@@ -111,6 +111,11 @@ $lang['Confirm a Booking']    = "XÁC NHẬN ĐẶT LỊCH";
 $lang['BOOKING APPOINTMENT ONLINE'] = "ĐẶT LỊCH KHÁM - TIÊM CHỦNG";
 $lang['COLLECTION BLOOD']     =   "LẤY MẪU XÉT NGHIỆM TẠI NHÀ";
 
+
+/**/
+$lang['vaccinations'] = 'tiem-ngua';
+$lang['Vaccinations'] = "Tiêm Ngừa";
+
 /*functionale*/
 $lang['View All']         = "Xem Tất Cả";
 

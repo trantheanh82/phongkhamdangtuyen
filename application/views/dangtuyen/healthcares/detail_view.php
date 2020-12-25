@@ -27,7 +27,10 @@
 							<!-- TEXT WIDGET -->
 							<div id="txt-widget" class="sidebar-div mb-50">
 
-								<?php //$this->load->view($template.'/modules/services/m_services',array('services'=>$other_services))?>
+								<?=$this->load->view($template.'/modules/healthcare/m_healthcare',array('healthcares'=>$other_healthcare))?>
+
+								<?=$this->load->view($template.'/modules/services/m_services',array('other_services'=>$other_services))?>
+
 								<?=$this->load->view($template.'/modules/articles/m_lastest_posts',array('lastest_posts'=>$lastest_posts));?>
 
 						</aside>   <!-- END SIDEBAR -->

@@ -2,11 +2,11 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Vaccination_model extends MY_Model
+class Healthcare_model extends MY_Model
 {
 
-		public $table = "vaccinations";
-		public $name = "vaccination";
+		public $table = "healthcares";
+		public $name = "healthcare";
     public function __construct()
     {
     	//$this->has_many['translations'] = array('Page_translation_model','page_id','id');
@@ -20,11 +20,15 @@ class Vaccination_model extends MY_Model
         parent::__construct();
     }
 
-		public function get_dropdown_items($lang){
+    public function get_healthcares(){
+	    return $this->where(array('active'=>'Y'))->fields(array('name','slug','image','description'))->order_by('sort','asc')->get_all();
+    }
+
+		public function get_dropdown_healthcares($lang){
 			$items = $this->with_translation('fields:content|where:`model`="'.$this->name.'" and `language`="'.$lang.'"')
 										->where('active','Y')
 										->fields('id')
-										->set_cache($lang.'_get_dropdown_'.$this->name)
+										->set_cache($lang.'_get_dropdown_services')
 										->get_all();
 
 			if(!empty($items)){
@@ -37,7 +41,7 @@ class Vaccination_model extends MY_Model
 			return $services;
     }
 
-		public function get_items_by_category($category_id,$lang){
+		public function get_healthcare_by_category($category_id,$lang){
 			return $this->with_translation('where:`model`="'.$this->name.'" and `language`="'.$lang.'"')
 									->with_slug('where:`model`="'.$this->name.'" and `language`="'.$lang.'"')
 									->where(array('active'=>'Y','category_id'=>$category_id))
@@ -61,29 +65,28 @@ class Vaccination_model extends MY_Model
 			//return $items;
 		}
 
-		public function get_items($language,$conditions=""){
-			$items =  $this->vaccination_model
-	                            ->with_translation('where:`translations`.`model`="'.$this->name.'" and `language`="'.$language.'"')
+		public function get_items($language){
+			return $this
+	                            ->with_translation('where:`translations`.`model`= "'.$this->name.'" and `language`="'.$language.'"')
 	                            ->with_slug('where:`model`="'.$this->name.'" and `language`="'.$language.'"')
-	                            ->where($conditions)
+	                            ->where(array('active'=>'Y'))
 	                            ->order_by('sort','ASC')
 	                            ->get_all();
-															return $items;
 		}
 
 		public function get_home_items($language){
-			$items = $this->vaccination_model
+			$items = $this
 	                            ->with_translation('where:`translations`.`model`="'.$this->name.'" and `language`="'.$language.'"')
 	                            ->with_slug('where:`model`="'.$this->name.'" and `language`="'.$language.'"')
 	                            ->where(array('active'=>'Y'))
-															->set_cache($language.'_get_home_items')
+															//->set_cache($language.'_get_home_items')
 															->order_by('sort','ASC')
 	                            ->get_all();
-			return $items;
+		 return $items;
 		}
 
 		public function get_item($slug,$lang){
-			$model = $this->slug_model->where(array('slug'=>$slug,'model'=>'vaccination'))->get();
+			$model = $this->slug_model->where(array('slug'=>$slug,'model'=>$this->name))->get();
 
 			return $this->with_translation('where:`translations`.`model`="'.$this->name.'" and `language`="'.$lang.'"')
 										->with_slug('where:`model`="'.$this->name.'" and `language`="'.$lang.'"')

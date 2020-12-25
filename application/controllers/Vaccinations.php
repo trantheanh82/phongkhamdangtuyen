@@ -5,8 +5,8 @@ class Vaccinations extends Public_Controller {
 
 	protected $page_id;
 	protected $page;
-	public function __construct(){
 
+	public function __construct(){
 		parent::__construct();
 
     $this->load->model('vaccination_model');
@@ -14,10 +14,29 @@ class Vaccinations extends Public_Controller {
 
     $this->load->model('page_model');
     $this->load->model('slug_model');
+
+$this->data['page_name'] = lang('Vaccinations');
+		$this->breadcrumbs->push(lang('Vaccinations'),"/");
+
   }
 
-  function index(){
-    
+  public function index($slug=""){
+		if(!empty($slug)){
+
+			$this->_detail($slug);
+		}else{
+			$this->data['page_name'] = lang('Vaccinations');
+			$this->render('/vaccinations/index_view');
+		}
   }
+
+	function _detail($slug){
+		$item = $this->vaccination_model->get_item($slug,$this->current_lang);
+
+		$this->data['page_name'] = $item->translation->content->name;
+		$this->breadcrumbs->push( $item->translation->content->name,"/".$item->slug->slug);
+		$this->data['item'] = $item;
+		$this->render('/vaccinations/detail_view');
+	}
 
 }

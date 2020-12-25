@@ -107,7 +107,7 @@ class Public_Controller extends MY_Controller{
 		return $public_menu;
 
 	}
-	
+
 	/**
 	 * [getEmailConfig description]
 	 * @return [type] [description]
@@ -119,7 +119,7 @@ class Public_Controller extends MY_Controller{
 		$config['protocol'] = 'smtp';
 		$config['smtp_port'] = '587';
 		$config['mailtype'] = "html";
-		
+
 		return $config;
 	}
 

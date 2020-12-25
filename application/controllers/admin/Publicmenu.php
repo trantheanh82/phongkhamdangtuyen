@@ -22,7 +22,6 @@ class Publicmenu extends Admin_Controller {
 
 	function listing(){
 		$this->data['items'] = $this->public_menu_model->get_allitems($this->current_lang);
-		
 		$this->render('admin/publicmenu/publicmenu_view');
 	}
 

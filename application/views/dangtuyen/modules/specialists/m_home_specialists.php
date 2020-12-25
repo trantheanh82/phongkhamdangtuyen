@@ -7,9 +7,7 @@
     <!-- SECTION TITLE -->
     <div class="row">
       <div class="col-lg-10 offset-lg-1 section-title">
-
         <?=$content?>
-
       </div>
     </div>
 

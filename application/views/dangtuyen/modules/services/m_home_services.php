@@ -1,41 +1,54 @@
-<!-- SERVICES
+<!-- SERVICES-2
 ============================================= -->
-<?php if(!empty($items)):?>
-<section id="tabs-1" class="wide-100 tabs-section division">
+<section id="services-2" class="bg-lightgrey wide-70 services-section division">
   <div class="container">
-    <?php if(isset($content)):?>
+
+
     <!-- SECTION TITLE -->
     <div class="row">
       <div class="col-lg-10 offset-lg-1 section-title">
 
-        <!-- Title 	-->
         <?=$content?>
 
-        <!-- Text -->
       </div>
-    </div>	 <!-- END SECTION TITLE -->
-  <?php endif;?>
-  <div class="row">
-    <?php
-    $i = 1;
-      foreach($items as $k=>$v):
-        $link = base_url()."dich-vu/".$v->slug->slug;
-    ?>
-      <div class='col-lg-4 col-md-6 col-sm-6 mb-2 <?=($i%2==0)?'pl-lg-4':'pr-lg-4'?>'>
-        <div class='sbox mb-5 box-shadow-dark'>
+    </div>
 
-        <?php if(!empty($v->image))
-              echo '<div class="tab-img text-center">'.anchor($link,img($v->image,'',array('class'=>'img-fluid','alt'=>$v->translation->content->name))).'</div>';
-        ?>
-          <div class='service-title text-center'  style='font-weight:bold;'>
-            <h4 class='h4-md h5-title text-uppercase'><?=anchor($link,$v->translation->content->name)?></h4>
-          </div>
+<?php
+  if(!empty($items)):
+    $data_wow_delay = 0.4;
+?>
+    <div class="row">
+
+      <?php
+        $parent_link = base_url().'dich-vu/';
+        foreach($items as $k=>$v):
+            $link = $parent_link.$v->slug->slug;
+         ?>
+      <!-- SERVICE BOX #1 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="sbox-2 wow fadeInUp" data-wow-delay="<?=$data_wow_delay?>s">
+          <a href="<?=$link?>">
+
+            <!-- Icon  -->
+            <div class="sbox-2-icon icon-xl">
+              <span class="<?=$v->icon?>"></span>
+            </div>
+
+            <!-- Title -->
+            <h5 class="h5-sm sbox-2-title green-color"><?=$v->translation->content->name?></h5>
+
+          </a>
         </div>
       </div>
-    <?php
-      $i++;
-    endforeach;
-    ?>
-  </div>
-</section>
-<?php endif;?>
+
+      <?php
+          $data_wow_delay += 0.2;
+          if($data_wow_delay > 1)
+            $data_wow_delay = 0.4;
+
+        endforeach;?>
+    </div>	   <!-- End row -->
+<?php endif; ?>
+
+  </div>	   <!-- End container -->
+</section>	<!-- END SERVICES-2 -->

@@ -13,10 +13,10 @@
 		    <thead>
 			    <tr>
 			      <th class='text-center'><?=lang("ID")?></th>
-						<th class='text-center'><?=lang("Category")?></th>
 			      <th class='text-center'><?=lang("Image")?></th>
 			      <th class='text-center'><?=lang("Name")?></th>
 			      <th class='text-center'><?=lang("Description")?></th>
+						<th class='text-center'><?=lang("Category")?></th>
 			      <th class='text-center'><?=lang("Created")?></th>
 			      <th class='text-center'><?=lang("Modified")?></th>
 			      <th class='text-center'><?=lang("Order")?></th>
@@ -28,17 +28,19 @@
 					if(!empty($items)):
 						foreach($items as $k=>$v):
 						$img = img(base_url().preg_replace("/upload/","thumbs",$v->image),'',array('width'=>100));
+						$edit_link = base_url().'admin/healthcares/edit/'.$v->id;
+						$delete_link = base_url().'admin/healthcares/delete/'.$v->id;
 					?>
 					<tr>
 						<td class='text-center'><?=$v->id?></td>
-							<td><?=$v->category->translation->content->name?></td>
-						<td class='text-center'><a href="<?=base_url()?>admin/services/edit/<?=$v->id?>"><?=$img?></a>
-						<td><a href="<?=base_url()?>admin/services/edit/<?=$v->id?>"><?=$v->translation->content->name?></a></td>
+						<td class='text-center'><a href="<?=$edit_link?>"><?=$img?></a>
+						<td><a href="<?=$edit_link?>"><?=$v->translation->content->name?></a></td>
 						<td><?=getSnippet($v->translation->content->description,10)?> [<a href="<?=base_url()?>admin/services/edit/<?=$v->id?>">...</a>]</td>
+						<td><?=$v->category->translation->content->name?></td>
 						<td class='text-center'><?=$v->created_at?></td>
 						<td class='text-center'><?=$v->updated_at?></td>
 						<td class='text-center'><?=$v->sort?></td>
-						<td class='text-center'><?=anchor('admin/services/edit/'.$v->id,'<i class="fa fa-edit"></i>',array('title'=>__('Edit',$this))).' '.anchor('admin/services/delete/'.$v->id,'<i class="fa fa-trash"></i>',array('title'=>__('Delete',$this),'class'=>'confirm_delete'))?></td>
+						<td class='text-center'><?=anchor('admin/services/edit/'.$v->id,'<i class="fa fa-edit"></i>',array('title'=>__('Edit',$this))).' '.anchor($delete_link,'<i class="fa fa-trash"></i>',array('title'=>__('Delete',$this),'class'=>'confirm_delete'))?></td>
 					</tr>
 				<?php
 						endforeach;
