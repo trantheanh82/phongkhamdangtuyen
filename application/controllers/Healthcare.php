@@ -37,7 +37,7 @@ class Healthcare extends Public_Controller {
   function index($slug=""){
 		if(empty($slug)){
 		  $this->data['page_name'] = $this->page->translation->content->name;
-			$this->data['items'] = $this->service_model->get_items($this->current_lang);
+			$this->data['items'] = $this->healthecare_model->get_items($this->current_lang);
 
 			/*SEO*/
       $this->data['page_title'] = $this->page->translation->content->meta_title;
