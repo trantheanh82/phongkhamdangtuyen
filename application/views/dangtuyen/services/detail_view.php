@@ -14,8 +14,9 @@
 				 				<?=$item->translation->content->content?>
 
 								<!-- Button -->
-								<a href="<?=base_url()?>bookingappointments" class="btn btn-green green-hover"><?=lang("Book an appointment")?></a>
-
+								<div class='text-center' style='width:100%;'>
+								<a href="<?=base_url()?>bookingappointments" class="btn btn-orange orange-hover " data-toggle="modal" data-target="#bookingModal" data-modal-type="<?=($item->slug->slug=="lay-mau-xet-nghiem"?"collection_blood":"booking")?>" data-modal-title="<?=($item->slug->slug=="lay-mau-xet-nghiem"?lang("COLLECTION BLOOD"):lang("BOOKING APPOINTMENT ONLINE"))?>"><?=lang("Book an appointment")?></a>
+								</div>
 				 			</div>
 				 		</div>	<!-- END SERVICE CONTENT -->
 

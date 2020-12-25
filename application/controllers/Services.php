@@ -80,7 +80,9 @@ class Services extends Public_Controller {
 				$this->data['page_name'] = $services->{0}->translation->content->name;
 				$this->breadcrumbs->push($services->{0}->translation->content->name,"/".$services->{0}->slug->slug);
 
+				$this->data['other_services'] = $this->service_model->get_other_services(array('1'=>'1'),$this->current_lang);
 				$this->data['lastest_posts'] = $this->article_model->get_lastest_article($this->current_lang,5);
+
 				$this->render('/services/detail_view');
 			}
 
