@@ -112,8 +112,8 @@ $route['^(\w{2})/(articles|article|tin-tuc)/(:any)/(:any)-chi-tiet'] = '/article
 $route['^(\w{2})/(articles|article|tin-tuc)/(.+)'] = '/articles/index/$3';
 
 /**/
-$route['^(\w{2})/(vaccinations|tiem-ngua)'] = '/vaccinations';
-$route['^(\w{2})/(vaccinations|tiem-ngua)/(:any)'] = '/vaccinations/index/$3';
+$route['^(\w{2})/(vaccinations|tiem-chung)'] = '/vaccinations';
+$route['^(\w{2})/(vaccinations|tiem-chung)/(:any)'] = '/vaccinations/index/$3';
 
 
 

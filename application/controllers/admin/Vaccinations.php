@@ -44,7 +44,8 @@ class Vaccinations extends Admin_Controller {
     ->with_articles_categories()
     ->where('id',$id)
     ->get();
-
+    pr($this->db->last_query());
+    pr($item);exit();
     foreach($item ->translations as $k=>$value){
       $item ->content[$value->language] = $value->content;
       $item ->content[$value->language]->id = $value->id;
@@ -54,8 +55,6 @@ class Vaccinations extends Admin_Controller {
       $item ->slug[$value->language]->slug = $value->slug;
       $item ->slug[$value->language]->id = $value->id;
     }
-
-    pr($item);exit();
 
     unset($item->translations);
     unset($item->slugs);
