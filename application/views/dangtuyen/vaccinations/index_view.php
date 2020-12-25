@@ -7,6 +7,11 @@
 									<?=$page->translation->content->content?>
 						</div>
 					</div>
+					<div class="row">
+						<div class="col-xl-12 col-lg-12 text-center text-center section-title">
+									<h2 class="h3-md red-color">CÁC GÓI TIÊM CHỦNG TẠI PHÒNG KHÁM ĐA KHOA ĐẶNG TUYỀN</h2>
+						</div>
+					</div>
 				 	<div class="row">
 				 		<!-- TABS NAVIGATION -->
 				 		<div class="col-lg-4">
