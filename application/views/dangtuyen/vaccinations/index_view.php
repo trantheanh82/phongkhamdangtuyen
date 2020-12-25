@@ -45,7 +45,7 @@
 								?>
 								<!-- TAB-1 CONTENT -->
 								<div class="tab-pane fade <?=$active?" active show":""?>" id="tab-<?=$v->id?>" role="tabpanel" aria-labelledby="tab<?=$v->id?>-list">
-											<h4 class="h4-md green-color"><?=$v->translation->content->name?></h4>
+											<h4 class="h4-md green-color mb-4"><?=$v->translation->content->name?></h4>
 											<?=$v->translation->content->content?>
 								</div>	<!-- END TAB-1 CONTENT -->
 							<?php $active=false; endforeach; endif;?>
