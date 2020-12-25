@@ -18,7 +18,7 @@
 															foreach($items as $k=>$v):
 										?>
 										<li class="nav-item icon-xs">
-											<a class="nav-link<?=$active?" active":""?>" id="tab<?$v->id?>-list" data-toggle="pill" href="#tab-<?$v->id?>" role="tab" aria-controls="tab-<?$v->id?>" aria-selected="false">
+											<a class="nav-link<?=$active?" active":""?>" id="tab<?=$v->id?>-list" data-toggle="pill" href="#tab-<?=$v->id?>" role="tab" aria-controls="tab-<?=$v->id?>" aria-selected="false">
 												<?=$v->translation->content->name?>
 											</a>
 										</li>
@@ -35,14 +35,14 @@
 
 								<?php
 									if(!empty($items)):
-
+										$active = true;
 											foreach($items as $k => $v):
 								?>
 								<!-- TAB-1 CONTENT -->
-								<div class="tab-pane fade" id="tab-<?=$v->id?>" role="tabpanel" aria-labelledby="tab<?=$v->id?>-list">
+								<div class="tab-pane fade <?=$active?" active show":""?>" id="tab-<?=$v->id?>" role="tabpanel" aria-labelledby="tab<?=$v->id?>-list">
 											<?=$v->translation->content->content?>
 								</div>	<!-- END TAB-1 CONTENT -->
-							<?php  endforeach; endif;?>
+							<?php $active=false; endforeach; endif;?>
 							</div>	<!-- END TABS CONTENT -->
 
 
