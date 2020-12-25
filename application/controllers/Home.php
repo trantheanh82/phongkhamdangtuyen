@@ -44,7 +44,6 @@ class Home extends Public_Controller {
 					$this->load->model($model);
 					//$items = $this->{$model}->get_home_items($this->current_lang);
 					$items = call_user_func_array(array($this->{$model},$v->function),array($this->current_lang));
-				
 					$content .= $this->load->view($this->template.'/modules/'.$v->view,array('items'=>$items,'content'=>isset($v->translation->content->html)?$v->translation->content->html:""),TRUE);
 
 				}else{
