@@ -18,11 +18,11 @@
 															foreach($items as $k=>$v):
 										?>
 										<li class="nav-item icon-xs">
-											<a class="nav-link <?=$active?"active":$active=false?>" id="tab<?$v->id?>-list" data-toggle="pill" href="#tab-<?$v->id?>" role="tab" aria-controls="tab-<?$v->id?>" aria-selected="false">
+											<a class="nav-link<?=$active?" active":""?>" id="tab<?$v->id?>-list" data-toggle="pill" href="#tab-<?$v->id?>" role="tab" aria-controls="tab-<?$v->id?>" aria-selected="false">
 												<?=$v->translation->content->name?>
 											</a>
 										</li>
-									<?php endforeach; endif;?>
+									<?php $active=false;endforeach; endif;?>
 								</ul>
 
 							</div>
