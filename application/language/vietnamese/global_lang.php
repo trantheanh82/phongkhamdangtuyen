@@ -113,7 +113,7 @@ $lang['COLLECTION BLOOD']     =   "LẤY MẪU XÉT NGHIỆM TẠI NHÀ";
 
 
 /**/
-$lang['vaccinations'] = 'tiem-chủng';
+$lang['vaccinations'] = 'tiem-chung';
 $lang['Vaccinations'] = "Tiêm Chủng";
 
 /*functionale*/
