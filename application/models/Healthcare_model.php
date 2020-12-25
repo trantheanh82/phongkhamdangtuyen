@@ -95,4 +95,14 @@ class Healthcare_model extends MY_Model
 										->set_cache($slug.'_'.$lang)
 										->get();
 		}
+
+		public function get_others($conditions,$lang){
+			$conditions = array_merge(array('active'=>'Y'),$conditions);
+			$items =  $this->with_translation('where:`translations`.`model`="'.$this->name.'" and `language`="'.$lang.'"')
+										->with_slug('where:`model`="'.$this->name.'" and `language`="'.$lang.'"')
+										->where($conditions)
+										->order_by('sort','ASC')
+										->get_all();
+		return $items;
+		}
 }

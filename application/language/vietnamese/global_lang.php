@@ -131,3 +131,6 @@ $lang['Latest Posts'] = "Bài viết mới";
 /*Mega menu*/
 $lang['Featured Post']   = "Bài viết được quan tâm";
 $lang['Lastest Posts']    = "Bài mới nhất";
+
+$lang['Other Services'] = "Dịch vụ khác";
+$lang['Health Cares']   =  "Các gói khám sức khỏe";

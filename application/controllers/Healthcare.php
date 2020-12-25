@@ -56,8 +56,9 @@ class Healthcare extends Public_Controller {
 			$this->breadcrumbs->push($this->data['item']->translation->content->name,"/");
 			$this->data['page_name'] = $this->data['item']->translation->content->name;
 
-			$this->data['other_healthcare'] = $this->healthcare_model->get_items($this->current_lang);
-			$this->data['other_services'] = $this->service_model->get_items($this->current_lang);
+			$this->data['other_healthcare'] = $this->healthcare_model->get_others(array('id <>'=>$this->data['item']->id),$this->current_lang);
+
+			$this->data['other_services'] = $this->service_model->get_other_services(array('1'=>'1'),$this->current_lang);
 			$this->data['lastest_posts']  = $this->article_model->get_lastest_article($this->current_lang,5);
 
 			foreach($this->data['other_healthcare'] as $k=>$v){

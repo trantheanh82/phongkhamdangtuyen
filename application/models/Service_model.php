@@ -116,4 +116,15 @@ class Service_model extends MY_Model
 										->get_all();
 			return $items;
 		}
+
+		public function get_other_services($conditions, $lang){
+			$conditions = array_merge(array('active'=>'Y'),$conditions);
+
+			return $this->with_translation('where:`translations`.`model`="service" and `language`="'.$lang.'"')
+										->with_slug('where:`model`="service" and `language`="'.$lang.'"')
+										->where($conditions)
+										->order_by('sort','ASC')
+									  ->set_cache('other_services_'.$lang)
+										->get_all();
+		}
 }

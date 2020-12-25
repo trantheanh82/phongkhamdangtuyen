@@ -42,13 +42,19 @@ class Services extends Public_Controller {
 
 			$this->render('/services/index_view');
 		}else if (!empty($slug_2)){
-
 			 $service = $this->service_model->get_item($slug_2,$this->current_lang);
 			 $this->data['item'] = $service;
 
-	 			 $this->breadcrumbs->push("Chuyên khoa","/".$this->page_id->slug."/chuyen-khoa");
+	 		 $this->breadcrumbs->push("Chuyên khoa","/".$this->page_id->slug."/chuyen-khoa");
 			 $this->breadcrumbs->push($service->translation->content->name,"/");
 			 $this->data['page_name']  = $service->translation->content->name;
+
+			 $other_services = $this->service_model->get_other_services(array('category_id'=>$this->data['item']->category_id),$this->current_lang);
+			 $lastest_posts = $this->article_model->get_lastest_article($this->current_lang,5);
+
+			 $this->data['other_services'] = $other_services;
+			 $this->data['lastest_posts'] = $lastest_posts;
+
 			 $this->render('/services/detail_view');
 		}else{
 
@@ -63,6 +69,8 @@ class Services extends Public_Controller {
 				$this->data['page_name'] = "Chuyên khoa";
 
 				$this->data['items'] = $services;
+
+
 				$this->render('/services/index_view');
 
 			}else{
