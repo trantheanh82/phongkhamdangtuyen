@@ -24,7 +24,7 @@
 				<div id="abox-3" class="col-md-4 col-lg-4  wow fadeInUp" onclick="window.open('http://ykhoadangtuyen.com');"  data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
 						<div class="abox-1 green-color text-center">
 							<?=img('/assets/dangtuyen/images/icon-search.png','',array('class'=>'img-fluid'))?>
-							<h5 class="h5-md mt-30">TRA CỨU KẾT QUẢ ONLINE</h5>
+							<h5 class="h5-md mt-30">TRA CỨU KẾT QUẢ <br  /> ONLINE</h5>
 						</div>
 				</div>
 

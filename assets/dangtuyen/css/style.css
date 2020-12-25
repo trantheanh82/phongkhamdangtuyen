@@ -765,7 +765,7 @@ span.id-color {
 .section-title h3.h3-md {
   line-height: 1;
   margin-bottom: 20px;
-  font-weight: 500;
+  font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -2038,7 +2038,7 @@ p.header-widget-phone {
 
 .abox-1 {
   padding: 25px 30px;
-  padding-bottom: 25px;
+  padding-bottom: 5px;
   overflow: hidden;
   /**/
     background: url(/assets/dangtuyen/images/abox-1-bg.jpg) bottom left;
@@ -2087,7 +2087,7 @@ box-shadow: 1px 1px 27px 0px rgba(133,133,133,1);
 
 .abox-1 h5,
 .abox-2 h5 {
-  line-height: 1;
+  line-height: 1.5;
   margin-bottom: 25px;
 }
 
