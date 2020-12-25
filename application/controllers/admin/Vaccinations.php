@@ -37,6 +37,7 @@ class Vaccinations extends Admin_Controller {
   }
 
   function edit($id){
+
     $item = $this->vaccination_model
     ->with_translations('where:`model`=\''.$this->model.'\'')
     ->with_slugs('where:`model`=\''.$this->model.'\'')
@@ -50,10 +51,11 @@ class Vaccinations extends Admin_Controller {
     }
 
     foreach($item ->slugs as $k=>$value){
-      $item ->slug[$value->language] = new \stdClass();
       $item ->slug[$value->language]->slug = $value->slug;
       $item ->slug[$value->language]->id = $value->id;
     }
+
+    pr($item);exit();
 
     unset($item->translations);
     unset($item->slugs);
