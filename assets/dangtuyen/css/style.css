@@ -2431,7 +2431,7 @@ td.text-right {
 }
 
 .sbox-7 h5 {
-  line-height: 1;
+  /*line-height: 1;*/
   margin-bottom: 10px;
 }
 
