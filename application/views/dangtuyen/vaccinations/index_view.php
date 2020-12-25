@@ -34,13 +34,14 @@
 
 								<?php
 									if(!empty($items)):
+										$active = true;
 											foreach($items as $k => $v):
 								?>
 								<!-- TAB-1 CONTENT -->
-								<div class="tab-pane fade" id="tab-<?=$v->id?>" role="tabpanel" aria-labelledby="tab<?=$v->id?>-list">
+								<div class="tab-pane fade <?=$active?"active":""?>" id="tab-<?=$v->id?>" role="tabpanel" aria-labelledby="tab<?=$v->id?>-list">
 											<?=$v->translation->content->content?>
 								</div>	<!-- END TAB-1 CONTENT -->
-							<?php endforeach; endif;?>
+							<?php $active =false; endforeach; endif;?>
 							</div>	<!-- END TABS CONTENT -->
 
 
