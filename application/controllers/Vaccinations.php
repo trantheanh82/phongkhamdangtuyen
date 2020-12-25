@@ -15,7 +15,9 @@ class Vaccinations extends Public_Controller {
     $this->load->model('page_model');
     $this->load->model('slug_model');
 
-$this->data['page_name'] = lang('Vaccinations');
+		$this->page = $this->page_model->get_page('tiem-chung',$this->current_lang);
+
+		$this->data['page_name'] = lang('Vaccinations');
 		$this->breadcrumbs->push(lang('Vaccinations'),"/");
 
   }
@@ -25,7 +27,14 @@ $this->data['page_name'] = lang('Vaccinations');
 
 			$this->_detail($slug);
 		}else{
+
+			$this->data['page'] = $this->page;
+
+			$items = $this->vaccination_model->get_all();
+
+			$this->data['items'] = $items;
 			$this->data['page_name'] = lang('Vaccinations');
+
 			$this->render('/vaccinations/index_view');
 		}
   }
