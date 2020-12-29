@@ -1510,7 +1510,7 @@
 
   /* Paragraphs */
   p.p-sm { font-size: 1.075rem; }
-  p { font-size: 1.4rem; }
+  p, .review-2 p { font-size: 1.4rem; }
   p.p-md { font-size: 1.1075rem; }
   p.p-lg { font-size: 1.145rem; }
   p.p-xl { font-size: 1.1785rem; }
