@@ -7,7 +7,7 @@
 			    <div class="wsmobileheader clearfix">
 			    	<a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
 			    	<span class="smllogo">
-              <?=img($Settings['company_logo_2'],'', array('height'=>'44px','alt'=>$Settings['company_name'],'class'=>'img-responsive'))?>
+              <?=anchor('/',img($Settings['company_logo_2'],'', array('height'=>'44px','alt'=>$Settings['company_name'],'class'=>'img-responsive')))?>
             </span>
 			    	<a href="return false;" class="searchbtn"><i class="fas fa-search"></i></a>
 			 	</div>
