@@ -20,7 +20,7 @@
                 <?=img($Settings['company_logo_footer'],'',array('height'=>45,'alt'=>$Settings['company_name']))?>
 
 								<!-- Text -->
-								<p class="p-sm mt-20"><?=$Settings['company_description']?></p>
+								<p class="mt-20"><?=$Settings['company_description']?></p>
 
 								<!-- Social Icons -->
 								<div class="footer-socials-links mt-20">
