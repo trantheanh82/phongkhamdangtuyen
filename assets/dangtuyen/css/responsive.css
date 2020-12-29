@@ -1522,7 +1522,7 @@
   .box-list p.p-sm { font-size: 1.1075rem; }
 
   /* Video Play Button */
-  .video-btn { width: 90px; height: 90px; margin-top: -45px; margin-left: -45px;  }
+  .video-btn { width: 90px; height: 90px; margin-top: -80px; margin-left: -45px;  }
   .video-btn i { font-size: 2.75rem; line-height: 82px!important; }
   .video-btn.video-btn-sm { width: 74px; height: 74px; margin-top: -37px; margin-left: -37px; line-height: 64px!important; }
   .video-btn.video-btn-sm i {font-size: 34px; line-height: 68px!important; margin-left: 6px; }
