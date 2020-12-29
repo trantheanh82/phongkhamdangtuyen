@@ -5966,3 +5966,7 @@ box-shadow: -1px 1px 11px -2px rgba(196,196,196,1);
 #abox-3:hover{
   cursor: pointer;
 }
+
+.video-popup1{
+  color: #fff;
+}
