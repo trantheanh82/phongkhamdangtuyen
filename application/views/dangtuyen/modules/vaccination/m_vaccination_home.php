@@ -70,10 +70,10 @@
 											<div class="txt-block pc-30">
 
 												<!-- Title -->
-												<h3 class="h3-md green-color"><?=$v->translation->content->name?></h3>
+												<h5 class="h5-md orange-color mb-40 text-uppercase"><?=$v->translation->content->name?></h3>
 
 												<!-- Text -->
-												<p class="mb-30"><?=strip_tags($v->translation->content->description)?>
+												<p class="mb-30" style="line-height:1.75rem"><?=strip_tags($v->translation->content->description)?>
 												</p>
 
 												<!-- Button -->

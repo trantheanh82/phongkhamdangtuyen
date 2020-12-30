@@ -170,7 +170,7 @@ video {
 }
 
 .wsmenu >.wsmenu-list > li a {
-  color: #666;
+  color: #444;
 }
 
 .wsmenu >.wsmenu-list > li:hover > a {
@@ -190,7 +190,7 @@ video {
   /*padding: 10px 40px 10px 10px;*/
   padding: 10px 30px 10px 10px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 800;
 }
 
 .wsmenu > .wsmenu-list > li:last-child > a {
@@ -431,7 +431,7 @@ video {
 .wsmenu>.wsmenu-list>li>ul.sub-menu>li>a {
   position: relative;
   background-image: none;
-  color: #888;
+  color: #444;
   border-right: 0 none;
   text-align: left;
   display: block;
