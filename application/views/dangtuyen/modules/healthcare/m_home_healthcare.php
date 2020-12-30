@@ -18,11 +18,12 @@
   <div class="row">
     <?php
     $i = 1;
+    $delay = 0.4;
       foreach($items as $k=>$v):
         $link = base_url()."goi-kham-suc-khoe/".$v->slug->slug;
     ?>
       <div class='col-lg-4 col-md-6 col-sm-6 mb-2 <?=($i%2==0)?'pl-lg-4':'pr-lg-4'?>'>
-        <div class='sbox mb-5 box-shadow-dark'>
+        <div class='sbox mb-5 box-shadow-dark wow fadeInUp' data-wow-delay="<?=$delay?>s">
 
         <?php if(!empty($v->image))
               echo '<div class="tab-img text-center">'.anchor($link,img($v->image,'',array('class'=>'img-fluid','alt'=>$v->translation->content->name))).'</div>';
@@ -34,6 +35,7 @@
       </div>
     <?php
       $i++;
+      $delay += 0.2;
     endforeach;
     ?>
   </div>
