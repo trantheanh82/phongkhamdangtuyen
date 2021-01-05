@@ -1,17 +1,11 @@
-<div class='zalo-btn'>
-  <div class="zalo-chat-widget" data-oaid="579745863508352884" data-welcome-message="Rất vui khi được hỗ trợ bạn!" data-autopopup="0" data-width="350" data-height="420"></div>
+<div class="zalo-chat">
+	<a href="http://zalo.me/0918757775"><img src="https://stc-zaloprofile.zdn.vn/pc/v1/images/zalo_sharelogo.png" class="img-responsive" style="max-width:50px;"></a>
 </div>
-<script src="https://sp.zalo.me/plugins/sdk.js"></script>
-
 <style>
-.zalo-btn{
-  z-index: 2147483647;
-    border: none;
-    visibility: visible;
-    bottom: 11%;
-    right: 4%;
-    position: fixed;
-    width: 70px;
-    height: 70px;
+.zalo-chat {
+  position: fixed;
+  bottom: 11%;
+  right: 6%;
+  z-index: 1000;
 }
 </style>
