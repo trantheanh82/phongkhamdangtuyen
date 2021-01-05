@@ -4,7 +4,7 @@
 <style>
 .zalo-chat {
   position: fixed;
-  bottom: 11%;
+  bottom: 17%;
   right: 6%;
   z-index: 1000;
 }
