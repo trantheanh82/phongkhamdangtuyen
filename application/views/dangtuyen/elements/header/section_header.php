@@ -58,13 +58,12 @@
 						    				<span class="flaticon-021-hospital-9 green-color"></span>
 							    			<div class="header-widget-txt">
 								    			<p class="txt-400"><?=lang('Address').$Settings['address']?></p>
-
-									    			<p class="txt-400"><?=lang('Address 2').$Settings['company_address_1']?></p>
+													<p class="txt-400"><?=lang('Address 2').$Settings['company_address_1']?></p>
+													<p class="txt-400">Hotline: <a href="tel:<?=$Settings['company_phone_1']?>"><?=$Settings['company_phone_1']?></a> - <?=$Settings['company_phone_2']?></p>
 												<!--<p class="lightgrey-color">Victoria 3000 Australia</p>-->
 											</div>
 						    			</div>
 						    		</div>
-
 						    	</div>
 					      	</div>	<!-- END WIDGETS -->
 

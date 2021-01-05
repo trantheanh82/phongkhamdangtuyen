@@ -32,7 +32,8 @@ class Public_Controller extends MY_Controller{
 			'animate.css',
 			'jquery.datetimepicker.min.css',
 			'style.css',
-			'responsive.css'
+			'responsive.css',
+			'call_btn.css'
 		),$this->template,'css',false);
 
 		//$this->data['before_head'] .= parent::insert_assets('modernizr-2.8.3.min.js',$this->template,'js',false);
