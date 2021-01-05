@@ -126,4 +126,6 @@
 				</div>	   <!-- End container -->
 			</footer>	<!-- END FOOTER-3 -->
 <?=$this->load->view($template.'/modules/call_btn')?>
+<?=$this->load->view($template.'/modules/zalo_btn')?>
+
 <?=$this->load->view($template.'/modules/dialog/modal',array('modal'=>array('title'=>lang('BOOKING APPOINTMENT ONLINE'),'content'=>$this->load->view($template.'/modules/m_booking','',true))))?>
