@@ -34,7 +34,12 @@
   /* HERO IMAGES CAROUSEL */
   #heroCarousel .carousel-item { min-height: 650px; }
 
-
+  .zalo-chat{
+    position: fixed;
+    bottom: 10%;
+    right: 6%;
+    z-index: 1000;
+  }
 
 
 }
@@ -907,8 +912,6 @@
 }
 
 
-
-
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------ */
@@ -987,6 +990,14 @@
     -webkit-box-shadow: 1px 1px 15px 0px rgba(133,133,133,1);
     -moz-box-shadow: 1px 1px 15px 0px rgba(133,133,133,1);
     box-shadow: 1px 1px 15px 0px rgba(133,133,133,1);
+  }
+
+  /*zalo btn call */
+  .zalo-chat {
+    position: fixed;
+    bottom: 17%;
+    right: 6%;
+    z-index: 1000;
   }
 
 }
