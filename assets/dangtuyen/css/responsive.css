@@ -41,7 +41,6 @@
     z-index: 1000;
   }
 
-
 }
 
 
@@ -996,7 +995,7 @@
   .zalo-chat {
     position: fixed;
     bottom: 17%;
-    right: 6%;
+    right: 5%;
     z-index: 1000;
   }
 
