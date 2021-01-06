@@ -33,14 +33,6 @@
 
   /* HERO IMAGES CAROUSEL */
   #heroCarousel .carousel-item { min-height: 650px; }
-
-  .zalo-chat{
-    position: fixed;
-    bottom: 10%;
-    right: 6%;
-    z-index: 1000;
-  }
-
 }
 
 

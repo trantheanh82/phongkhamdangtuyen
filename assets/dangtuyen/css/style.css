@@ -5971,3 +5971,10 @@ box-shadow: -1px 1px 11px -2px rgba(196,196,196,1);
 .video-popup1{
   color: #fff;
 }
+
+.zalo-chat{
+  position: fixed;
+  bottom: 10%;
+  right: 6%;
+  z-index: 1000;
+}
