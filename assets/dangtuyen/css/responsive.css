@@ -986,8 +986,8 @@
   /*zalo btn call */
   .zalo-chat {
     position: fixed;
-    bottom: 12%;
-    right: 5%;
+    bottom: 7rem;
+    right: 1.5rem;
     z-index: 1000;
   }
 
