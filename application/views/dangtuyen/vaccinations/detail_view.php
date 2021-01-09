@@ -14,8 +14,7 @@
 				 				<?=$item->translation->content->content?>
 
 								<!-- Button -->
-								<a href="<?=base_url()?>bookingappointments" class="btn btn-green green-hover"><?=lang("Book an appointment")?></a>
-
+								<a href="https://phongkhamdangtuyen.com/bookingappointments" class="btn btn-orange orange-hover " data-toggle="modal" data-target="#bookingModal" data-modal-type="booking" data-modal-title="ĐẶT LỊCH KHÁM - TIÊM CHỦNG">Đặt lịch khám</a>
 				 			</div>
 				 		</div>	<!-- END SERVICE CONTENT -->
 
