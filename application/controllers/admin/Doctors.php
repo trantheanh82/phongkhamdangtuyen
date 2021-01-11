@@ -6,7 +6,7 @@ class Doctors extends Admin_Controller {
   function __construct(){
 
 		parent::__construct();
-
+    $this->load->library('user_agent');
 		if(!$this->ion_auth->in_group('admin'))
 		{
 			$this->session->set_flashdata('message','You are not allowed to visit the Groups page');
@@ -34,7 +34,13 @@ class Doctors extends Admin_Controller {
   }
 
   function delete($id){
+    if(!empty($id)){
+			if(parent::__delete($id,'doctor',true,true)){
+				$this->session->set_flashdata('message','Doctors has been deleted.');
+			}
+		}
 
+		redirect($this->agent->referrer(),'refresh');
   }
 
   function submit(){

@@ -1,3 +1,6 @@
+<?php
+  if(!empty($items)):
+?>
 <!-- DOCTORS-1
 ============================================= -->
 <section id="doctors-1" class="wide-40 doctors-section division">
@@ -15,7 +18,6 @@
       </div>
     </div>	 <!-- END SECTION TITLE -->
 
-<?php if (!empty($items)) :?>
     <div class="row">
       <?php  foreach($items as $k=>$v):?>
       <!-- DOCTOR #1 -->
@@ -67,8 +69,6 @@
       </div>
     </div>
 
-  <?php endif;?>
-
-
   </div>	   <!-- End container -->
 </section>	<!-- END DOCTORS-1 -->
+<?php endif; ?>
