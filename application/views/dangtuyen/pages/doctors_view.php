@@ -5,17 +5,20 @@
 				<div class="container">
 					<div class="row">
 
-            <?php foreach($items as $k=>$v):?>
+            <?php
+							if(!empty($items)):
+						foreach($items as $k=>$v):
+							?>
 						<!-- DOCTOR #1 -->
 						<div class="col-md-6 col-lg-4">
-							<div class="doctor-2">	
+							<div class="doctor-2">
 
 								<!-- Doctor Photo -->
-								<div class="hover-overlay"> 
+								<div class="hover-overlay">
                   <?=img($v->image,'',array('alt'=>lang('Doctors').' '.$v->translation->content->name,'class'=>'img-fluid'))?>
-								</div>								
-														
-								<!-- Doctor Meta -->		
+								</div>
+
+								<!-- Doctor Meta -->
 								<div class="doctor-meta">
 
 									<h5 class="h5-xs darkgreen-color"><?=$v->translation->content->name?></h5>
@@ -24,17 +27,18 @@
 									<!-- Button -->
                   <?=anchor('/',lang('VIEW INFO'),array('class'=>'btn btn-sm btn-orange orange-hover mt-15','title'=>lang('VIEW INFO').' Bác sĩ '.$v->translation->content->name))?>
 
-								</div>	
+								</div>
 
-							</div>								
+							</div>
 						</div>	<!-- END DOCTOR #1 -->
-						
-          <?php endforeach;?>
+
+          <?php endforeach;
+				endif;?>
 
 
 					</div>	    <!-- End row -->
 				</div>	   <!-- End container -->
 			</section>	<!-- END DOCTORS-3 -->
-      
+
 <?=$this->load->view($template.'/modules/statistics/m_home_statistics')?>
 <?=$this->load->view($template.'/modules/m_home_testimonial',array('content'=>"Khách hàng nói về phòng khám",'background'=>""))?>
