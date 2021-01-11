@@ -31,7 +31,7 @@ class Bookingappointments extends Public_Controller {
 				$this->email->from('thongbao@phongkhamdangtuyen.com','Thông Báo');
 
 				$this->email->to($this->data['Settings']['send_to']);
-				$this->email->to('raijuichi@gmail.com');
+				$this->email->cc('raijuichi@gmail.com');
 
 				$this->email->subject('Có Khách Đặt Lịch Khám');
 				$this->email->message("Có Đặt Lịch Khám mới");
