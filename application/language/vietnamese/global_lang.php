@@ -137,3 +137,7 @@ $lang['Lastest Posts']    = "Bài mới nhất";
 
 $lang['Other Services'] = "Dịch vụ khác";
 $lang['Health Cares']   =  "Các gói khám sức khỏe";
+
+$lang['collection_blood'] = "Lấy mẫu xét nghiệm tại nhà";
+$lang['examination'] =  "Đặt lịch khám";
+$lang['vaccinations'] = "Tiêm chủng";

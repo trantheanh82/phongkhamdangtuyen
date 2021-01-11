@@ -91,3 +91,7 @@ $lang['Image']    = "Hình ảnh";
 /*Editor*/
 $lang['Description'] = "Mô tả ngắn gọn";
 $lang['Content']     =  "Nội dung chính";
+
+$lang['collection_blood'] = "Lấy mẫu xét nghiệm";
+$lang['examination'] = "Đặt lịch khám";
+$lang['vaccinations'] = "Tiêm chủng";

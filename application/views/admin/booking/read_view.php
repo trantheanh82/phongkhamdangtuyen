@@ -17,6 +17,10 @@
 					<td width='10%'><label><?=lang('Phone')?></label></td>
 					<td>: <?=(!empty($item->phone)?$item->phone:"")?></td>
 				</tr>
+				<tr>
+					<td width='10%'><label><?=lang('Type of Booking')?></label></td>
+					<td>: <?=(!empty($item->type)?lang($item->type):"")?></td>
+				</tr>
 			</table>
 		</div>
 	</div>

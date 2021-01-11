@@ -13,6 +13,9 @@
 			    <tr>
 			      <th class='text-center'><?=lang("ID")?></th>
 			      <th class='text-center'><?=lang("Name")?></th>
+						<th class='text-center'>
+							<?=lang("Type of Booking")?>
+						</th>
 			      <th class='text-center'><?=lang('Phone')?></th>
 			      <th class='text-center'><?=lang("Read")?></th>
 			      <th class='text-center'><?=lang("Action")?></th>
@@ -29,6 +32,9 @@
 					<tr <?=$v->view=='N'?"class='highlight'":""?>>
 						<td class='text-center'><?=$v->id?></td>
 						<td><a href="<?=$link_edit?>"><?=$v->name?></a></td>
+						<td>
+							<?=lang($v->type)?>
+						</td>
 						<td class='text-center'><?=$v->phone?></td>
 						<td class='text-center'><?=$v->view=='Y'?lang('Seen'):lang('Not seen yet')?>
 						<td class='text-center'><?=anchor($link_edit,'<i class="fa fa-eye"></i>',array('title'=>__('View',$this)))?></td>
