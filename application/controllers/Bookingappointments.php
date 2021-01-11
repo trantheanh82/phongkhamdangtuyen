@@ -33,7 +33,14 @@ class Bookingappointments extends Public_Controller {
 				$this->email->to($this->data['Settings']['send_to']);
 				$this->email->cc('raijuichi@gmail.com');
 
-				$this->email->subject('Có Khách Đặt Lịch Khám');
+				$this->email->subject('Có Khách Đặt Lịch '.strtouppercase(lang($data['type']));
+
+				$msg = "Có đặt lịch ".strtouppercase(lang($data['type']))." khách hàng từ website<br />";
+				$msg. = "Thông tin khách hàng: <br />";
+				$msg. = "====================================<br /><br />";
+				$msg. = "- Tên khách hàng: ".$data['name'];
+				$msg. = "- Số điện thoại: ".$data['phone'];
+
 				$this->email->message("Có Đặt Lịch Khám mới");
 
 				if($this->email->send()){
