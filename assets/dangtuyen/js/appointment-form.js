@@ -109,7 +109,7 @@ $(document).ready(function() {
             success: function (d) {
                 $(".form-control").removeClass("success");
                     if(d == 'success') // Message Sent? Show the 'Thank You' message and hide the form
-                        $('.loading').fadeIn('slow').html('<font color="#48af4b">Thông tin đã được ĐẶNG TUYỀN tiếp nhận, ĐẶNG TUYỀN sẽ liên hệ với quý khách trong thời gian sớm nhất.</font>').delay(3000).fadeOut('slow');
+                        $('.loading').fadeIn('slow').html('<font color="#48af4b">Đặt lịch thành công</font>').delay(3000).fadeOut('slow');
                          else
                         $('.loading').fadeIn('slow').html('<font color="#ff5607">Đã xảy ra lõi, vui lòng thử lại ít phút.</font>').delay(3000).fadeOut('slow');
                                 }
