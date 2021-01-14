@@ -65,7 +65,7 @@
 								<p class="foo-email mt-20">E: <a href="mailto:<?=$Settings['company_email']?>"><?=$Settings['company_email']?></a></p>
 
 								<!-- Phone -->
-								<p>P: <?=$Settings['company_phone_1']?></p>
+								<p>P: <?=$Settings['company_phone_1'].' - '. $Settings['company_phone_2']?></p>
 
 							</div>
 						</div>
