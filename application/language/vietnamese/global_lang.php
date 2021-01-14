@@ -103,7 +103,7 @@ $lang['Clinic Rooms']     = "Phòng khám";
 $lang['Partners']     = "Đối tác uy tín";
 
 /*Booking*/
-$lang['Book an appointment'] = "Đặt lịch khám";
+$lang['Book an appointment'] = "Đặt lịch";
 $lang['Select Booking or Vaccinations']  = "Chọn Khám Bệnh hoặc Tiêm Chủng";
 $lang['Medical Examination'] = "Khám bệnh";
 $lang['Vaccinations']       = "Tiêm Chủng";
