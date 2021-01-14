@@ -22,6 +22,7 @@ class Slider_model extends MY_Model
 			$items = $this->with_translation("fields:content","where:`model`='slider' and language='".$language."'")
 			->set_cache($language.'_home_sliders')
 			->where('active','Y')
+			->order_by('sort','ASC')
 			->set_cache($language)
 			->get_all();
 
