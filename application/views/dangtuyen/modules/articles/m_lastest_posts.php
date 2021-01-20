@@ -1,6 +1,6 @@
 <!-- POPULAR POSTS -->
-<div class="popular-posts sidebar-div mb-50">
-    
+<div class="popular-posts sidebar-div mb-50 wow fadeInUp" data-wow-delay="1s">
+
   <!-- Title -->
   <h5 class="h5-sm darkgreen-color"><?=lang("Latest Posts")?></h5>
 

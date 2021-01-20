@@ -101,6 +101,7 @@ class Public_Controller extends MY_Controller{
 					$this->load->model($model);
 
 					$items = $this->{$model}->{$v->user_function}($this->current_lang,'article');
+
 					if(!empty($items))
 					$public_menu[$k]->children = $items;
 				}

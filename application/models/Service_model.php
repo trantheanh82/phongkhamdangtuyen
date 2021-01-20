@@ -96,7 +96,7 @@ class Service_model extends MY_Model
 
 		public function get_item($slug,$lang){
 			$model = $this->slug_model->where(array('slug'=>$slug,'model'=>'service'))->get();
-
+			
 			return $this->with_translation('where:`translations`.`model`="service" and `language`="'.$lang.'"')
 										->with_slug('where:`model`="service" and `language`="'.$lang.'"')
 										->where(array('active'=>'Y','id'=>$model->model_id))

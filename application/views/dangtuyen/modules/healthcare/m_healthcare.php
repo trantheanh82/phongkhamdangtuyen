@@ -1,5 +1,5 @@
 <?php if(isset($healthcares)):?>
-	<div class="popular-posts sidebar-div mb-50">
+	<div class="popular-posts sidebar-div mb-50 wow fadeInUp"  data-wow-delay="0.8s">
 
 	  <!-- Title -->
 	  <h5 class="h5-sm darkgreen-color"><?=lang("Health Cares")?></h5>

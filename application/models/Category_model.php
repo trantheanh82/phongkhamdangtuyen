@@ -31,6 +31,12 @@ class Category_model extends MY_Model
 			'foreign_key'=>'category_id',
 			'local_key'=>'id');
 
+		$this->has_many['services'] = array(
+			'foreign_model'=>'Service_model',
+			'foreign_table'=>'services',
+			'foreign_key'=>'category_id',
+			'local_key'=>'id');
+
 		$this->has_one['slug'] = array('foreign_model'=>'Slug_model','foreign_table'=>'slugs','foreign_key'=>'model_id','local_key'=>'id');
 		$this->has_many['slugs'] = array('foreign_model'=>'Slug_model','foreign_table'=>'slugs','foreign_key'=>'model_id','local_key'=>'id');
 
@@ -80,6 +86,8 @@ class Category_model extends MY_Model
 
 		$items =  $this->with_translation($conditions)
 								->with_slug($conditions)
+								//->with_services(array('fields'=>'id','with'=>array('relation'=>'translations','fields'=>'content'),'where'=>array('on_menu'=>'"Y"')))
+								->with_services(array('fields'=>'id','where'=>array('on_menu'=>'"Y"'),'with'=>array(array('relation'=>'translation','fields'=>'content'),array('relation'=>'slug','fields'=>'slug'))))
 								->where(array('model'=>'service','on_menu'=>'Y','active'=>'Y'))
 								->order_by('sort','ASC')
 								//->set_cache('service_'.$lang)

@@ -61,53 +61,19 @@
 						</div>	<!-- END SERVICE BOXES -->
 
 
-						<!-- INFO TABLE -->
-						<div class="col-lg-4">
-							<div class="services-7-table green-table mb-30 wow fadeInUp" data-wow-delay="0.6s">
 
-								<!-- Title -->
-								<h4 class="h4-xs">Opening Hours:</h4>
+						<!-- SIDEBAR -->
+						<aside id="sidebar" class="col-lg-4">
 
-								<!-- Text -->
-								<p class="p-sm">Porta semper lacus cursus and feugiat primis ultrice ligula risus auctor
-								   tempus feugiat and dolor lacinia cursus
-								</p>
+							<?=$this->load->view($template.'/modules/opening_house_view.php')?>
+							<!-- TEXT WIDGET -->
+							<div id="txt-widget" class="sidebar-div mb-50">
+								<?=$this->load->view($template.'/modules/healthcare/m_healthcare',array('healthcares'=>$other_healthcare))?>
 
-								<!-- Table -->
-								<table class="table">
-									<tbody>
-									    <tr>
-									      	<td>Mon – Wed</td>
-									      	<td> - </td>
-									      	<td class="text-right">9:00 AM - 7:00 PM</td>
-									    </tr>
-									    <tr>
-									      	<td>Thursday</td>
-									      	<td> - </td>
-									      	<td class="text-right">9:00 AM - 6:30 PM</td>
-									    </tr>
-									     <tr>
-									      	<td>Friday</td>
-									      	<td> - </td>
-									      	<td class="text-right">9:00 AM - 6:00 PM</td>
-									    </tr>
-									    <tr class="last-tr">
-									      	<td>Sun - Sun</td>
-									      	<td>-</td>
-									      	<td class="text-right">CLOSED</td>
-									   	 </tr>
-									  </tbody>
-								</table>
-
-								<!-- Title -->
-								<h5 class="h5-sm">Need a personal health plan?</h5>
-
-								<!-- Text -->
-								<p class="p-sm">Porta semper lacus cursus, and feugiat primis ultrice ligula at risus auctor</p>
-
+								<?=$this->load->view($template.'/modules/articles/m_lastest_posts',array('lastest_posts'=>$lastest_posts));?>
 							</div>
-						</div>	<!-- END INFO TABLE -->
 
+						</aside>   <!-- END SIDEBAR -->
 
 					</div>    <!-- End row -->
 				</div>	   <!-- End container -->

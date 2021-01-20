@@ -462,7 +462,7 @@ video {
 }
 
 .wsmenu>.wsmenu-list>li>ul.sub-menu>li>ul.sub-menu {
-  min-width: 200px;
+  min-width: 240px;
   position: absolute;
   left: 100%;
   top: 0;
@@ -502,7 +502,7 @@ video {
 }
 
 .wsmenu > .wsmenu-list > li > ul.sub-menu > li > ul.sub-menu > li >a:hover {
-  background-color: #00a3c8;
+  background-color: #00923f;
   color: #fff;
   padding: 8px 15px 8px 23px;
 }

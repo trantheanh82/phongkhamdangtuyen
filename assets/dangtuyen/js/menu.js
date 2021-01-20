@@ -27,6 +27,8 @@ jQuery(function () {
       jQuery(".wsmenu > .wsmenu-list > li > .sub-menu, .wsmegamenu").not(jQuery(this).siblings('.wsmenu > .wsmenu-list > li > .sub-menu, .wsmegamenu')).slideUp('slow');
       jQuery(this).siblings('.sub-menu').slideToggle('slow');
       jQuery(this).siblings('.wsmegamenu').slideToggle('slow');
+      console.log('clicked');
+      return false;
     });
 
     jQuery('.wsmenu > .wsmenu-list > li > ul > li').has('.sub-menu').prepend('<span class="wsmenu-click02"><i class="wsmenu-arrow"></i></span>');
@@ -35,6 +37,8 @@ jQuery(function () {
     jQuery('.wsmenu-click02').click(function () {
       jQuery(this).children('.wsmenu-arrow').toggleClass('wsmenu-rotate');
       jQuery(this).siblings('li > .sub-menu').slideToggle('slow');
+      console.log('clciked');
+      return false;
     });
 
     jQuery(window).on('resize', function () {

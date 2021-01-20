@@ -34,6 +34,7 @@
 								<?=$this->load->view($template.'/modules/services/m_services',array('other_services'=>$other_services))?>
 
 								<?=$this->load->view($template.'/modules/articles/m_lastest_posts',array('lastest_posts'=>$lastest_posts));?>
+							</div>
 
 						</aside>   <!-- END SIDEBAR -->
 

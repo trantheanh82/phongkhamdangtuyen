@@ -39,6 +39,7 @@
   -o-transform: rotateX(-75deg);
   -moz-transform: rotateX(-75deg);
   -webkit-transform: rotateX(-75deg);
+  border-left: 2px solid #007b36
 }
 
 .wsmenu > .wsmenu-list > li > ul.sub-menu > li:hover > ul.sub-menu {
